@@ -1,0 +1,33 @@
+# This file defines the structure of various named navigational
+# listings, any of which can be used (with some caveats) as the
+# links in your header, footer, and per-page side navigation.
+#
+# For instance, if you have a "primary" navigation list here, you
+# can use that as your header's primary navigation by setting
+# `primary.links` to "primary":
+#
+# primary:
+#   links: primary
+#
+primary:
+  - text: The crisis
+    href: '#crisis'
+  - text: Safer prescribing
+    href: '#prescribing'
+  - text: Illicit supply
+    href: '#supply'
+  - text: Saving lives
+    href: '#lives'
+  - text: Veterans
+    href: '#veterans'
+  - text: Stay updated
+    href: '#updated'
+
+# footer:
+#   - text: Documentation
+#     href: /docs/
+#   - text: Demo link
+#     href: /demo/
+#   - text: External link
+#     href: https://18f.gsa.gov
+#     external: true

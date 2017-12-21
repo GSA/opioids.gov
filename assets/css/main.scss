@@ -1,0 +1,12 @@
+---
+# this ensures Jekyll reads the file to be transformed into CSS later
+# only Main files contain this front matter, not partials.
+---
+
+
+// Import partials from `sass_dir` (defaults to `_sass`)
+// These contain overrides and additions to the USWDS
+
+@import "variables";
+@import "../assets/uswds/scss/uswds";
+
