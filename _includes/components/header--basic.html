@@ -45,7 +45,7 @@
             </ul>
             {% else %}
             <a class="usa-nav-link{% if _section.href == page.permalink %} usa-current{% endif %}" href="{% if _section.external %}{{ _section.href }}{% else %}{{ _section.href | relative_url }}{% endif %}">
-              <span>{{ _section.text }}</span>
+              {{ _section.text }}
             </a>
             {% endif %}
           </li>

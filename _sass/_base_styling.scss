@@ -1,3 +1,14 @@
-.site-logo img{
+.site-logo img {
     height: 100px;
+}
+
+.usa-nav-primary a:hover {
+    color: $color-gold;
+}
+
+
+@media screen and (min-width: 951px) {
+.usa-header {
+    border-bottom: 3px solid $color-gold;
+}
 }
