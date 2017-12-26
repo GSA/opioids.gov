@@ -9,9 +9,17 @@
 }
 }
 
-
 @media screen and (min-width: 951px) {
 .usa-header {
     border-bottom: 3px solid $color-gold;
 }
+}
+
+.site-section-light {
+    background-color: $color-gray-lightest;
+}
+
+.site-section-dark {
+    background-color: $color-blue-darker;
+    color: #ffffff;
 }
