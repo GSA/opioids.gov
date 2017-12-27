@@ -10,9 +10,8 @@ $('a[href*="#"]:not([href="#"]):not([href="#show"]):not([href="#hide"])').click(
         target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
         if (target.length) {
             $('html,body').animate({
-                scrollTop: target.offset().top-100
+                scrollTop: target.offset().top-170
             }, 1000, function() {
-                location.hash = target;
                 target.focus();
                 if (target.is(":focus")) { //checking if the target was focused
                     return false;
