@@ -7,7 +7,7 @@
       <button class="usa-menu-btn">Menu</button>
       <div class="site-logo" id="logo">
         {% if site.logo %}
-          <img src="{{ site.logo | prepend: site.baseurl }}" alt="{{ site.title }}">
+          <a href="/#home"><img src="{{ site.logo | prepend: site.baseurl }}" alt="{{ site.title }}"></a>
         {% else %}
         <em class="usa-logo-text">
           <a href="{% if header.href %}{{ header.href }}{% else %}{{ site.baseurl }}/{% endif %}" title="Home">

@@ -1,0 +1,22 @@
+{
+  "name": "opstat",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/GSA/opstat.git"
+  },
+  "author": "GSA",
+  "license": "UNLICENSED",
+  "bugs": {
+    "url": "https://github.com/GSA/opstat/issues"
+  },
+  "homepage": "https://github.com/GSA/opstat#readme",
+  "devDependencies": {
+    "stickybits": "^2.0.13"
+  }
+}

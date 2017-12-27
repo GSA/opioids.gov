@@ -15,4 +15,10 @@
   {% assign _src = _script.src | default: _script %}
 <script src="{{ _src | replace: _async_marker, '' | relative_url }}"{% if _script.async or _src contains _async_marker %} async{% endif %}></script>
 {% endfor %}{% endfor %}
+<script src="{{'/assets/js/stickybits.min.js' | relative_url }}" async></script>
+<script
+src="https://code.jquery.com/jquery-3.2.1.min.js"
+integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+crossorigin="anonymous"></script>
+<script src="{{'/assets/js/index.js' | relative_url }}" async></script>
 
