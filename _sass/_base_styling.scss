@@ -28,6 +28,111 @@
 }
 }
 
+.site-lead {
+    h2 {
+    font-family: $font-sans;
+    font-weight: $font-normal;
+    text-transform: uppercase;
+    }
+    span {
+        display: block;
+        margin: 0 auto;
+        max-width: 45%;
+        font-weight: $font-bold;
+        font-size: $title-font-size;
+        background: $color-red;
+        text-align: center;
+    }
+    hr {
+        color: $color-gold;
+        width: calc(25% - 50px);
+        border-bottom: 1px solid $color-gold;
+    }
+}
+
+.site-crisis {
+    p > span {
+        color: $color-red;
+        } 
+    .site-section-data {
+        font-family: $font-serif; 
+        font-weight: $font-bold;
+        text-align: center;
+        .site-section-data-metric {
+            display: inline-block;
+            font-size: $title-font-size;
+            font-weight: $font-bold;
+            font-size: $h2-font-size;
+            color: $color-red;
+            .site-section-data-caption {
+                font-weight: $font-normal;
+                font-size: $h5-font-size;
+                color: $color-black;
+                span {
+                    color: $color-red;
+                }
+            }
+        }
+        .site-right {
+            float: right;
+            margin-right:20%;
+        }
+        .site-left {
+            float: left;
+            margin-left:20%;
+        }
+        .site-section-data-split {
+            &:after {
+                content: "";
+                display: table;
+                clear: both;
+            }
+        }
+        .pie-chart{
+            width: 150px;
+            height: 150px;
+            margin: 2em auto;
+            border-radius: 50%;
+            background: linear-gradient(to right, $color-red 50%, $color-white 0);
+            border: solid $color-black 1px;
+        }
+        .pie-chart::before{
+            content: "";
+            height: 100%;
+            display: block;
+            background: $color-red;
+            border-radius: 0 100% 100% 0 / 50%;
+            margin-left: 50%;
+            transform-origin: left;
+            animation: spin1 3s forwards
+        }
+        @keyframes spin1{
+            to {
+            transform: rotate(145deg); 
+            }
+        }
+        .site-section-data-source {
+            margin: 20px;
+            font-size: $small-font-size;
+            font-weight: $font-normal;
+            font-family: $font-sans;
+        }
+        p {
+            margin-top: 3em;
+            font-size: $base-font-size;
+            font-weight: $font-normal;
+            font-family: $font-sans;
+            color: $color-red;
+        }
+        .site-section-data-share {
+            text-align: left;
+            margin-left: 15%;
+            text-transform: uppercase;
+            font-size: $small-font-size;
+        }
+    }
+}
+
 .site-section h2, h3{
     text-align: center;
 }
