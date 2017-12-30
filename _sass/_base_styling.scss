@@ -32,6 +32,11 @@ p > span {
 }
 }
 
+.site-section-data-split {
+    display:flex;
+    justify-content: center;
+}
+
 .site-lead {
     h2 {
     font-family: $font-sans;
@@ -59,14 +64,17 @@ p > span {
         font-family: $font-serif; 
         font-weight: $font-bold;
         text-align: center;
+        .site-section-data-lead-metric {
+            font-size: $title-font-size;
+            color: $color-red;
+        }
         .site-section-data-metric {
             display: inline-block;
-            font-size: $title-font-size;
+            margin: 0 8rem;
             font-weight: $font-bold;
             font-size: $h2-font-size;
             color: $color-red;
             .site-section-data-caption {
-                font-weight: $font-normal;
                 font-size: $h5-font-size;
                 color: $color-black;
                 span {
@@ -176,15 +184,6 @@ p > span {
 .site-left {
     float: left;
     margin-left:20%;
-}
-.site-section-data-split {
-    display:flex;
-    justify-content: center;
-    &:after {
-        content: "";
-        display: table;
-        clear: both;
-    }
 }
 .site-section h2, h3{
     text-align: center;
