@@ -22,6 +22,10 @@
 }
 }
 
+p > span {
+    color: $color-red;
+    } 
+
 @media screen and (min-width: $medium-screen) {
 .usa-header {
     border-bottom: 3px solid $color-gold;
@@ -51,9 +55,6 @@
 }
 
 .site-crisis {
-    p > span {
-        color: $color-red;
-        } 
     .site-section-data {
         font-family: $font-serif; 
         font-weight: $font-bold;
@@ -73,49 +74,28 @@
                 }
             }
         }
-        .site-right {
-            float: right;
-            margin-right:20%;
-        }
-        .site-left {
-            float: left;
-            margin-left:20%;
-        }
-        .site-section-data-split {
-            &:after {
-                content: "";
-                display: table;
-                clear: both;
-            }
-        }
-        .pie-chart{
+        .site-pie-chart1{
             width: 150px;
             height: 150px;
             margin: 2em auto;
             border-radius: 50%;
             background: linear-gradient(to right, $color-red 50%, $color-white 0);
             border: solid $color-black 1px;
+            &:before{
+                content: "";
+                height: 100%;
+                display: block;
+                background: $color-red;
+                border-radius: 0 100% 100% 0 / 50%;
+                margin-left: 50%;
+                transform-origin: left;
+                animation: pie1 3s forwards;
+            }
         }
-        .pie-chart::before{
-            content: "";
-            height: 100%;
-            display: block;
-            background: $color-red;
-            border-radius: 0 100% 100% 0 / 50%;
-            margin-left: 50%;
-            transform-origin: left;
-            animation: spin1 3s forwards
-        }
-        @keyframes spin1{
+        @keyframes pie1{
             to {
             transform: rotate(145deg); 
             }
-        }
-        .site-section-data-source {
-            margin: 20px;
-            font-size: $small-font-size;
-            font-weight: $font-normal;
-            font-family: $font-sans;
         }
         p {
             margin-top: 3em;
@@ -124,15 +104,88 @@
             font-family: $font-sans;
             color: $color-red;
         }
-        .site-section-data-share {
-            text-align: left;
-            margin-left: 15%;
-            text-transform: uppercase;
-            font-size: $small-font-size;
-        }
     }
 }
 
+.site-section-data-share {
+    text-align: left;
+    text-transform: uppercase;
+    font-family: $font-sans;
+    font-size: $small-font-size;
+    font-weight: $font-normal;
+}
+
+.site-section-data-source {
+    margin: 20px;
+    font-size: $small-font-size;
+    font-weight: $font-normal;
+    font-family: $font-sans;
+    text-align: center;
+}
+
+.site-pie-chart2{
+    width: 150px;
+    height: 150px;
+    margin: 2em auto;
+    border-radius: 50%;
+    background: linear-gradient(to right, $color-blue-darker 50%, $color-white 0);
+    border: solid $color-black 1px;
+    &:before{
+        content: "";
+        height: 100%;
+        display: block;
+        background: $color-blue-darker;
+        border-radius: 0 100% 100% 0 / 50%;
+        margin-left: 50%;
+        transform-origin: left;
+        animation: pie2 3s forwards;
+    }
+}
+@keyframes pie2{
+    to {
+    transform: rotate(115deg); 
+    }
+}
+.site-pie-chart3{
+    width: 150px;
+    height: 150px;
+    margin: 2em auto;
+    border-radius: 50%;
+    background: linear-gradient(to right, $color-blue-darker 50%, $color-white 0);
+    border: solid $color-black 1px;
+    &:before{
+        content: "";
+        height: 100%;
+        display: block;
+        background: $color-blue-darker;
+        border-radius: 0 100% 100% 0 / 50%;
+        margin-left: 50%;
+        transform-origin: left;
+        animation: pie3 3s forwards;
+    }
+}
+@keyframes pie3{
+    to {
+    transform: rotate(45deg); 
+    }
+}
+.site-right {
+    float: right;
+    margin-right:20%;
+}
+.site-left {
+    float: left;
+    margin-left:20%;
+}
+.site-section-data-split {
+    display:flex;
+    justify-content: center;
+    &:after {
+        content: "";
+        display: table;
+        clear: both;
+    }
+}
 .site-section h2, h3{
     text-align: center;
 }
@@ -203,5 +256,14 @@
                 }
             }
         }
+    }
+}
+
+.site-pie2-wrapper, .site-pie3-wrapper {
+    margin: 0 4rem;
+    max-width: 25%;
+    text-align: center;
+    .site-section-data-caption {
+        font-size: $small-font-size;
     }
 }
