@@ -115,6 +115,19 @@ p > span {
     }
 }
 
+.site-lives {
+    flex-direction: column;
+    text-align: center;
+    margin: 0 20px;
+    max-width: 30%;
+    svg {
+        max-width: 140px;
+    }
+    .site-section-data-source {
+        align-self: flex-end;
+    }
+}
+
 .site-section-data-share {
     text-align: left;
     text-transform: uppercase;
