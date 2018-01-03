@@ -29,3 +29,13 @@ exclude:
    - vendor/ruby/
 
 uswds-version: 1.4.4
+
+forms:
+- type: updates
+  heading: 
+  url: 
+  button: Submit
+  fields:
+    - type: email
+      name: entry.2070146184
+      label: Email Address

@@ -129,6 +129,7 @@ p > span {
     }
     .site-section-data-source {
         align-self: flex-end;
+        color: $color-white;
     }
 }
 
@@ -401,4 +402,12 @@ p > span {
     .site-section-data-caption {
         font-size: $small-font-size;
     }
+}
+
+form label {
+    visibility: hidden;
+}
+
+input[type=submit] {
+    background-color: $color-gold;
 }

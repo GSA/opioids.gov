@@ -364,6 +364,32 @@ layout: default
         <h3 id="updated">Stay Updated</h3>
         <hr>
       </span>
-    <p></p>
+    <div class="usa-width-one-half">
+      <p>Sign up to receive updates on actions the Trump Administration is taking to address the opioid crisis</p>
+      {% for form in site.forms %}
+      {% if form.type == 'updates' %}
+        {% assign f = form %}
+      {% endif %}
+    {% endfor %}
+      <form id="contact" action="{{ f.url }}" method="POST">
+          <fieldset>
+            <legend>{{ f.heading }}</legend>
+              {% for field in f.fields %}
+                {% unless field.type == 'hidden' %}<label for="contact-{{ field.name }}">{{ field.label }}</label>{% endunless %}
+                <input id="contact-{{ field.name }}"
+                  name="{{ field.name }}" type="{{ field.type }}" placeholder="EMAIL HERE"
+                  {% if field.value %} value="{{ field.value }}" {% endif %}>
+              {% endfor %}
+              <div class="usa-input-buttons-inline">
+                <input type="submit" value="{{ f.button }}">
+              </div>
+          </fieldset>
+      
+        </form>
+    </div>
+    <div class="usa-width-one-half">
+      <p>Learn more about the opioids crisis from the Department of Health and Human Services (HHS)</p>
+      <p>HHS.gov/Opioids</p>
+    </div>
   </div>
 </section>
