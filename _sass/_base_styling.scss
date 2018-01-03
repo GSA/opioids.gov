@@ -59,7 +59,11 @@ p > span {
     }
 }
 
-.site-crisis {
+.site-caption {
+    font-size: $small-font-size;
+}
+
+.site-crisis, .site-prescribing {
     .site-section-data {
         font-family: $font-serif; 
         font-weight: $font-bold;
@@ -128,14 +132,29 @@ p > span {
     }
 }
 
+.site-prescribing {
+    .site-section-data-metric {
+        max-width: 25%;
+    }
+    .site-caption {
+        margin-top: 15px;
+        font-weight: $font-normal;
+        color: $color-black;
+    }
+    path:hover, circle:hover {
+        stroke: #002868 !important;
+        stroke-width:2px;
+        stroke-linejoin: round;
+        fill: #002868 !important;
+        cursor: pointer;
+    }
+}
+
 .site-supply {
     .site-section-data-split {
         text-align: center;
         margin: 0 auto;
         
-    }
-    .site-caption {
-        font-size: $small-font-size;
     }
     .site-metric {
         max-width: 150px;
@@ -245,6 +264,7 @@ p > span {
     font-weight: $font-normal;
     font-family: $font-sans;
     text-align: center;
+    color: $color-gray-dark;
 }
 
 .site-pie-chart2{
