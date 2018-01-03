@@ -126,6 +126,13 @@ p > span {
 }
 
 .site-lives {
+    .site-section-data-share {
+        .cls-fb, .cls-twitter {
+            fill: $color-white;
+        }
+    }
+}
+.site-lives-data {
     flex-direction: column;
     text-align: center;
     margin: 0 20px;
@@ -137,7 +144,7 @@ p > span {
     }
     .site-section-data-source {
         align-self: flex-end;
-        color: $color-white;
+        color: $color-white;       
     }
 }
 
@@ -268,11 +275,20 @@ p > span {
 }
 
 .site-section-data-share {
+    margin-top: 5%;
     text-align: left;
     text-transform: uppercase;
     font-family: $font-sans;
     font-size: $small-font-size;
     font-weight: $font-normal;
+    div {
+        display: inline;
+        vertical-align: top;
+    }
+    svg {
+        height: 15px;
+        width: 15px;
+    }
 }
 
 .site-section-data-source {

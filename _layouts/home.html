@@ -50,9 +50,7 @@ layout: default
         <div class="site-section-data-source">
             source: wh.gov
         </div>
-        <div class="site-section-data-share">
-          Share:
-        </div>
+        {% include social-share.html %}
     </div>
 </section>
 
@@ -150,9 +148,7 @@ layout: default
             </div>
           </div>
         </div>
-          <div class="site-section-data-share">
-            Share:
-          </div>
+        {% include social-share.html %}
       </div>
 </div>
 </section>
@@ -277,9 +273,10 @@ layout: default
       <div class="site-section-data-source">
           source: wh.gov
       </div>
+      {% include social-share.html %}
 </section>
 
-<section class="usa-section site-section site-section-dark">
+<section class="usa-section site-section site-section-dark site-lives">
   <div class="usa-grid">
     <span class="site-divider">
       <hr>
@@ -288,7 +285,7 @@ layout: default
     </span>
     <p>From <span>providing overdose-reversing drugs</span> to first responders to increasing access to drug addiction treatment, the Trump Administration is working to save the lives of those suffering with addiction.</p>
     <div class="site-section-data-split">
-      <div class="site-lives">
+      <div class="site-lives-data">
       <h4>
         Overdose Rescue
       </h4>
@@ -300,7 +297,7 @@ layout: default
           source: wh.gov
       </div>
     </div>
-    <div class="site-lives">
+    <div class="site-lives-data">
         <h4>
           Treating Addiction
         </h4>
@@ -312,7 +309,7 @@ layout: default
             source: wh.gov
         </div>
       </div>
-      <div class="site-lives">
+      <div class="site-lives-data">
           <h4>
             Access to Care
           </h4>
@@ -325,6 +322,7 @@ layout: default
           </div>
         </div>
   </div>
+  {% include social-share.html %}
 </section>
 
 <section class="usa-grid usa-section site-section">
@@ -352,9 +350,7 @@ layout: default
   <div class="site-section-data-source">
       source: wh.gov
   </div>
-  <div class="site-section-data-share">
-      Share:
-    </div>
+  {% include social-share.html %}
 </section>
 
 <section class="usa-section site-section site-section-dark">
