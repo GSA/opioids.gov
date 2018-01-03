@@ -25,3 +25,10 @@ $('a[href*="#"]:not([href="#"]):not([href="#show"]):not([href="#hide"])').click(
     }
 });
 
+//barchart animation
+$('.value').each(function() {
+	var text = $(this).text();
+	$(this).parent().css('width', text);
+});
+
+$('.block').tooltip();
