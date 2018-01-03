@@ -135,6 +135,12 @@ p > span {
             fill: $color-white;
         }
     }
+    a {
+        color: $color-white;
+        &:hover {
+            color: $color-blue;
+        }
+    }
 }
 .site-lives-data {
     flex-direction: column;
@@ -302,6 +308,9 @@ p > span {
     font-family: $font-sans;
     text-align: center;
     color: $color-gray-dark;
+    a {
+        text-decoration: none;
+    }
 }
 
 .site-pie-chart2{
