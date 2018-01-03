@@ -35,6 +35,10 @@ p > span {
 .site-section-data-split {
     display:flex;
     justify-content: center;
+    flex-direction: column;
+    @media screen and (min-width: $medium-screen) {
+        flex-direction: row;
+    }
 }
 
 .site-lead {
@@ -46,11 +50,13 @@ p > span {
     span {
         display: block;
         margin: 0 auto;
-        max-width: 45%;
         font-weight: $font-bold;
         font-size: $title-font-size;
         background: $color-red;
         text-align: center;
+        @media screen and (min-width: $medium-screen) {
+            max-width: 45%;
+        }
     }
     hr {
         color: $color-gold;
@@ -123,7 +129,9 @@ p > span {
     flex-direction: column;
     text-align: center;
     margin: 0 20px;
-    max-width: 30%;
+    @media screen and (min-width: $medium-screen) {
+      max-width: 30%;
+    }
     svg {
         max-width: 140px;
     }
@@ -134,13 +142,18 @@ p > span {
 }
 
 .site-prescribing {
-    .site-section-data-metric {
-        max-width: 25%;
+    @media screen and (min-width: $medium-screen) {
+        .site-section-data-metric {
+            max-width: 25%;
+        }
     }
     .site-caption {
         margin-top: 15px;
         font-weight: $font-normal;
         color: $color-black;
+    }
+    svg {
+        width: 100%;
     }
     path:hover, circle:hover {
         stroke: #002868 !important;
@@ -155,6 +168,7 @@ p > span {
     .site-section-data-split {
         text-align: center;
         margin: 0 auto;
+        flex-direction: row;
         
     }
     .site-metric {
@@ -232,12 +246,14 @@ p > span {
     }
     .value {
         display: block;
-        visibility: hidden;
         line-height: 1em;
         position: absolute;
         top: 50%;
         left: 50%;
         transform: translate(-50%);
+        @media screen and (min-width: $medium-screen) {
+            visibility: hidden;
+        }
     }
     .x-axis {
         text-align: center;
@@ -397,8 +413,10 @@ p > span {
 
 .site-pie2-wrapper, .site-pie3-wrapper {
     margin: 0 4rem;
-    max-width: 25%;
     text-align: center;
+    @media screen and (min-width: $medium-screen) {
+        max-width: 25%;
+    }
     .site-section-data-caption {
         font-size: $small-font-size;
     }
@@ -411,3 +429,4 @@ form label {
 input[type=submit] {
     background-color: $color-gold;
 }
+
