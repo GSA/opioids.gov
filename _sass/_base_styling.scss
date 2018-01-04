@@ -181,6 +181,16 @@ p > span {
     }
 }
 
+.site-updated {
+    a {
+        text-decoration: none;
+        color: $color-white;
+        &:visited {
+            color: $color-white;
+        }
+    } 
+}
+
 .site-supply {
     .site-section-data-split {
         text-align: center;
