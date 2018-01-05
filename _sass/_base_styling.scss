@@ -58,6 +58,7 @@ p > span {
     font-family: $font-sans;
     font-weight: $font-normal;
     text-transform: uppercase;
+    padding: 2rem;
     }
     span {
         display: block;
@@ -70,16 +71,10 @@ p > span {
         @media screen and (min-width: $medium-screen) {
             max-width: 50%;
         }
-        span.secondaryheader {
-        display: block;
-        margin: 0 auto;
-        padding: 1.5rem 1rem;
+        div.secondaryheader {
         font-weight: $font-bold;
         font-size: $title-font-size;
-        background: $color-red;
         text-align: center;
-        @media screen and (min-width: $medium-screen) {
-            max-width: 45%;
         }
     }
     hr {
