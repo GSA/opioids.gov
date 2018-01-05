@@ -86,6 +86,14 @@ p > span {
         width: calc(25% - 50px);
         border-bottom: 1px solid $color-gold;
     }
+    
+    .usa-grid {
+    
+        p {
+            padding-bottom: 1rem;
+        }
+    
+    }
 }
 
 .site-caption {
