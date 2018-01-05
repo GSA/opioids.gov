@@ -37,6 +37,7 @@ p {
 
 p > span {
     color: $color-red;
+    font-weight: $font-bold;
     } 
 
 @media screen and (min-width: $medium-screen) {
@@ -91,7 +92,7 @@ p > span {
     
         p {
             padding-top: 1rem;
-            padding-bottom: 1rem;
+            padding-bottom: 2.5rem;
         }
     
     }
