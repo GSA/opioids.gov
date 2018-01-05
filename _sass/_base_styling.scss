@@ -4,7 +4,6 @@
 
 h2 {
     margin-top: 1rem;
-    line-height: 1rem;
 }
 
 .usa-banner {
@@ -29,6 +28,10 @@ h2 {
     a:hover {
     color: $color-gold;
 }
+}
+
+p {
+    text-align: center;
 }
 
 p > span {
@@ -57,6 +60,17 @@ p > span {
     text-transform: uppercase;
     }
     span {
+        display: block;
+        margin: 0 auto;
+        padding: 1.5rem 1rem;
+        font-weight: $font-bold;
+        font-size: $title-font-size;
+        background: $color-red;
+        text-align: center;
+        @media screen and (min-width: $medium-screen) {
+            max-width: 50%;
+        }
+        span.secondaryheader {
         display: block;
         margin: 0 auto;
         padding: 1.5rem 1rem;
