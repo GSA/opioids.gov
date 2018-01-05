@@ -4,6 +4,7 @@
 
 h2 {
     margin-top: 1rem;
+    line-height: 1rem;
 }
 
 .usa-banner {
@@ -58,6 +59,7 @@ p > span {
     span {
         display: block;
         margin: 0 auto;
+        padding: 1.5rem 1rem;
         font-weight: $font-bold;
         font-size: $title-font-size;
         background: $color-red;
