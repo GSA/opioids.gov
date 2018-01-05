@@ -2,7 +2,7 @@
     visibility: hidden; 
 }
 
-h2 {
+h1, h2 {
     margin-top: 1rem;
 }
 
@@ -58,7 +58,7 @@ p > span {
 }
 
 .site-lead {
-    h2 {
+    h1 {
     font-family: $font-sans;
     font-weight: $font-normal;
     text-transform: uppercase;
@@ -103,6 +103,10 @@ p > span {
 
 .site-caption {
     font-size: $small-font-size;
+}
+
+.site-crisis h2, .site-prescribing h2, .site-supply h2, .site-veterans h2 {
+    background-color: $color-blue-darker; 
 }
 
 .site-crisis, .site-prescribing {
