@@ -61,6 +61,7 @@ p > span {
     font-weight: $font-normal;
     text-transform: uppercase;
     padding: 2rem 2rem 1rem 2rem;
+    letter-spacing: .03rem
     }
     span {
         display: block;
@@ -84,14 +85,14 @@ p > span {
     
        div.secondaryheader {
         font-weight: $font-bold;
-        font-size: 5rem;
+        font-size: 4rem;
         text-align: center;
         }
     
     .usa-grid {
     
         p {
-            padding-top: 1rem;
+            padding-top: 1.5rem;
             padding-bottom: 3rem;
         }
     
