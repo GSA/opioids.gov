@@ -17,17 +17,19 @@ h2 {
 }
 
 .site-logo img {
-    height: 65px;    
+    height: 65px;
+    
     @media screen and (min-width: $medium-screen) {
     height: 100px;
     }
 }
 
 .usa-nav-primary {
-    text-transform: uppercase;   
+    text-transform: uppercase;
+    
     a:hover {
     color: $color-gold;
-}
+    }
 }
 
 p {
@@ -108,7 +110,7 @@ p > span {
         font-family: $font-serif; 
         font-weight: $font-bold;
         text-align: center;
-        padding-top: 3rem;
+        padding-top: 5rem;
         
         .site-section-data-lead-metric {
             font-size: $title-font-size;
