@@ -127,21 +127,22 @@ p > span {
             color: $color-red;
         }
         
+        .site-section-data-caption {
+                font-size: $h5-font-size;
+                color: $color-black;
+                
+                span {
+                    color: $color-red;
+                    font-weight: $font-bold; 
+                }
+            }
+        
         .site-section-data-metric {
             display: inline-block;
             margin: 0 8rem;
             font-weight: $font-bold;
             font-size: $h2-font-size;
             color: $color-red;
-            
-            .site-section-data-caption {
-                font-size: $h5-font-size;
-                color: $color-black;
-                
-                span {
-                    color: $color-red;
-                }
-            }
             
         }
         
@@ -362,13 +363,18 @@ p > span {
 
 .site-section-data-source {
     margin: 20px;
-    font-size: $small-font-size;
+    font-size: .5rem;
     font-weight: $font-normal;
     font-family: $font-sans;
     text-align: center;
-    color: $color-gray-dark;
+    color: $color-gray-medium;
+    
     a {
         text-decoration: none;
+    }
+    
+    a:hover {
+        text-decoration: underline;
     }
 }
 
