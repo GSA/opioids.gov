@@ -108,24 +108,31 @@ p > span {
         font-family: $font-serif; 
         font-weight: $font-bold;
         text-align: center;
+        padding-top: 3rem;
+        
         .site-section-data-lead-metric {
             font-size: $title-font-size;
             color: $color-red;
         }
+        
         .site-section-data-metric {
             display: inline-block;
             margin: 0 8rem;
             font-weight: $font-bold;
             font-size: $h2-font-size;
             color: $color-red;
+            
             .site-section-data-caption {
                 font-size: $h5-font-size;
                 color: $color-black;
+                
                 span {
                     color: $color-red;
                 }
             }
+            
         }
+        
         .site-pie-chart1{
             width: 150px;
             height: 150px;
@@ -425,7 +432,7 @@ p > span {
     display: flex;
     align-items: center;
     justify-content: space-evenly;
-    margin: 28px auto;
+    margin: 0 auto;
     max-width: 80%;
     width: 100%;
     &:after {
