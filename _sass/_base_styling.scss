@@ -32,7 +32,7 @@ h2 {
 
 p {
     text-align: center;
-    letter-spacing: .5rem;
+    letter-spacing: .08rem;
 }
 
 p > span {
@@ -89,6 +89,7 @@ p > span {
     .usa-grid {
     
         p {
+            padding-top: 1rem;
             padding-bottom: 1rem;
         }
     
