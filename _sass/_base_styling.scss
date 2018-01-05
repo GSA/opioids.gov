@@ -74,17 +74,18 @@ p > span {
         @media screen and (min-width: $medium-screen) {
             max-width: 60%;
         }
-   div .secondaryheader {
-        font-weight: $font-bold;
-        font-size: 5rem;
-        text-align: center;
-        }
     }
     hr {
         color: $color-gold;
         width: calc(25% - 50px);
         border-bottom: 1px solid $color-gold;
     }
+    
+       div.secondaryheader {
+        font-weight: $font-bold;
+        font-size: 5rem;
+        text-align: center;
+        }
     
     .usa-grid {
     
