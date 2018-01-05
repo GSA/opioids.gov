@@ -63,13 +63,15 @@ p > span {
     span {
         display: block;
         margin: 0 auto;
-        padding: .5rem 1rem;
+        margin-top: 1.5rem;
+        margin-bottom: 1.5rem;
+        padding: .5rem 1.5rem;
         font-weight: $font-bold;
         font-size: 7rem;
         background: $color-red;
         text-align: center;
         @media screen and (min-width: $medium-screen) {
-            max-width: 50%;
+            max-width: 60%;
         }
         div.secondaryheader {
         font-weight: $font-bold;
