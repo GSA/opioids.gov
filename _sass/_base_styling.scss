@@ -374,12 +374,13 @@ p > span {
     }
     
     .site-section-data-metric {
-        font-size: 2.5rem;
+        font-size: 2.8rem;
         color: #ffffff;
         letter-spacing: .08rem;
         font-weight: 700;
         font-family: $font-serif;
         margin-bottom: 1rem; 
+        margin-top: .5rem;
     }
     
     .site-section-data-caption {
@@ -412,7 +413,7 @@ p > span {
 .site-lives-data {
     flex-direction: column;
     text-align: center;
-    margin: 0 20px;
+    margin: 0 30px;
     @media screen and (min-width: $medium-screen) {
       max-width: 30%;
     }
@@ -421,7 +422,7 @@ p > span {
     }
     .site-section-data-source {
         align-self: flex-end;
-        color: $color-white;       
+        color: $color-gray-lighter;       
     }
 }
 
