@@ -259,6 +259,20 @@ p > span {
         font-weight: $font-bold;
     }
     
+    .air-title {
+        color: $color-red;
+    }
+    
+    border-title {
+        color: $color-blue-darkest;
+    }
+    
+    sea-title {
+        color: $color-gold;
+    }
+    
+    
+    
     .site-section-data-split {
         text-align: center;
         margin: 0 auto;
@@ -292,7 +306,7 @@ p > span {
         padding-left: 30px;
     }
     .row {
-        margin-bottom: 1.5em;
+        margin-bottom: 3em;
     }
     // @keyframes expand {
     //     from {width: 0%;}
