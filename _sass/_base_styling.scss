@@ -123,7 +123,7 @@ p > span {
         padding-top: 5rem;
         
         .site-section-data-lead-metric {
-            font-size: $title-font-size;
+            font-size: 6rem;
             color: $color-red;
         }
         
@@ -223,10 +223,10 @@ p > span {
         width: 100%;
     }
     path:hover, circle:hover {
-        stroke: #002868 !important;
+        stroke: #ffffff !important;
         stroke-width:2px;
         stroke-linejoin: round;
-        fill: #002868 !important;
+        fill: #C19222 !important;
         cursor: pointer;
     }
 }
@@ -246,6 +246,7 @@ p > span {
         text-align: center;
         margin: 0 auto;
         flex-direction: row;
+        margin-top: 3rem;
         
     }
     .site-metric {
