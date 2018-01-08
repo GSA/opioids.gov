@@ -128,7 +128,7 @@ p > span {
         }
         
         .site-section-data-caption {
-                font-size: $h5-font-size;
+                font-size: 1.8rem;
                 color: $color-black;
                 
                 span {
@@ -147,11 +147,11 @@ p > span {
         }
         
         .site-pie-chart1{
-            width: 150px;
-            height: 150px;
+            width: 200px;
+            height: 200px;
             margin: 2em auto;
             border-radius: 50%;
-            background: linear-gradient(to right, $color-red 50%, $color-white 0);
+            background: linear-gradient(to left, $color-red 50%, $color-white 0);
             border: solid $color-black 1px;
             &:before{
                 content: "";
@@ -375,6 +375,7 @@ p > span {
     
     a:hover {
         text-decoration: underline;
+        color: #C19222;
     }
 }
 
