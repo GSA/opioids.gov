@@ -31,7 +31,6 @@ h2 {
 
 .usa-nav-primary {
     text-transform: uppercase;
-    
     a:hover {
     color: $color-gold;
     }
@@ -57,6 +56,7 @@ p > span {
     display:flex;
     justify-content: center;
     flex-direction: column;
+    margin-top: 3rem;
     @media screen and (min-width: $medium-screen) {
         flex-direction: row;
     }
@@ -141,7 +141,7 @@ p > span {
             display: inline-block;
             margin: 0 8rem;
             font-weight: $font-bold;
-            font-size: $h2-font-size;
+            font-size: 3.2rem;
             color: $color-red;
             
         }
