@@ -368,27 +368,31 @@ p > span {
     }
     
     h3 {
-        font-size: 1.4rem;
+        font-size: 1.8rem;
     }
     
     .site-section-data-metric {
-        font-size: 1.8rem;
+        font-size: 2.5rem;
         color: #ffffff;
         letter-spacing: .08rem;
         font-weight: 700;
-        font-family: $font-serif; 
+        font-family: $font-serif;
+        margin-bottom: 1rem; 
     }
     
     .site-section-data-caption {
         font-family: $font-serif;
         font-weight: normal;
-        margin-bottom: 0;
-        font-size: 1.4rem;
+        margin-bottom: 1rem;
+        font-size: 1.8rem;
         margin-top: .03rem;
+        letter-spacing: .08rem;
     }
     
     .secondary-caption {
         font-size: 1.4rem;
+        font-family: $font-sans;
+        letter-spacing: .08rem;
     }
     
     .site-section-data-share {
