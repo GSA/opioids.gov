@@ -184,6 +184,13 @@ p > span {
     }
 }
 
+.site-prescribing {
+    .site-caption {
+        font-size: 1.2rem;
+    }
+    
+}
+
 .site-lives {
     .site-section-data-share {
         .cls-fb, .cls-twitter {
@@ -251,24 +258,25 @@ p > span {
 .site-supply {
     p {
         margin-bottom: 5rem;
-        font-size: 1.3rem;
-    }
-    
-    .site-caption {
-        font-family: $font-serif; 
-        font-weight: $font-bold;
+        font-size: 1.7rem;
     }
     
     .air-title {
         color: $color-red;
+        font-family: $font-serif; 
+        font-weight: $font-bold;
     }
     
     border-title {
         color: $color-blue-darkest;
+        font-family: $font-serif; 
+        font-weight: $font-bold;
     }
     
     sea-title {
         color: $color-gold;
+        font-family: $font-serif; 
+        font-weight: $font-bold;
     }
     
     
