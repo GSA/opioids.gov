@@ -265,22 +265,25 @@ p > span {
         margin-bottom: 0;
     }
     
-    .air-title {
-        color: $color-red;
+    .air-title, .border-title, .sea-title {
         font-family: $font-serif; 
         font-weight: $font-bold;
+        margin-bottom: 0;
+        font-size: 1.4rem;
+        margin-top: .03rem;
+    
+    }
+    
+    .air-title {
+        color: $color-red;
     }
     
     .border-title {
         color: $color-blue-darkest;
-        font-family: $font-serif; 
-        font-weight: $font-bold;
     }
     
     .sea-title {
         color: $color-gold;
-        font-family: $font-serif; 
-        font-weight: $font-bold;
     }
     
     
