@@ -191,35 +191,6 @@ p > span {
     
 }
 
-.site-lives {
-    .site-section-data-share {
-        .cls-fb, .cls-twitter {
-            fill: $color-white;
-        }
-    }
-    a {
-        color: $color-white;
-        &:hover {
-            color: $color-blue;
-        }
-    }
-}
-.site-lives-data {
-    flex-direction: column;
-    text-align: center;
-    margin: 0 20px;
-    @media screen and (min-width: $medium-screen) {
-      max-width: 30%;
-    }
-    svg {
-        max-width: 140px;
-    }
-    .site-section-data-source {
-        align-self: flex-end;
-        color: $color-white;       
-    }
-}
-
 .site-prescribing {
     @media screen and (min-width: $medium-screen) {
         .site-section-data-metric {
@@ -287,8 +258,6 @@ p > span {
         color: $color-gold;
     }
     
-    
-    
     .site-section-data-split {
         text-align: center;
         margin: 0 auto;
@@ -314,7 +283,7 @@ p > span {
         }
     }
     figure {
-        padding-top: 3rem;
+        padding-top: 4rem;
         margin: 0 auto;
         max-width: 1100px;
         position: relative;
@@ -322,9 +291,9 @@ p > span {
     .graphic {
         padding-left: 30px;
     }
-    .row {
-        margin-bottom: 3em;
-    }
+    //.row {
+    //    margin-bottom: 3em;
+    //}
     // @keyframes expand {
     //     from {width: 0%;}
     //     to {width: 100%;}
@@ -390,6 +359,63 @@ p > span {
         transform: translate(-32px,170px) rotate(270deg);
         position: absolute;
         left: 0;
+    }
+}
+
+.site-lives {
+    p {
+       margin-bottom: 5rem; 
+    }
+    
+    h3 {
+        font-size: 1.4rem;
+    }
+    
+    .site-section-data-metric {
+        font-size: 1.8rem;
+        color: #ffffff;
+        letter-spacing: .08rem;
+        font-weight: 700;
+        font-family: $font-serif; 
+    }
+    
+    .site-section-data-caption {
+        font-family: $font-serif;
+        font-weight: normal;
+        margin-bottom: 0;
+        font-size: 1.4rem;
+        margin-top: .03rem;
+    }
+    
+    .secondary-caption {
+        font-size: 1.4rem;
+    }
+    
+    .site-section-data-share {
+        .cls-fb, .cls-twitter {
+            fill: $color-white;
+        }
+    }
+    a {
+        color: $color-white;
+        &:hover {
+            color: $color-blue;
+        }
+    }
+}
+.site-lives-data {
+    flex-direction: column;
+    text-align: center;
+    margin: 0 20px;
+    @media screen and (min-width: $medium-screen) {
+      max-width: 30%;
+    }
+    svg {
+        max-width: 140px;
+    }
+    .site-section-data-source {
+        align-self: flex-end;
+        color: $color-white;       
     }
 }
 
