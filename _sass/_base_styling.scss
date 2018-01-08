@@ -5,6 +5,7 @@
 h1, h2 {
     margin-top: 1rem;
     text-align: center;
+    letter-spacing: .08rem;
 }
 
 h2 {
@@ -109,6 +110,7 @@ p > span {
 
 .site-caption {
     font-size: $small-font-size;
+    letter-spacing: .08rem;
 }
 
 .site-crisis h2, .site-prescribing h2, .site-supply h2, .site-veterans h2 {
@@ -121,6 +123,7 @@ p > span {
         font-weight: $font-bold;
         text-align: center;
         padding-top: 5rem;
+        letter-spacing: .08rem;
         
         .site-section-data-lead-metric {
             font-size: 6rem;
@@ -130,6 +133,7 @@ p > span {
         .site-section-data-caption {
                 font-size: 1.8rem;
                 color: $color-black;
+                letter-spacing: .08rem;
                 
                 span {
                     color: $color-red;
@@ -143,6 +147,7 @@ p > span {
             font-weight: $font-bold;
             font-size: 3.2rem;
             color: $color-red;
+            letter-spacing: .08rem;
             
         }
         
@@ -218,6 +223,7 @@ p > span {
         margin-top: 15px;
         font-weight: $font-normal;
         color: $color-black;
+        letter-spacing: .08rem;
     }
     svg {
         width: 100%;
@@ -235,6 +241,7 @@ p > span {
     a {
         text-decoration: none;
         color: $color-white;
+        letter-spacing: .08rem;
         &:visited {
             color: $color-white;
         }
@@ -352,6 +359,7 @@ p > span {
     font-family: $font-sans;
     font-size: $small-font-size;
     font-weight: $font-normal;
+    letter-spacing: .08rem;
     div {
         display: inline;
         vertical-align: top;
@@ -369,6 +377,7 @@ p > span {
     font-family: $font-sans;
     text-align: center;
     color: $color-gray-medium;
+    letter-spacing: .08rem;
     
     a {
         text-decoration: none;
@@ -436,6 +445,7 @@ p > span {
 }
 .site-section h2, h3{
     text-align: center;
+    letter-spacing: .08rem;
 }
 
 .site-section-light {
