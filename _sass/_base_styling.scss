@@ -20,10 +20,7 @@ h2 {
 
 .site-logo img {
     height: 65px;
-    
-    @media screen and (min-width: $medium-screen) {
-    height: 100px;
-    }
+
 }
 
 .usa-nav-primary {
@@ -31,6 +28,10 @@ h2 {
     a:hover {
     color: $color-gold;
     }
+}
+
+.usa-nav {
+    padding-top: 2rem;
 }
 
 p {
