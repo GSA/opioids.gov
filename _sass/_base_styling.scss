@@ -343,6 +343,23 @@ p > span {
     .block:hover {
         opacity: .65;
     }
+
+    .tooltip{
+        display: inline;
+        position: relative;
+    }
+
+    .tooltip:hover:after{
+        background: $color-white;
+        border: solid $color-black 1px;
+        bottom: 26px;
+        color: $color-black;
+        content: attr(title);
+        left: 20%;
+        padding: 5px 5px;
+        position: absolute;
+        z-index: 98;
+    }
     .value {
         display: block;
         line-height: 1em;
