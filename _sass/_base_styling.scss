@@ -471,10 +471,15 @@ p > span {
 .site-veterans {
    
     .site-section-data-metric {
+        
+        p {
         font-size: 1.8rem;
         color: $color-black;
         letter-spacing: .08rem;
+        margin-bottom: 1rem;
+        margin-top: 1rem;
         font-family: $font-serif;
+        }
     }
     
     .section-data-caption {
