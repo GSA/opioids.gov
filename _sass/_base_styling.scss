@@ -469,6 +469,24 @@ p > span {
     }
 }
 
+.site-veterans {
+   
+    .site-section-data-metric {
+        font-size: 1.8rem;
+        color: $color-black;
+        letter-spacing: .08rem;
+        font-family: $font-serif;
+    }
+    
+    .section-data-caption {
+        font-size: 1.4rem;
+        letter-spacing: 0.08rem;
+        font-family: $font-sans;
+    }
+    
+    
+}
+
 .site-pie-chart2{
     width: 150px;
     height: 150px;
