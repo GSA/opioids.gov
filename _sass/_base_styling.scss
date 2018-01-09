@@ -327,7 +327,6 @@ p > span {
         float: left;
         background-color: $color-red;
         position: relative;
-        overflow: hidden;
         opacity: 1;
         // transition: opacity, .3s ease;
         cursor: pointer;
@@ -352,9 +351,9 @@ p > span {
     .tooltip:hover:after{
         background: $color-white;
         border: solid $color-black 1px;
-        bottom: 26px;
         color: $color-black;
         content: attr(title);
+        top: 20%;
         left: 20%;
         padding: 5px 5px;
         position: absolute;
