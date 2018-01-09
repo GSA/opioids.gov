@@ -266,6 +266,12 @@ p > span {
         margin-top: 3rem;
         
     }
+    
+    .secondary-caption {
+        1.2rem;
+        
+    }
+    
     .site-metric {
         max-width: 150px;
         padding: 0 30px;
@@ -466,7 +472,7 @@ p > span {
 .site-pie-chart2{
     width: 150px;
     height: 150px;
-    margin: 2em auto;
+    margin: 1em auto;
     border-radius: 50%;
     background: linear-gradient(to right, $color-blue-darker 50%, $color-white 0);
     border: solid $color-blue-darker 1px;
@@ -489,7 +495,7 @@ p > span {
 .site-pie-chart3{
     width: 150px;
     height: 150px;
-    margin: 2em auto;
+    margin: 1em auto;
     border-radius: 50%;
     background: linear-gradient(to right, $color-blue-darker 50%, $color-white 0);
     border: solid $color-black 1px;
