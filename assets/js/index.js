@@ -1,4 +1,6 @@
 
+
+
 //sticky header
 stickybits('.usa-header');
 
@@ -25,10 +27,11 @@ $('a[href*="#"]:not([href="#"]):not([href="#show"]):not([href="#hide"])').click(
     }
 });
 
-//barchart animation
+//barchart sizing
 $('.value').each(function() {
 	var text = $(this).text();
 	$(this).parent().css('width', text);
 });
 
-$('.block').tooltip();
+// $('.block').tooltip();
+
