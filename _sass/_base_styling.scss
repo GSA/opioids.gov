@@ -369,6 +369,10 @@ p > span {
         transform: translate(-50%);
         visibility: hidden;
     }
+    .chart-total {
+        font-weight: $font-bold;
+        padding-top: 20px;
+    }
     .x-axis {
         text-align: center;
         padding: .5em 0 2em;
