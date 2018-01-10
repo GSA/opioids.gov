@@ -29,7 +29,8 @@ h2 {
     letter-spacing: .08rem;
     
         li > a.usa-nav-link {
-          font-size: 1.4rem;  
+          font-size: 1.4rem;
+          padding: 0;
         }
     
         a:hover {
@@ -239,17 +240,36 @@ p > span {
         color: $color-black;
         
         ul {
+            
             li {
                 listing-style: none;
                 display: inline;
-                padding: .03rem 0;
+                padding: 0 2rem;
+                font-size: 1.4rem;
             }
         }
         
         .darkest-sq, .dark-sq, .lighest-sq, light-sq {
-            height: 6px;
-            weight: 6px;
-            background-color: $color-red;
+            height: 20px;
+            width: 20px;
+            padding: 0 .8rem;
+            margin-right: .8rem;
+        }
+        
+        .darkest-sq {
+            background-color: #0b1c34;
+        }
+        
+        .dark-sq {
+            background-color: #203c63;
+        }
+        
+        .lightest-sq {
+            background-color: #6386b8;
+        }
+        
+        .light-sq {
+            background-color: #b8d4fc;
         }
     }
     
