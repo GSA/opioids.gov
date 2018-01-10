@@ -554,7 +554,7 @@ p > span {
     .site-section-data-metric {
         
         p {
-        font-size: 1.8rem;
+        font-size: 3.2rem;
         color: $color-black;
         letter-spacing: .08rem;
         margin-bottom: 1rem;
@@ -640,6 +640,15 @@ p > span {
     color: #ffffff;
 }
 
+.site-updated {
+    
+    @media screen and (min-width: $medium-screen) {
+        p {
+            text-align: left;
+        }
+    }
+}
+
 .site-divider {
     position: relative;
     display: flex;
@@ -715,6 +724,7 @@ p > span {
 
 form label {
     visibility: hidden;
+    display:none;
 }
 
 input[type=submit] {
@@ -724,4 +734,9 @@ input[type=submit] {
 .site-empasis {
     font-size: $h3-font-size;
     font-weight: $font-bold;
+    color: $font-gold;
+    
+    a:hover {
+        text-decoration: underline;
+    }
 }
