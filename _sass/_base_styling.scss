@@ -26,8 +26,11 @@ h2 {
 
 .usa-nav-primary {
     text-transform: uppercase;
-    letter-spacing: 0.03rem;
-    font-size: 1.4rem;
+    letter-spacing: .08rem;
+    
+        a {
+          font-size: 1.4rem;  
+        }
     
         a:hover {
         color: $color-gold;
@@ -65,7 +68,7 @@ p > span {
 
 .site-lead {
     height: 90vh;
-    position: relative;
+    //position: relative;
     
         .lead-text {
             position: absolute;
@@ -83,7 +86,7 @@ p > span {
             
             .secondaryheader {
                 font-weight: $font-bold;
-                font-size: 4rem;
+                font-size: 3.8rem;
                 text-align: center;
                 }
     
@@ -230,6 +233,24 @@ p > span {
     .site-caption {
         font-size: 1.2rem;
         font-family: $font-sans;
+    }
+    
+    .secondary-caption {
+        color: $color-black;
+        
+        ul {
+            li {
+                listing-style: none;
+                display: inline;
+                padding: .03rem 0;
+            }
+        }
+        
+        .darkest-sq, .dark-sq, .lighest-sq, light-sq {
+            height: 6px;
+            weight: 6px;
+            background-color: $color-red;
+        }
     }
     
 }
