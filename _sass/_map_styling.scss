@@ -9,7 +9,9 @@
 #wa:hover + #tooltip-map-wa,
 #ca:hover + #tooltip-map-ca,
 #or:hover + #tooltip-map-or,
-#id:hover + #tooltip-map-id {
+#id:hover + #tooltip-map-id,
+#az:hover + #tooltip-map-az,
+#nv:hover + #tooltip-map-nv {
     opacity: 1;
     z-index: 999;
 }
