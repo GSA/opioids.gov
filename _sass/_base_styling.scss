@@ -68,44 +68,49 @@ p > span {
 .site-lead {
     height: 90vh;
     position: relative;
-    .lead-text {
-        position: absolute;
-        top: 50%;
-        transform: translateY(-50%);
-    }
-    h1 {
-    font-family: $font-sans;
-    font-weight: $font-normal;
-    text-transform: uppercase;
-    padding: 2rem 2rem 1rem 2rem;
-    letter-spacing: .03rem;
-    font-size: 3rem;
-    }
-    .title-emphasis {
-        display: block;
-        margin: 0 auto;
-        margin-top: 1rem;
-        margin-bottom: 1rem;
-        padding: .5rem 1.5rem;
-        font-weight: $font-bold;
-        font-size: 7rem;
-        background: $color-red;
-        text-align: center;
-        @media screen and (min-width: $medium-screen) {
-            max-width: 60%;
+    
+        .lead-text {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
         }
+    
+        h1 {
+        font-family: $font-sans;
+        font-weight: $font-normal;
+        text-transform: uppercase;
+        padding: 2rem 2rem 1rem 2rem;
+        letter-spacing: .03rem;
+        font-size: 3rem;
+            
+            .secondaryheader {
+                font-weight: $font-bold;
+                font-size: 4rem;
+                text-align: center;
+                }
+    
+        }
+    
+        .title-emphasis {
+            display: block;
+            margin: 0 auto;
+            margin-top: 1rem;
+            margin-bottom: 1rem;
+            padding: .5rem 1.5rem;
+            font-weight: $font-bold;
+            font-size: 7rem;
+            background: $color-red;
+            text-align: center;
+            
+            @media screen and (min-width: $medium-screen) {
+                max-width: 60%;
+            }
     }
     hr {
         color: $color-gold;
         width: calc(25% - 50px);
         border-bottom: 1px solid $color-gold;
     }
-    
-       div.secondaryheader {
-        font-weight: $font-bold;
-        font-size: 4rem;
-        text-align: center;
-        }
     
     .usa-grid {
     
@@ -115,6 +120,7 @@ p > span {
         }
     
     }
+    
     @media screen and (min-width: $medium-screen) {
     @include keyframes(bounce) {
         0%, 20%, 50%, 80%, 100% {
