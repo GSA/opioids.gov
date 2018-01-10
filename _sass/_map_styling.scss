@@ -1,4 +1,4 @@
-[id*="tooltip"] {
+[id*="tooltip-map"] {
     opacity: 0;
     transition: all 0.6s ease;
     // &:hover {
@@ -6,10 +6,12 @@
     // }
 }
   
-#wa:hover + #tooltip-wa,
-#ca:hover + #tooltip-ca,
-#or:hover + #tooltip-or {
+#wa:hover + #tooltip-map-wa,
+#ca:hover + #tooltip-map-ca,
+#or:hover + #tooltip-map-or,
+#id:hover + #tooltip-map-id {
     opacity: 1;
+    z-index: 999;
 }
 
 
