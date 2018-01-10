@@ -28,7 +28,7 @@ h2 {
     text-transform: uppercase;
     letter-spacing: .08rem;
     
-        a {
+        li > a.usa-nav-link {
           font-size: 1.4rem;  
         }
     
@@ -554,7 +554,7 @@ p > span {
     .site-section-data-metric {
         
         p {
-        font-size: 1.8rem;
+        font-size: 3.2rem;
         color: $color-black;
         letter-spacing: .08rem;
         margin-bottom: 1rem;
@@ -724,4 +724,8 @@ input[type=submit] {
 .site-empasis {
     font-size: $h3-font-size;
     font-weight: $font-bold;
+    
+    a:hover {
+    text-decoration: underline;
+    }
 }
