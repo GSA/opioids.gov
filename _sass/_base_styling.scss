@@ -26,18 +26,16 @@ h2 {
 
 .usa-nav-primary {
     text-transform: uppercase;
-    a:hover {
-    color: $color-gold;
-    }
+    letter-spacing: 0.03rem;
+    font-size: 1.4rem;
+    
+        a:hover {
+        color: $color-gold;
+        }
 }
 
 .usa-nav {
     padding-top: 2rem;
-}
-
-.usa-nav-container {
-height:150px;
-
 }
 
 p {
