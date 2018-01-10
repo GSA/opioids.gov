@@ -29,8 +29,8 @@ h2 {
     letter-spacing: .08rem;
     
         li > a.usa-nav-link {
-          font-size: 1.4rem;
-          padding: 0;
+          font-size: 1.3rem;
+          padding: 2rem 1rem;
         }
     
         a:hover {
@@ -163,6 +163,15 @@ p > span {
     color: $color-blue-darker; 
 }
 
+.site-crisis {
+    .site-section-data-caption {
+        span:first-child {
+            font-size: 2.5rem;
+            color: $color-blue-darker;
+        }
+    }
+}
+
 .site-crisis, .site-prescribing {
     .site-section-data {
         font-family: $font-serif; 
@@ -198,17 +207,17 @@ p > span {
         }
         
         .site-pie-chart1{
-            width: 200px;
-            height: 200px;
+            width: 150px;
+            height: 150px;
             margin: 2em auto;
             border-radius: 50%;
-            background: linear-gradient(to left, $color-red 50%, $color-white 0);
-            border: solid $color-blue-darker 1px;
+            background: linear-gradient(to left, $color-blue-darker 20%, $color-white 0);
+            border: solid $color-red 1px;
             &:before{
                 content: "";
                 height: 100%;
                 display: block;
-                background: $color-red;
+                background: $color-blue-darker;
                 border-radius: 0 100% 100% 0 / 50%;
                 margin-left: 50%;
                 transform-origin: left;
@@ -249,7 +258,7 @@ p > span {
             }
         }
         
-        .darkest-sq, .dark-sq, .lighest-sq, light-sq {
+        .darkest-sq, .dark-sq, .lightest-sq, .light-sq {
             height: 20px;
             width: 20px;
             padding: 0 .8rem;
@@ -264,11 +273,11 @@ p > span {
             background-color: #203c63;
         }
         
-        .lightest-sq {
+        .light-sq {
             background-color: #6386b8;
         }
         
-        .light-sq {
+        .lightest-sq {
             background-color: #b8d4fc;
         }
     }
@@ -287,6 +296,11 @@ p > span {
         color: $color-black;
         letter-spacing: .08rem;
     }
+    
+    .site-section-data-split {
+        margin-top: 3rem;
+    }
+    
     svg {
         width: 100%;
     }
@@ -575,7 +589,8 @@ p > span {
         
         p {
         font-size: 3.2rem;
-        color: $color-black;
+        font-weight: bold;
+        color: $color-red;
         letter-spacing: .08rem;
         margin-bottom: 1rem;
         margin-top: 1rem;
@@ -597,13 +612,13 @@ p > span {
     height: 150px;
     margin: 1em auto;
     border-radius: 50%;
-    background: linear-gradient(to right, $color-blue-darker 50%, $color-white 0);
+    background: linear-gradient(to right, $color-blue-red 30%, $color-white 0);
     border: solid $color-blue-darker 1px;
     &:before{
         content: "";
         height: 100%;
         display: block;
-        background: $color-blue-darker;
+        background: $color-blue-red;
         border-radius: 0 100% 100% 0 / 50%;
         margin-left: 50%;
         transform-origin: left;
@@ -620,13 +635,13 @@ p > span {
     height: 150px;
     margin: 1em auto;
     border-radius: 50%;
-    background: linear-gradient(to right, $color-blue-darker 50%, $color-white 0);
+    background: linear-gradient(to right, $color-red 30%, $color-white 0);
     border: solid $color-black 1px;
     &:before{
         content: "";
         height: 100%;
         display: block;
-        background: $color-blue-darker;
+        background: $color-red;
         border-radius: 0 100% 100% 0 / 50%;
         margin-left: 50%;
         transform-origin: left;
@@ -744,6 +759,8 @@ input[type=submit] {
 .site-empasis {
     font-size: $h3-font-size;
     font-weight: $font-bold;
+    font-color: $font-gold;
+    text-align: left;
     
     a:hover {
     text-decoration: underline;
