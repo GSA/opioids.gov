@@ -11,9 +11,9 @@
 #or:hover + #tooltip-map-or,
 #id:hover + #tooltip-map-id,
 #az:hover + #tooltip-map-az,
-#nv:hover + #tooltip-map-nv {
+#nv:hover + #tooltip-map-nv,
+#ut:hover + #tooltip-map-ut {
     opacity: 1;
-    z-index: 999;
 }
 
 
