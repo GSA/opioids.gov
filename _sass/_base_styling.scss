@@ -211,7 +211,7 @@ p > span {
             height: 150px;
             margin: 2em auto;
             border-radius: 50%;
-            background: linear-gradient(to left, $color-blue-darker 20%, $color-white 0);
+            background: linear-gradient(to left, $color-blue-darker 50%, $color-white 0);
             border: solid $color-red 1px;
             &:before{
                 content: "";
@@ -298,7 +298,7 @@ p > span {
     }
     
     .site-section-data-split {
-        margin-top: 3rem;
+        margin-top: 6rem;
     }
     
     svg {
@@ -612,7 +612,7 @@ p > span {
     height: 150px;
     margin: 1em auto;
     border-radius: 50%;
-    background: linear-gradient(to right, $color-red 30%, $color-white 0);
+    background: linear-gradient(to right, $color-red 50%, $color-white 0);
     border: solid $color-blue-darker 1px;
     &:before{
         content: "";
@@ -635,7 +635,7 @@ p > span {
     height: 150px;
     margin: 1em auto;
     border-radius: 50%;
-    background: linear-gradient(to right, $color-red 30%, $color-white 0);
+    background: linear-gradient(to right, $color-red 50%, $color-white 0);
     border: solid $color-black 1px;
     &:before{
         content: "";
@@ -653,6 +653,13 @@ p > span {
     transform: rotate(45deg); 
     }
 }
+
+.site-updated {
+    p {
+        text-align: left;
+    }
+}
+
 .site-right {
     float: right;
     margin-right:20%;
@@ -759,8 +766,11 @@ input[type=submit] {
 .site-empasis {
     font-size: $h3-font-size;
     font-weight: $font-bold;
-    color: $color-gold;
     text-align: left;
+    
+    a {
+       color: $color-gold;
+    }
     
     a:hover {
     text-decoration: underline;
