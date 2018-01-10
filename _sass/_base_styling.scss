@@ -62,6 +62,7 @@ p > span {
     display:flex;
     justify-content: center;
     flex-direction: column;
+    padding-top: 2rem;
     @media screen and (min-width: $medium-screen) {
         flex-direction: row;
     }
@@ -166,7 +167,7 @@ p > span {
 
 .site-crisis {
     .site-section-data-caption {
-        span:first-child {
+        .exception {
             font-size: 2.5rem;
             color: $color-blue-darker;
         }
@@ -174,6 +175,11 @@ p > span {
 }
 
 .site-crisis, .site-prescribing {
+    
+    .site-section-data-split {
+        padding-top: 2rem;
+    }
+    
     .site-section-data {
         font-family: $font-serif; 
         font-weight: $font-bold;
@@ -183,11 +189,13 @@ p > span {
         
         .site-section-data-lead-metric {
             font-size: 6rem;
+            line-height: 8rem;
             color: $color-red;
         }
         
         .site-section-data-caption {
                 font-size: 1.8rem;
+                line-height: 2.4rem;
                 color: $color-black;
                 letter-spacing: .08rem;
                 
@@ -201,7 +209,8 @@ p > span {
             display: inline-block;
             margin: 0 8rem;
             font-weight: $font-bold;
-            font-size: 3.2rem;
+            font-size: 3.5rem;
+            line-height: 5rem;
             color: $color-red;
             letter-spacing: .08rem;
             
@@ -240,10 +249,18 @@ p > span {
     }
 }
 
+
 .site-prescribing {
     .site-caption {
         font-size: 1.2rem;
         font-family: $font-sans;
+    }
+    
+    .site-section-data {
+           p {
+                color: $color-black;
+            }
+
     }
     
     .secondary-caption {
@@ -329,6 +346,10 @@ p > span {
     p {
         margin-bottom: 5rem;
         font-size: 1.7rem;
+    }
+    
+    .site-section-data-split {
+        padding-top: 0;
     }
     
     .secondary-caption {
@@ -494,6 +515,10 @@ p > span {
         font-size: 1.8rem;
     }
     
+    .site-section-data-split {
+        padding-top: 0;
+    }
+    
     .site-section-data-metric {
         font-size: 2.8rem;
         color: #ffffff;
@@ -656,6 +681,11 @@ p > span {
 }
 
 .site-updated {
+    
+    .site-divider {
+        padding-bottom: 5rem;
+    }
+    
     p {
         text-align: left;
     }
@@ -756,8 +786,16 @@ p > span {
     }
 }
 
-form label {
+form {
+    
+    label {
     visibility: hidden;
+    display: none;
+    }
+    
+    legend {
+        display: none;
+    }
 }
 
 input[type=submit] {
