@@ -280,10 +280,11 @@ p > span {
         }
         
         .darkest-sq, .dark-sq, .lightest-sq, .light-sq {
-            height: 20px;
+            height: 10px;
             width: 20px;
             padding: 0 .8rem;
             margin-right: .8rem;
+            display: inline-block;
         }
         
         .darkest-sq {
