@@ -53,9 +53,9 @@ p > span {
     } 
 
 @media screen and (min-width: $medium-screen) {
-.usa-header {
-    border-bottom: 3px solid $color-gold;
-}
+    .usa-header {
+        border-bottom: 3px solid $color-gold;
+    }
 }
 
 .site-section-data-split {
@@ -63,6 +63,7 @@ p > span {
     justify-content: center;
     flex-direction: column;
     padding-top: 2rem;
+    
     @media screen and (min-width: $medium-screen) {
         flex-direction: row;
     }
@@ -90,7 +91,13 @@ p > span {
                 font-weight: $font-bold;
                 font-size: 3.8rem;
                 text-align: center;
+                 @media screen and (min-width: $medium-screen) {
+                    font-size: 4.8rem; 
                 }
+            }
+            @media screen and (min-width: $medium-screen) {
+                font-size: 4rem; 
+            }
     
         }
     
@@ -107,6 +114,7 @@ p > span {
             
             @media screen and (min-width: $medium-screen) {
                 max-width: 60%;
+                font-size: 8rem;
             }
     }
     hr {
