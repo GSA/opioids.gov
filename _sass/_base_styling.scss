@@ -16,6 +16,11 @@ h2 {
     position: sticky;
     top: 0;
     background: $color-white;
+    
+    .usa-navbar {
+        height: 0;
+        border: none;
+    }
 }
 
 .site-logo img {
@@ -59,9 +64,9 @@ p > span {
 }
 
 #main-content {
-    margin-top:3rem;
+    //margin-top:3rem;
     
-    @media screen and (min-width: $medium-screen) {
+    @media screen and (min-width: $large-screen) {
         margin-top: 0;
     }
 }
