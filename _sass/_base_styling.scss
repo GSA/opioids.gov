@@ -58,6 +58,14 @@ p > span {
     }
 }
 
+#main-content {
+    margin-top:3rem;
+    
+    @media screen and (min-width: $medium-screen) {
+        margin-top: 0;
+    }
+}
+
 .site-section-data-split {
     display:flex;
     justify-content: center;
