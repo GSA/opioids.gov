@@ -1,9 +1,6 @@
 [id*="tooltip-map"] {
     opacity: 0;
     transition: all 0.6s ease;
-    // &:hover {
-    //     opacity: 1;
-    // }
 }
   
 #wa:hover + #tooltip-map-wa,
@@ -13,7 +10,59 @@
 #az:hover + #tooltip-map-az,
 #nv:hover + #tooltip-map-nv,
 #ut:hover + #tooltip-map-ut,
-#mt:hover + #tooltip-map-mt {
+#mt:hover + #tooltip-map-mt,
+#ak:hover + #tooltip-map-ak,
+#hi:hover + #tooltip-map-hi,
+#dc:hover + #tooltip-map-dc,
+#nj:hover + #tooltip-map-nj,
+#tn:hover + #tooltip-map-tn,
+#ar:hover + #tooltip-map-ar,
+#la:hover + #tooltip-map-la,
+#de:hover + #tooltip-map-de,
+#ok:hover + #tooltip-map-ok,
+#ky:hover + #tooltip-map-ky,
+#mi:hover + #tooltip-map-mi,
+#sc:hover + #tooltip-map-sc,
+#in:hover + #tooltip-map-in,
+#ks:hover + #tooltip-map-ks,
+#nc:hover + #tooltip-map-nc,
+#oh:hover + #tooltip-map-oh,
+#nv:hover + #tooltip-map-nv,
+#wv:hover + #tooltip-map-wv,
+#ga:hover + #tooltip-map-ga,
+#pa:hover + #tooltip-map-pa,
+#id:hover + #tooltip-map-id,
+#or:hover + #tooltip-map-or,
+#ne:hover + #tooltip-map-ne,
+#ut:hover + #tooltip-map-ut,
+#az:hover + #tooltip-map-az,
+#mt:hover + #tooltip-map-mt,
+#me:hover + #tooltip-map-me,
+#wy:hover + #tooltip-map-wy,
+#sd:hover + #tooltip-map-sd,
+#ia:hover + #tooltip-map-ia,
+#wi:hover + #tooltip-map-wi,
+#wa:hover + #tooltip-map-wa,
+#nm:hover + #tooltip-map-nm,
+#va:hover + #tooltip-map-va,
+#ri:hover + #tooltip-map-ri,
+#dc:hover + #tooltip-map-dc,
+#md:hover + #tooltip-map-md,
+#fl:hover + #tooltip-map-fl,
+#il:hover + #tooltip-map-il,
+#nd:hover + #tooltip-map-nd,
+#co:hover + #tooltip-map-co,
+#nh:hover + #tooltip-map-nh,
+#ct:hover + #tooltip-map-ct,
+#tx:hover + #tooltip-map-tx,
+#ma:hover + #tooltip-map-ma,
+#nj:hover + #tooltip-map-nj,
+#mn:hover + #tooltip-map-mn,
+#al:hover + #tooltip-map-al,
+#vt:hover + #tooltip-map-vt,
+#mo:hover + #tooltip-map-mo,
+#ms:hover + #tooltip-map-ms,
+#ny:hover + #tooltip-map-ny {
     opacity: 1;
 }
 
