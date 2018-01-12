@@ -16,7 +16,27 @@ h2 {
     position: sticky;
     top: 0;
     background: $color-white;
+    
+    .usa-menu-btn {
+        background-color: $color-gold;
+        margin-top: 2rem;
+        margin-right: 2.3rem;
+    }
+    
+    .usa-menu-btn:hover {
+        background-color: $color-gray-warm-dark;
+    }
 }
+
+.usa-mobile_nav-active {
+    .usa-overlay.is-visible {
+        opacity: 0;
+        visibility: none;
+        display:none;
+    }
+
+}
+
 
 .site-logo img {
     height: 60px;
@@ -42,9 +62,44 @@ h2 {
     padding-top: 2rem;
 }
 
+.usa-mobile_nav-active {
+    .usa-nav-container {
+
+        .usa-nav.is-visible {
+            width: 100%;
+            background-color: #35465E;
+        }
+
+        .usa-nav-primary a {
+            color: #fff;
+            opacity: 0.6;
+        }
+
+        .usa-nav-primary a:hover {
+            color: #fff;
+            opacity: 1;
+            background-color: #35465E;
+        }
+    }
+}
+
+.usa-accordion {
+    
+    .usa-nav-link {
+        font-weight: bold;
+        letter-spacing: 0.08rem;
+    }
+
+}
+
 p {
     text-align: center;
     letter-spacing: .08rem;
+    font-size: 1.6rem;
+    
+    @media screen and (min-width: $medium-screen) {
+       font-size: 1.8rem;
+    }
 }
 
 p > span {
@@ -52,31 +107,58 @@ p > span {
     font-weight: $font-bold;
     } 
 
-@media screen and (min-width: $medium-screen) {
     .usa-header {
         border-bottom: 3px solid $color-gold;
+        
+        .usa-navbar {
+            height: 8rem;
+            
+             @media screen and (min-width: $medium-screen) {
+                height: 8rem;
+            }
+        }
     }
-}
+
 
 .site-section-data-split {
     display:flex;
     justify-content: center;
     flex-direction: column;
-    padding-top: 2rem;
+    //padding-top: 2rem;
     
     @media screen and (min-width: $medium-screen) {
         flex-direction: row;
     }
 }
 
+#main-content {
+    margin-top: 0;
+    
+    //@media screen and (min-width: $medium-screen) {
+    //    margin-top: 3rem;
+    //}
+    
+    @media screen and (min-width: $large-screen) {
+        margin-top: 0;
+    }
+}
+
 .site-lead {
-    height: 90vh;
+    height: 65vh;
+     @media screen and (min-width: $medium-screen) {
+        height: 90vh;
+    }
     //position: relative;
     
         .lead-text {
             position: absolute;
-            top: 50%;
+            top: 40%;
             transform: translateY(-50%);
+            
+            @media screen and (min-width: $medium-screen) {
+                top: 50%;
+            }
+            
         }
     
         h1 {
@@ -89,7 +171,7 @@ p > span {
             
             .secondaryheader {
                 font-weight: $font-bold;
-                font-size: 3.8rem;
+                font-size: 2.8rem;
                 text-align: center;
                  @media screen and (min-width: $medium-screen) {
                     font-size: 4.8rem; 
@@ -108,7 +190,7 @@ p > span {
             margin-bottom: 1rem;
             padding: .5rem 1.5rem;
             font-weight: $font-bold;
-            font-size: 7rem;
+            font-size: 5rem;
             background: $color-red;
             text-align: center;
             
@@ -128,7 +210,11 @@ p > span {
         p {
             padding-top: 1.5rem;
             padding-bottom: 3rem;
-            font-size: 1.8rem;
+            font-size: 1.6rem;
+            
+            @media screen and (min-width: $medium-screen) {
+                font-size: 1.8rem;
+            }
         }
     
     }
@@ -194,7 +280,7 @@ p > span {
         font-family: $font-serif; 
         font-weight: $font-bold;
         text-align: center;
-        padding-top: 5rem;
+        padding-top: 2rem;
         letter-spacing: .08rem;
         
         .site-section-data-lead-metric {
@@ -327,9 +413,9 @@ p > span {
         letter-spacing: .08rem;
     }
     
-    .site-section-data-split {
-        margin-top: 6rem;
-    }
+   // .site-section-data-split {
+   //     margin-top: 2rem;
+   // }
     
     svg {
         width: 100%;
@@ -357,7 +443,11 @@ p > span {
 .site-supply {
     p {
         margin-bottom: 5rem;
-        font-size: 1.7rem;
+        font-size: 1.6rem;
+        
+        @media screen and (min-width: $medium-screen) {
+                font-size: 1.8rem;
+            }
     }
     
     .site-section-data-split {
@@ -520,7 +610,7 @@ p > span {
 
 .site-lives {
     p {
-       margin-bottom: 5rem; 
+       margin-bottom: 3rem; 
     }
     
     h3 {
@@ -603,7 +693,7 @@ p > span {
 }
 
 .site-section-data-source {
-    margin: 20px;
+    margin: 5px 20px;
     font-size: 1rem;
     font-weight: $font-normal;
     font-family: $font-sans;
@@ -650,7 +740,7 @@ p > span {
     height: 150px;
     margin: 1em auto;
     border-radius: 50%;
-    background: linear-gradient(to right, $color-red 50%, $color-white 0);
+    background: linear-gradient(to left, $color-red 50%, $color-white 0);
     border: solid $color-blue-darker 1px;
     &:before{
         content: "";
@@ -673,7 +763,7 @@ p > span {
     height: 150px;
     margin: 1em auto;
     border-radius: 50%;
-    background: linear-gradient(to right, $color-red 50%, $color-white 0);
+    background: linear-gradient(to left, $color-red 50%, $color-white 0);
     border: solid $color-black 1px;
     &:before{
         content: "";
@@ -695,7 +785,7 @@ p > span {
 .site-updated {
     
     .site-divider {
-        padding-bottom: 5rem;
+        padding-bottom: 3rem;
     }
     
     p {
@@ -785,6 +875,14 @@ p > span {
     }
 }
 
+.site-updated{
+    .usa-width-one-half{
+        @media screen and (min-width: $medium-screen){
+            padding: 0 3rem;
+        }
+    }
+}
+
 .site-pie2-wrapper, .site-pie3-wrapper {
     margin: 0 4rem;
     text-align: center;
@@ -812,6 +910,12 @@ form {
 
 input[type=submit] {
     background-color: $color-gold;
+}
+
+.site-updated {
+    form [type="submit"] {
+        padding: 1rem 2rem;
+    }
 }
 
 .site-empasis {
