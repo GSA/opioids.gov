@@ -16,7 +16,26 @@ h2 {
     position: sticky;
     top: 0;
     background: $color-white;
+    
+    .usa-menu-btn {
+        background-color: $color-gold;
+        margin-top: 2rem;
+        margin-right: 2.3rem;
+    }
+    
+    .usa-menu-btn:hover {
+        background-color: $color-gray-warm-dark;
+    }
 }
+
+.usa-mobile_nav-active {
+    .usa-overlay.is-visible {
+        opacity: 0;
+        visibility: none;
+    }
+
+}
+
 
 .site-logo img {
     height: 60px;
