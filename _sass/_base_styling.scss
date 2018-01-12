@@ -76,6 +76,18 @@ p > span {
     }
 }
 
+#main-content {
+    margin-top: 0;
+    
+    @media screen and (min-width: $medium-screen) {
+        margin-top: 3rem;
+    }
+    
+    @media screen and (min-width: $large-screen) {
+        margin-top: 0;
+    }
+}
+
 .site-lead {
     height: 65vh;
      @media screen and (min-width: $medium-screen) {
