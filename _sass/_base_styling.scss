@@ -32,6 +32,7 @@ h2 {
     .usa-overlay.is-visible {
         opacity: 0;
         visibility: none;
+        display:none;
     }
 
 }
@@ -59,6 +60,15 @@ h2 {
 
 .usa-nav {
     padding-top: 2rem;
+}
+
+.usa-accordion {
+    
+    .usa-nav-link {
+        font-weight: bold;
+        letter-spacing: 0.08rem;
+    }
+
 }
 
 p {
