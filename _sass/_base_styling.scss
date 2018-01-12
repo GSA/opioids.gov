@@ -70,7 +70,10 @@ p > span {
 }
 
 .site-lead {
-    height: 90vh;
+    height: 65vh;
+     @media screen and (min-width: $medium-screen) {
+        height: 90vh;
+    }
     //position: relative;
     
         .lead-text {
@@ -85,7 +88,7 @@ p > span {
         text-transform: uppercase;
         padding: 2rem 2rem 1rem 2rem;
         letter-spacing: .03rem;
-        font-size: 2rem;
+        font-size: 3rem;
             
             .secondaryheader {
                 font-weight: $font-bold;
@@ -128,7 +131,7 @@ p > span {
         p {
             padding-top: 1.5rem;
             padding-bottom: 3rem;
-            font-size: 1.4rem;
+            font-size: 1.6rem;
             
             @media screen and (min-width: $medium-screen) {
                 font-size: 1.8rem;
