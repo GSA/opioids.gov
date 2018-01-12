@@ -260,11 +260,13 @@ p > span {
 }
 
 .site-crisis {
-    .site-section-data-split {
+    .graphic.site-section-data-split {
         align-items: flex-end;
+        flex-direction: row;
     }
     .row {
         margin-right: 5%;
+        max-width: 33.3%;
     }
     hr {
         max-width: 47%;
