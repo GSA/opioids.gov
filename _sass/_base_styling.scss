@@ -16,11 +16,6 @@ h2 {
     position: sticky;
     top: 0;
     background: $color-white;
-    
-    .usa-navbar {
-        height: 0;
-        border: none;
-    }
 }
 
 .site-logo img {
@@ -57,16 +52,14 @@ p > span {
     font-weight: $font-bold;
     } 
 
-@media screen and (min-width: $medium-screen) {
     .usa-header {
         border-bottom: 3px solid $color-gold;
     }
-}
 
 #main-content {
     margin-top:3rem;
     
-    @media screen and (min-width: $large-screen) {
+    @media screen and (min-width: $medium-screen) {
         margin-top: 0;
     }
 }
