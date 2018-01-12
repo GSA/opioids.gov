@@ -54,15 +54,16 @@ p > span {
 
     .usa-header {
         border-bottom: 3px solid $color-gold;
+        
+        .usa-navbar {
+            height: 8rem;
+            
+             @media screen and (min-width: $medium-screen) {
+                height: 4rem;
+            }
+        }
     }
 
-#main-content {
-    margin-top:3rem;
-    
-    @media screen and (min-width: $medium-screen) {
-        margin-top: 0;
-    }
-}
 
 .site-section-data-split {
     display:flex;
