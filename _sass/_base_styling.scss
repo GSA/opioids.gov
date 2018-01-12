@@ -93,6 +93,11 @@ h2 {
 p {
     text-align: center;
     letter-spacing: .08rem;
+    font-size: 1.6rem;
+    
+    @media screen and (min-width: $medium-screen) {
+       font-size: 1.8rem;
+    }
 }
 
 p > span {
@@ -436,7 +441,11 @@ p > span {
 .site-supply {
     p {
         margin-bottom: 5rem;
-        font-size: 1.7rem;
+        font-size: 1.6rem;
+        
+        @media screen and (min-width: $medium-screen) {
+                font-size: 1.8rem;
+            }
     }
     
     .site-section-data-split {
