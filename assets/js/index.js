@@ -33,6 +33,12 @@ $('.value').each(function() {
 	$(this).parent().css('width', text);
 });
 
+$('.value-vertical').each(function() {
+	var text = $(this).text();
+	$(this).parent().css('height', text);
+});
+
+
 $('.block').tooltip();
 
 $(window).scroll(function(){
