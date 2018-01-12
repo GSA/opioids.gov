@@ -303,7 +303,7 @@ p > span {
         
         .site-section-data-metric {
             display: inline-block;
-            margin: 0 8rem;
+            margin: 0 6rem;
             font-weight: $font-bold;
             font-size: 3.5rem;
             line-height: 5rem;
@@ -340,7 +340,7 @@ p > span {
             font-size: $base-font-size;
             font-weight: $font-normal;
             font-family: $font-sans;
-            color: $color-red;
+            //color: $color-red;
         }
     }
 }
@@ -351,6 +351,10 @@ p > span {
         font-size: 1.2rem;
         line-height: 1.6rem;
         font-family: $font-sans;
+    }
+    
+    .site-section-data-source {
+        line-height: 0;
     }
     
     .site-section-data {
