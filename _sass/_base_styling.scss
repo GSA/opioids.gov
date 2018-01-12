@@ -62,6 +62,25 @@ h2 {
     padding-top: 2rem;
 }
 
+.usa-nav-container {
+    
+    .usa-nav.is-visible {
+        width: 100%;
+        background-color: #35465E;
+    }
+    
+    .usa-nav-primary a {
+        color: #fff;
+        opacity: 0.6;
+    }
+    
+    .usa-nav-primary a:hover {
+        color: #fff;
+        opacity: 0;
+        background-color: none;
+    }
+}
+
 .usa-accordion {
     
     .usa-nav-link {
