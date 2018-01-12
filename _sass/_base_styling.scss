@@ -78,8 +78,13 @@ p > span {
     
         .lead-text {
             position: absolute;
-            top: 50%;
+            top: 40%;
             transform: translateY(-50%);
+            
+            @media screen and (min-width: $medium-screen) {
+                top: 50%;
+            }
+            
         }
     
         h1 {
