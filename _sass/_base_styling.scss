@@ -122,7 +122,7 @@ p > span {
     display:flex;
     justify-content: center;
     flex-direction: column;
-    padding-top: 2rem;
+    //padding-top: 2rem;
     
     @media screen and (min-width: $medium-screen) {
         flex-direction: row;
@@ -278,7 +278,7 @@ p > span {
         font-family: $font-serif; 
         font-weight: $font-bold;
         text-align: center;
-        padding-top: 5rem;
+        padding-top: 2rem;
         letter-spacing: .08rem;
         
         .site-section-data-lead-metric {
@@ -412,7 +412,7 @@ p > span {
     }
     
     .site-section-data-split {
-        margin-top: 6rem;
+        margin-top: 2rem;
     }
     
     svg {
@@ -608,7 +608,7 @@ p > span {
 
 .site-lives {
     p {
-       margin-bottom: 5rem; 
+       margin-bottom: 3rem; 
     }
     
     h3 {
@@ -691,7 +691,7 @@ p > span {
 }
 
 .site-section-data-source {
-    margin: 20px;
+    margin: 5px 20px;
     font-size: 1rem;
     font-weight: $font-normal;
     font-family: $font-sans;
@@ -738,7 +738,7 @@ p > span {
     height: 150px;
     margin: 1em auto;
     border-radius: 50%;
-    background: linear-gradient(to right, $color-red 50%, $color-white 0);
+    background: linear-gradient(to left, $color-red 50%, $color-white 0);
     border: solid $color-blue-darker 1px;
     &:before{
         content: "";
@@ -761,7 +761,7 @@ p > span {
     height: 150px;
     margin: 1em auto;
     border-radius: 50%;
-    background: linear-gradient(to right, $color-red 50%, $color-white 0);
+    background: linear-gradient(to left, $color-red 50%, $color-white 0);
     border: solid $color-black 1px;
     &:before{
         content: "";
@@ -783,7 +783,7 @@ p > span {
 .site-updated {
     
     .site-divider {
-        padding-bottom: 5rem;
+        padding-bottom: 3rem;
     }
     
     p {
@@ -873,6 +873,14 @@ p > span {
     }
 }
 
+.site-updated{
+    .usa-width-one-half{
+        @media screen and (min-width: $medium-screen){
+            padding: 0 3rem;
+        }
+    }
+}
+
 .site-pie2-wrapper, .site-pie3-wrapper {
     margin: 0 4rem;
     text-align: center;
@@ -900,6 +908,12 @@ form {
 
 input[type=submit] {
     background-color: $color-gold;
+}
+
+.site-updated {
+    form [type="submit"] {
+        padding: 1rem 2rem;
+    }
 }
 
 .site-empasis {
