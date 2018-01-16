@@ -154,9 +154,14 @@ p > span {
             position: absolute;
             top: 40%;
             transform: translateY(-50%);
+            margin-top: 30%;
+            
             
             @media screen and (min-width: $medium-screen) {
+                position: absolute;
                 top: 50%;
+                transform: translateY(-50%);
+                margin-top: 0;
             }
             
         }
