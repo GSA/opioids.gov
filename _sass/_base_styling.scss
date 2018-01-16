@@ -270,6 +270,7 @@ p > span {
     .graphic.site-section-data-split {
         text-align: center;
         align-items: center;
+        padding-top: 1rem;
         @media screen and (min-width: $medium-screen) {
             align-items: flex-end;
         }
@@ -307,7 +308,6 @@ p > span {
         }
     }
     figure {
-        padding-top: 3rem;
         padding-bottom: 3rem;
         margin: 0 auto;
         max-width: 1100px;
