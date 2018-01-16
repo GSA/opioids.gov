@@ -414,37 +414,6 @@ p > span {
             letter-spacing: .08rem;
             
         }
-        
-        .site-pie-chart1{
-            width: 150px;
-            height: 150px;
-            margin: 2em auto;
-            border-radius: 50%;
-            background: linear-gradient(to left, $color-blue-darker 50%, $color-white 0);
-            border: solid $color-red 1px;
-            &:before{
-                content: "";
-                height: 100%;
-                display: block;
-                background: $color-blue-darker;
-                border-radius: 0 100% 100% 0 / 50%;
-                margin-left: 50%;
-                transform-origin: left;
-                animation: pie1 3s forwards;
-            }
-        }
-        @keyframes pie1{
-            to {
-            transform: rotate(145deg); 
-            }
-        }
-        p {
-            margin-top: 3em;
-            font-size: $base-font-size;
-            font-weight: $font-normal;
-            font-family: $font-sans;
-            //color: $color-red;
-        }
     }
 }
 
@@ -837,22 +806,22 @@ p > span {
     height: 150px;
     margin: 1em auto;
     border-radius: 50%;
-    background: linear-gradient(to left, $color-red 50%, $color-white 0);
+    background: linear-gradient(to right, $color-white 50%, $color-red 0);
     border: solid $color-blue-darker 1px;
     &:before{
         content: "";
         height: 100%;
         display: block;
-        background: $color-red;
+        background: $color-white;
         border-radius: 0 100% 100% 0 / 50%;
         margin-left: 50%;
         transform-origin: left;
-        animation: pie2 3s forwards;
+        animation: pie2 1s forwards;
     }
 }
 @keyframes pie2{
     to {
-    transform: rotate(115deg); 
+    transform: rotate(10deg); 
     }
 }
 .site-pie-chart3{
@@ -860,13 +829,13 @@ p > span {
     height: 150px;
     margin: 1em auto;
     border-radius: 50%;
-    background: linear-gradient(to left, $color-red 50%, $color-white 0);
+    background: linear-gradient(to right, $color-white 50%, $color-red 0);
     border: solid $color-black 1px;
     &:before{
         content: "";
         height: 100%;
         display: block;
-        background: $color-red;
+        background: $color-white;
         border-radius: 0 100% 100% 0 / 50%;
         margin-left: 50%;
         transform-origin: left;
@@ -875,7 +844,7 @@ p > span {
 }
 @keyframes pie3{
     to {
-    transform: rotate(45deg); 
+    transform: rotate(35deg); 
     }
 }
 
