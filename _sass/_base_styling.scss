@@ -274,6 +274,10 @@ p > span {
         @media screen and (min-width: $medium-screen) {
             align-items: flex-end;
         }
+        
+        p {
+            font-family: $font-sans;;
+        }
     }
     hr {
         //max-width: 47%;
@@ -319,6 +323,7 @@ p > span {
         h4 {
             margin-top: 0;
             color: #293340;
+            font-size: 2rem;
         }
         
     }
