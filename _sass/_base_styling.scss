@@ -260,9 +260,14 @@ p > span {
 }
 
 .site-crisis {
-    .crisis-graphic {
-        display: flex;
-        justify-content: space-evenly;
+    .bar-caption {
+        color: $color-gold;
+        font-weight: $font-bold;
+    }
+    .bar-caption-opioid {
+        color: $color-red;
+    }
+    .graphic.site-section-data-split {
         align-items: flex-end;
         text-align: center;
     }
@@ -306,9 +311,9 @@ p > span {
         max-width: 1100px;
         position: relative;
     }
-    //.row {
-    //    margin-bottom: 3em;
-    //}
+    .row {
+       padding: 0 3em;
+    }
     // @keyframes expand {
     //     from {width: 0%;}
     //     to {width: 100%;}
