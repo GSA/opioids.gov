@@ -260,13 +260,11 @@ p > span {
 }
 
 .site-crisis {
-    .graphic.site-section-data-split {
+    .crisis-graphic {
+        display: flex;
+        justify-content: space-evenly;
         align-items: flex-end;
-        flex-direction: row;
-    }
-    .row {
-        margin-right: 5%;
-        max-width: 33.3%;
+        text-align: center;
     }
     hr {
         max-width: 47%;
@@ -308,9 +306,6 @@ p > span {
         max-width: 1100px;
         position: relative;
     }
-    .graphic {
-        padding-left: 30px;
-    }
     //.row {
     //    margin-bottom: 3em;
     //}
@@ -326,7 +321,7 @@ p > span {
     // }
     .chart {
         overflow: hidden;
-        width: 100%;
+        // width: 100%;
         // animation: expand 1.5s ease forwards;
     }
     // .row + .row .chart {
@@ -367,6 +362,9 @@ p > span {
     h4 span {
         display: block;
         font-size: $h6-font-size;
+    }
+    svg {
+        max-width: 65px;
     }
 }
 
