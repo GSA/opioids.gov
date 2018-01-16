@@ -268,6 +268,7 @@ p > span {
     .site-section-data {
         p {
         font-family: $font-sans;
+        font-size: normal;
         }
     }
     
@@ -284,7 +285,7 @@ p > span {
         }
         
         p {
-            font-family: $font-sans;;
+            font-family: $font-sans;
         }
     }
     hr {
