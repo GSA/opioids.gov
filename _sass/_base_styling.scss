@@ -268,8 +268,11 @@ p > span {
         color: $color-red;
     }
     .graphic.site-section-data-split {
-        align-items: flex-end;
         text-align: center;
+        align-items: center;
+        @media screen and (min-width: $medium-screen) {
+            align-items: flex-end;
+        }
     }
     hr {
         max-width: 47%;
@@ -291,18 +294,17 @@ p > span {
     .tooltip{
         display: inline;
         position: relative;
-    }
-
-    .tooltip:hover:after{
-        background: $color-white;
-        border: solid $color-black 1px;
-        color: $color-black;
-        content: attr(title);
-        top: 20%;
-        left: 20%;
-        padding: 5px 5px;
-        position: absolute;
-        z-index: 98;
+        &:hover:after{
+            background: $color-white;
+            border: solid $color-black 1px;
+            color: $color-black;
+            content: attr(title);
+            top: 20%;
+            left: 28%;
+            padding: 5px 5px;
+            position: absolute;
+            z-index: 98;
+        }
     }
     figure {
         padding-top: 3rem;
