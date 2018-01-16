@@ -803,15 +803,15 @@ p > span {
     margin: 1em auto;
     border-radius: 50%;
     background: -webkit-gradient(linear, left top, right top, color-stop(50%, $color-white), color-stop(0, $color-red));
-    background: -webkit-linear-gradient(left, $color-white 50%, $color-red 0);
-    background: -o-linear-gradient(left, $color-white 50%, $color-red 0);
-    background: linear-gradient(to right, $color-white 50%, $color-red 0);
+    background: -webkit-linear-gradient(left, $color-red 50%, $color-white 0);
+    background: -o-linear-gradient(left, $color-red 50%, $color-white 0);
+    background: linear-gradient(to right, $color-red 50%, $color-white 0);
     border: solid $color-blue-darker 1px;
     &:before{
         content: "";
         height: 100%;
         display: block;
-        background: $color-white;
+        background: $color-red;
         border-radius: 0 100% 100% 0 / 50%;
         margin-left: 50%;
         -webkit-transform-origin: left;
@@ -839,15 +839,15 @@ p > span {
     margin: 1em auto;
     border-radius: 50%;
     background: -webkit-gradient(linear, left top, right top, color-stop(50%, $color-white), color-stop(0, $color-red));
-    background: -webkit-linear-gradient(left, $color-white 50%, $color-red 0);
-    background: -o-linear-gradient(left, $color-white 50%, $color-red 0);
-    background: linear-gradient(to right, $color-white 50%, $color-red 0);
+    background: -webkit-linear-gradient(left, $color-red 50%, $color-white 0);
+    background: -o-linear-gradient(left, $color-red 50%, $color-white 0);
+    background: linear-gradient(to right, $color-red 50%, $color-white 0);
     border: solid $color-black 1px;
     &:before{
         content: "";
         height: 100%;
         display: block;
-        background: $color-white;
+        background: $color-red;
         border-radius: 0 100% 100% 0 / 50%;
         margin-left: 50%;
         -webkit-transform-origin: left;
@@ -859,14 +859,14 @@ p > span {
 }
 @-webkit-keyframes pie3{
     to {
-    -webkit-transform: rotate(35deg);
-            transform: rotate(35deg); 
+    -webkit-transform: rotate(135deg);
+            transform: rotate(135deg); 
     }
 }
 @keyframes pie3{
     to {
-    -webkit-transform: rotate(35deg);
-            transform: rotate(35deg); 
+    -webkit-transform: rotate(135deg);
+            transform: rotate(135deg); 
     }
 }
 
