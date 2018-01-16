@@ -13,7 +13,6 @@ h2 {
 }
 
 .usa-header {
-    position: -webkit-sticky;
     position: sticky;
     top: 0;
     background: $color-white;
@@ -122,28 +121,23 @@ p > span {
 
 
 .site-section-data-split {
-    display:-webkit-box;
-    display:-ms-flexbox;
     display:flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    justify-content: center;
+    flex-direction: column;
     //padding-top: 2rem;
     
     @media screen and (min-width: $medium-screen) {
-        -webkit-box-orient: horizontal;
-        -webkit-box-direction: normal;
-            -ms-flex-direction: row;
-                flex-direction: row;
+        flex-direction: row;
     }
 }
 
 #main-content {
     margin-top: 0;
+    
+    //@media screen and (min-width: $medium-screen) {
+    //    margin-top: 3rem;
+    //}
+    
     @media screen and (min-width: $large-screen) {
         margin-top: 0;
     }
@@ -159,9 +153,7 @@ p > span {
         .lead-text {
             position: absolute;
             top: 40%;
-            -webkit-transform: translateY(-50%);
-                -ms-transform: translateY(-50%);
-                    transform: translateY(-50%);
+            transform: translateY(-50%);
             
             @media screen and (min-width: $medium-screen) {
                 top: 50%;
@@ -277,24 +269,22 @@ p > span {
     }
     .graphic.site-section-data-split {
         text-align: center;
+        align-items: center;
         padding-top: 1rem;
-        -webkit-box-align: center;
-            -ms-flex-align: center;
-                align-items: center;
         @media screen and (min-width: $medium-screen) {
-            -webkit-box-align: end;
-                -ms-flex-align: end;
-                    align-items: flex-end;
+            align-items: flex-end;
         }
     }
     hr {
-        max-width: 47%;
+        //max-width: 47%;
         visibility: visible;
-        color: #748796;
+        color: #e6e1e7;
+        border-color: #e6e1e7;
         border: 0;
-        border-top: 1px solid $color-gray-light;
-        height: 6.6px;
+        border-top: 2px solid $color-gray-light;
+        //height: 6.6px;
         margin: 5px auto;
+        margin-top: 2rem;
     }
     .site-section-data-caption {
         span {
@@ -328,22 +318,34 @@ p > span {
         
         h4 {
             margin-top: 0;
-        }
-        
-        .chart-hbar {
-            margin-top: 1rem;
-            width: 2px;
-            color: #e6e1e7;
-            border-color: #e6e1e7;
+            color: #293340;
         }
         
     }
     .row {
        padding: 0 3em;
     }
+    // @keyframes expand {
+    //     from {width: 0%;}
+    //     to {width: 100%;}
+    // }
+    // @media screen and (min-width: 768px) {
+    //     @keyframes expand {
+    //         from {width: 0%;}
+    //         to {width: calc(100% - 75px);}
+    //     }
+    // }
     .chart {
         overflow: hidden;
+        // width: 100%;
+        // animation: expand 1.5s ease forwards;
     }
+    // .row + .row .chart {
+    //     animation-delay: .2s;
+    // }
+    // .row + .row + .row .chart {
+    //     animation-delay: .4s;
+    // }
     
     .block {
         display: block;
@@ -353,8 +355,6 @@ p > span {
         background-color: $color-blue-darkest;
         overflow: hidden;
         opacity: 1;
-        -webkit-transition: opacity, .3s ease;
-        -o-transition: opacity, .3s ease;
         transition: opacity, .3s ease;
         cursor: pointer;
     }
@@ -500,6 +500,10 @@ p > span {
         letter-spacing: .08rem;
     }
     
+   // .site-section-data-split {
+   //     margin-top: 2rem;
+   // }
+    
     svg {
         width: 100%;
     }
@@ -566,10 +570,7 @@ p > span {
     .site-section-data-split {
         text-align: center;
         margin: 0 auto;
-        -webkit-box-orient: horizontal;
-        -webkit-box-direction: normal;
-            -ms-flex-direction: row;
-                flex-direction: row;
+        flex-direction: row;
         margin-top: 3rem;
         
     }
@@ -605,10 +606,30 @@ p > span {
     .graphic {
         padding-left: 30px;
     }
+    //.row {
+    //    margin-bottom: 3em;
+    //}
+    // @keyframes expand {
+    //     from {width: 0%;}
+    //     to {width: 100%;}
+    // }
+    // @media screen and (min-width: 768px) {
+    //     @keyframes expand {
+    //         from {width: 0%;}
+    //         to {width: calc(100% - 75px);}
+    //     }
+    // }
     .chart {
         overflow: hidden;
         width: 100%;
+        // animation: expand 1.5s ease forwards;
     }
+    // .row + .row .chart {
+    //     animation-delay: .2s;
+    // }
+    // .row + .row + .row .chart {
+    //     animation-delay: .4s;
+    // }
     .block {
         display: block;
         height: 60px;
@@ -655,9 +676,7 @@ p > span {
         position: absolute;
         top: 50%;
         left: 50%;
-        -webkit-transform: translate(-50%);
-            -ms-transform: translate(-50%);
-                transform: translate(-50%);
+        transform: translate(-50%);
         visibility: hidden;
     }
     .chart-total {
@@ -717,10 +736,7 @@ p > span {
     }
 }
 .site-lives-data {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    flex-direction: column;
     text-align: center;
     margin: 0 30px;
     @media screen and (min-width: $medium-screen) {
@@ -730,8 +746,7 @@ p > span {
         max-width: 140px;
     }
     .site-section-data-source {
-        -ms-flex-item-align: end;
-            align-self: flex-end;
+        align-self: flex-end;
         color: $color-gray-lighter;       
     }
 }
@@ -802,9 +817,6 @@ p > span {
     height: 150px;
     margin: 1em auto;
     border-radius: 50%;
-    background: -webkit-gradient(linear, left top, right top, color-stop(50%, $color-white), color-stop(0, $color-red));
-    background: -webkit-linear-gradient(left, $color-white 50%, $color-red 0);
-    background: -o-linear-gradient(left, $color-white 50%, $color-red 0);
     background: linear-gradient(to right, $color-white 50%, $color-red 0);
     border: solid $color-blue-darker 1px;
     &:before{
@@ -814,23 +826,13 @@ p > span {
         background: $color-white;
         border-radius: 0 100% 100% 0 / 50%;
         margin-left: 50%;
-        -webkit-transform-origin: left;
-            -ms-transform-origin: left;
-                transform-origin: left;
-        -webkit-animation: pie2 1s forwards;
-                animation: pie2 1s forwards;
-    }
-}
-@-webkit-keyframes pie2{
-    to {
-    -webkit-transform: rotate(10deg);
-            transform: rotate(10deg); 
+        transform-origin: left;
+        animation: pie2 1s forwards;
     }
 }
 @keyframes pie2{
     to {
-    -webkit-transform: rotate(10deg);
-            transform: rotate(10deg); 
+    transform: rotate(10deg); 
     }
 }
 .site-pie-chart3{
@@ -838,9 +840,6 @@ p > span {
     height: 150px;
     margin: 1em auto;
     border-radius: 50%;
-    background: -webkit-gradient(linear, left top, right top, color-stop(50%, $color-white), color-stop(0, $color-red));
-    background: -webkit-linear-gradient(left, $color-white 50%, $color-red 0);
-    background: -o-linear-gradient(left, $color-white 50%, $color-red 0);
     background: linear-gradient(to right, $color-white 50%, $color-red 0);
     border: solid $color-black 1px;
     &:before{
@@ -850,23 +849,13 @@ p > span {
         background: $color-white;
         border-radius: 0 100% 100% 0 / 50%;
         margin-left: 50%;
-        -webkit-transform-origin: left;
-            -ms-transform-origin: left;
-                transform-origin: left;
-        -webkit-animation: pie3 3s forwards;
-                animation: pie3 3s forwards;
-    }
-}
-@-webkit-keyframes pie3{
-    to {
-    -webkit-transform: rotate(35deg);
-            transform: rotate(35deg); 
+        transform-origin: left;
+        animation: pie3 3s forwards;
     }
 }
 @keyframes pie3{
     to {
-    -webkit-transform: rotate(35deg);
-            transform: rotate(35deg); 
+    transform: rotate(35deg); 
     }
 }
 
@@ -905,15 +894,9 @@ p > span {
 
 .site-divider {
     position: relative;
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-box-pack: space-evenly;
-        -ms-flex-pack: space-evenly;
-            justify-content: space-evenly;
+    align-items: center;
+    justify-content: space-evenly;
     margin: 0 auto;
     max-width: 80%;
     width: 100%;
@@ -922,8 +905,7 @@ p > span {
         line-height: inherit;
         position: absolute;
         -webkit-transform: translateX(-50%);
-        -ms-transform: translateX(-50%);
-            transform: translateX(-50%);
+        transform: translateX(-50%);
     }
     h3 {
         @media screen and (min-width: $medium-screen) {
@@ -943,8 +925,7 @@ p > span {
             margin: 0;
             top: 50%;
             -webkit-transform: translateY(-50%);
-            -ms-transform: translateY(-50%);
-                transform: translateY(-50%);
+            transform: translateY(-50%);
             width: calc(50% - 50px);
             max-width: 100px;
             -webkit-box-sizing: border-box;
