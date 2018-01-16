@@ -264,9 +264,15 @@ p > span {
         color: $color-gold;
         font-weight: $font-bold;
     }
+    
+    .site-section-data {
+        font-family: $font-sans;
+    }
+    
     .bar-caption-opioid {
         color: $color-red;
     }
+    
     .graphic.site-section-data-split {
         text-align: center;
         align-items: center;
