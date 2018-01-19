@@ -526,6 +526,15 @@ p > span {
     
 }
 
+.site-section-data-share {
+        path:hover, circle:hover {
+        stroke: none;
+        stroke-width:0;
+        fill: #C19222 !important;
+        cursor: pointer;
+        }
+    }
+
 .site-prescribing {
     @media screen and (min-width: $medium-screen) {
         .site-section-data-metric {
@@ -543,6 +552,7 @@ p > span {
     svg {
         width: 100%;
     }
+    
     path:hover, circle:hover {
         stroke: #ffffff !important;
         stroke-width:2px;
