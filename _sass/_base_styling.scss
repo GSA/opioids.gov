@@ -298,7 +298,12 @@ p > span {
     //}
     
     .bar-caption-opioid {
-        color: $color-red;
+        color: $color-blue;
+        
+            .highlighted-secondary {
+                color: $color-red;
+                font-size: 1rem;
+            }
     }
     
     .graphic.site-section-data-split {
@@ -527,9 +532,8 @@ p > span {
 }
 
 .site-section-data-share {
-        path:hover, circle:hover {
-        stroke: none;
-        stroke-width:0;
+        path:hover{
+        stroke-width: 0;
         fill: #C19222 !important;
         cursor: pointer;
         }
