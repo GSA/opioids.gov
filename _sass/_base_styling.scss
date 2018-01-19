@@ -151,7 +151,8 @@ p > span {
 }
 
 .site-lead {
-    height: 65vh;
+    height: 80vh;
+    
      @media screen and (min-width: $medium-screen) {
         height: 90vh;
     }
@@ -285,12 +286,12 @@ p > span {
         margin-top:0;
     }
     
-    .site-section-data {
-        p {
-        font-family: $font-sans;
-        font-weight: normal;
-        }
-    }
+    //.site-section-data {
+      //  p {
+        //font-family: $font-sans;
+        //font-weight: normal;
+        //}
+    //}
     
     .bar-caption-opioid {
         color: $color-red;
@@ -742,6 +743,14 @@ p > span {
     .site-section-data-share {
         .cls-fb, .cls-twitter {
             fill: $color-white;
+        }
+        
+        svg {
+            color: $color-blue;
+        }
+        
+        svg:hover {
+            color: $color-gold;
         }
     }
     a {
