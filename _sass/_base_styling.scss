@@ -310,7 +310,9 @@ p > span {
         text-align: center;
         -webkit-box-align: center;
             -ms-flex-align: center;
-                align-items: center;
+            align-items: center;
+            -ms-flex-direction: row;
+            flex-direction: row;
         padding-top: 1rem;
         @media screen and (min-width: $medium-screen) {
             -webkit-box-align: end;
@@ -351,7 +353,7 @@ p > span {
                 color: $color-black;
                 content: attr(title);
                 top: 20%;
-                left: 28%;
+                left: 12%;
                 padding: 5px 5px;
                 position: absolute;
                 z-index: 98;
@@ -392,7 +394,7 @@ p > span {
     
     .block {
         display: block;
-        width: 125px;
+        width: 75px;
         color: #fff;
         font-size: .75em;
         background-color: $color-blue-darkest;
@@ -402,6 +404,9 @@ p > span {
         -o-transition: opacity, .3s ease;
         transition: opacity, .3s ease;
         cursor: pointer;
+        @media screen and (min-width: $medium-screen) {
+            width: 125px;
+        }
     }
     .block:nth-of-type(2) {
         background-color: $color-red;
