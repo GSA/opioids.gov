@@ -493,6 +493,9 @@ p > span {
                 display: inline;
                 padding: 0 2rem;
                 font-size: 1.4rem;
+                -webkit-column-break-inside: avoid;
+                page-break-inside: avoid;
+                break-inside: avoid;
             }
         }
         
