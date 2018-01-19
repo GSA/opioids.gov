@@ -553,6 +553,14 @@ p > span {
         width: 100%;
     }
     
+    .site-section-data-share {
+        path:hover{
+        stroke: none;
+        fill: #C19222 !important;
+        cursor: pointer;
+        }
+    }
+    
     path:hover, circle:hover {
         stroke: #ffffff !important;
         stroke-width:2px;
