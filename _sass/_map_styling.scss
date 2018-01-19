@@ -64,7 +64,9 @@
 #ms:hover + #tooltip-map-ms,
 #de:hover + #tooltip-map-de,
 #ny:hover + #tooltip-map-ny {
+    @media screen and (min-width: $medium-screen) {
     opacity: 1;
+}
 }
 
 

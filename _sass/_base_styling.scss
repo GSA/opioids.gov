@@ -779,7 +779,9 @@ p > span {
         }
         
         svg:hover {
-            color: $color-gold;
+            @media screen and (min-width: $medium-screen) {
+             color: $color-gold;
+            }
         }
     }
     a {
