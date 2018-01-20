@@ -151,7 +151,8 @@ p > span {
 }
 
 .site-lead {
-    height: 65vh;
+    height: 80vh;
+    
      @media screen and (min-width: $medium-screen) {
         height: 90vh;
     }
@@ -281,26 +282,37 @@ p > span {
         font-weight: $font-bold;
     }
     
+    .site-section-data-source {
+        line-height: 1rem;
+    }
+    
     h3 {
         margin-top:0;
     }
     
-    .site-section-data {
-        p {
-        font-family: $font-sans;
-        font-weight: normal;
-        }
-    }
+    //.site-section-data {
+      //  p {
+        //font-family: $font-sans;
+        //font-weight: normal;
+        //}
+    //}
     
     .bar-caption-opioid {
-        color: $color-red;
+        color: $color-blue;
+        
+            .highlighted-secondary {
+                color: $color-red;
+                font-size: 1rem;
+            }
     }
     
     .graphic.site-section-data-split {
         text-align: center;
         -webkit-box-align: center;
             -ms-flex-align: center;
-                align-items: center;
+            align-items: center;
+            -ms-flex-direction: row;
+            flex-direction: row;
         padding-top: 1rem;
         @media screen and (min-width: $medium-screen) {
             -webkit-box-align: end;
@@ -334,17 +346,30 @@ p > span {
     .tooltip{
         display: inline;
         position: relative;
-        &:hover:after{
-            background: $color-white;
-            border: solid $color-black 1px;
-            color: $color-black;
-            content: attr(title);
-            top: 20%;
-            left: 28%;
-            padding: 5px 5px;
-            position: absolute;
-            z-index: 98;
+        @media (hover:none) {
+            &:after{
+                background: $color-white;
+                border: solid $color-black 1px;
+                color: $color-black;
+                content: attr(title);
+                top: 20%;
+                left: 12%;
+                padding: 5px 5px;
+                position: absolute;
+                z-index: 98;
+            }
         }
+           &:hover:after {
+                background: $color-white;
+                border: solid $color-black 1px;
+                color: $color-black;
+                content: attr(title);
+                top: 20%;
+                left: 28%;
+                padding: 5px 5px;
+                position: absolute;
+                z-index: 98;
+           }
     }
     figure {
         padding-bottom: 3rem;
@@ -369,7 +394,7 @@ p > span {
     
     .block {
         display: block;
-        width: 125px;
+        width: 75px;
         color: #fff;
         font-size: .75em;
         background-color: $color-blue-darkest;
@@ -379,6 +404,9 @@ p > span {
         -o-transition: opacity, .3s ease;
         transition: opacity, .3s ease;
         cursor: pointer;
+        @media screen and (min-width: $medium-screen) {
+            width: 125px;
+        }
     }
     .block:nth-of-type(2) {
         background-color: $color-red;
@@ -486,8 +514,11 @@ p > span {
             li {
                 listing-style: none;
                 display: inline;
-                padding: 0 2rem;
+                padding: 0 3.2rem;
                 font-size: 1.4rem;
+                -webkit-column-break-inside: avoid;
+                page-break-inside: avoid;
+                break-inside: avoid;
             }
         }
         
@@ -518,6 +549,14 @@ p > span {
     
 }
 
+.site-section-data-share {
+        path:hover{
+        stroke-width: 0;
+        fill: #C19222 !important;
+        cursor: pointer;
+        }
+    }
+
 .site-prescribing {
     @media screen and (min-width: $medium-screen) {
         .site-section-data-metric {
@@ -535,6 +574,15 @@ p > span {
     svg {
         width: 100%;
     }
+    
+    .site-section-data-share {
+        path:hover{
+        stroke: none;
+        fill: #C19222 !important;
+        cursor: pointer;
+        }
+    }
+    
     path:hover, circle:hover {
         stroke: #ffffff !important;
         stroke-width:2px;
@@ -742,6 +790,14 @@ p > span {
     .site-section-data-share {
         .cls-fb, .cls-twitter {
             fill: $color-white;
+        }
+        
+        svg {
+            color: $color-blue;
+        }
+        
+        svg:hover {
+            color: $color-gold;
         }
     }
     a {
