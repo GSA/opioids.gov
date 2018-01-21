@@ -96,7 +96,7 @@ h2 {
 p {
     text-align: center;
     letter-spacing: .08rem;
-    font-size: 1.6rem;
+    font-size: 1.5rem;
     
     @media screen and (min-width: $medium-screen) {
        font-size: 1.8rem;
@@ -151,7 +151,7 @@ p > span {
 }
 
 .site-lead {
-    height: 80vh;
+    height: 85vh;
     
      @media screen and (min-width: $medium-screen) {
         height: 90vh;
@@ -160,7 +160,7 @@ p > span {
     
         .lead-text {
             position: absolute;
-            top: 40%;
+            top: 45%;
             -webkit-transform: translateY(-50%);
                 -ms-transform: translateY(-50%);
                     transform: translateY(-50%);
@@ -473,6 +473,11 @@ p > span {
             line-height: 5rem;
             color: $color-red;
             letter-spacing: .08rem;
+            padding-bottom: 30px;
+            
+                @media screen and (min-width: $medium-screen) {
+                    paddining-bottom:10px;
+                }
             
         }
     }
