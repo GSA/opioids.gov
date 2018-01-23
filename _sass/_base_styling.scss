@@ -104,7 +104,6 @@ p {
 }
 
 p > span {
-    color: $color-red;
     font-weight: $font-bold;
     } 
 
@@ -735,7 +734,7 @@ p > span {
             }
     }
     figure {
-        padding-top: 3rem;
+        padding-top: .5rem;
         padding-bottom: 3rem;
         margin: 0 auto;
         max-width: 1100px;
@@ -808,7 +807,11 @@ p > span {
     }
     .chart-total {
         font-weight: $font-bold;
-        padding-top: 20px;
+        padding-top: 5px;
+        
+        @media screen and (min-width: $medium-screen) {
+                padding-top: 20px;
+            }
     }
 }
 
@@ -878,9 +881,12 @@ p > span {
             flex-direction: column;
     text-align: center;
     margin: 0 30px;
-    @media screen and (min-width: $medium-screen) {
-      max-width: 30%;
-    }
+    padding-bottom: 30px;
+    
+        @media screen and (min-width: $medium-screen) {
+          max-width: 30%;
+            padding-bottom: 0;
+        }
     svg {
         max-width: 140px;
     }
