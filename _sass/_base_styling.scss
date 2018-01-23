@@ -660,6 +660,7 @@ p > span {
         font-size: 1.4rem;
     }
     
+    
     .air-title, .border-title, .sea-title {
         font-family: $font-serif; 
         font-weight: $font-bold;
@@ -679,6 +680,16 @@ p > span {
     
     .sea-title {
         color: $color-gold;
+    }
+    
+        .site-section-data-split.siezure-key {
+        text-align: center;
+        margin: 0 auto;
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+           -ms-flex-direction: row;
+           flex-direction: row;
+        margin-top: 3rem;       
     }
     
     .site-section-data-split {
