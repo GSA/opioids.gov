@@ -14,7 +14,7 @@ h2 {
 
 .usa-header {
     position: -webkit-sticky;
-    position: sticky;
+    position: sticky; 
     top: 0;
     background: $color-white;
     
@@ -581,6 +581,10 @@ p > span {
 
 .site-section-data-share {
         text-align: center;
+    
+        @media screen and (min-width: $medium-screen) {
+            text-align: left;
+        }
         
         path:hover{
         stroke-width: 0;
@@ -588,9 +592,7 @@ p > span {
         cursor: pointer;
         }
     
-         @media screen and (min-width: $medium-screen) {
-            text-align: left;
-        }
+         
     }
 
 .site-prescribing {
@@ -834,6 +836,7 @@ p > span {
         
         svg:hover {
             color: $color-gold;
+            border: none;
         }
     }
     a {
@@ -865,12 +868,17 @@ p > span {
 
 .site-section-data-share {
     margin-top: 5%;
-    text-align: left;
+    text-align: center;
     text-transform: uppercase;
     font-family: $font-sans;
     font-size: $small-font-size;
     font-weight: $font-normal;
     letter-spacing: .08rem;
+    
+        @media screen and (min-width: $medium-screen) {
+            text-align: left;
+        }
+    
     div {
         display: inline;
         vertical-align: top;
