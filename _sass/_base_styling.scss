@@ -517,6 +517,11 @@ p > span {
         ul {
             
             padding-left: 0;
+            padding: 0 4rem;
+            
+                @media screen and (min-width: $medium-screen) {
+                    padding: 0 2rem;
+                }
             
             li {
                 listing-style: none;
@@ -531,13 +536,18 @@ p > span {
                 -moz-column-count: 2;
                 -webkit-column-count: 2;
                 column-count: 2;
-                float: left;
                 margin: 0 auto;
+                width: 50%;
+                text-align: left;
+                float: left;
                 
                     @media screen and (min-width: $medium-screen) {
                         padding: 0 3.2rem;
                         font-size: 1.4rem;
+                        text-align: center;
+                        width: auto;
                         float: none;
+                        text-align: center;
                     }
             }
         }
@@ -570,10 +580,16 @@ p > span {
 }
 
 .site-section-data-share {
+        text-align: center;
+        
         path:hover{
         stroke-width: 0;
         fill: #C19222 !important;
         cursor: pointer;
+        }
+    
+         @media screen and (min-width: $medium-screen) {
+            text-align: left;
         }
     }
 
