@@ -1152,11 +1152,23 @@ p > span {
 }
 
 .site-updated{
-    .usa-width-one-half{
-        @media screen and (min-width: $medium-screen){
-            padding: 0 3rem;
+    .usa-width-one-half:first-child {
+       @media screen and (min-width: $medium-screen){
+            padding-right: 7rem;
         }
     }
+    
+    .usa-width-one-half:last-child {
+       @media screen and (min-width: $medium-screen){
+            padding-left: 7rem;
+        }
+    }
+    
+    //.usa-width-one-half{
+    //    @media screen and (min-width: $medium-screen){
+    //        padding: 0 7rem;
+    //    }
+    //}
 }
 
 .site-pie2-wrapper, .site-pie3-wrapper {
