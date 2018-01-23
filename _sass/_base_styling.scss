@@ -2,10 +2,12 @@ h1, h2 {
     margin-top: 1rem;
     text-align: center;
     letter-spacing: .08rem;
+    outline: 0;
 }
 
 h2 {
     padding: 0 2rem;
+    outline: 0;
 }
 
 .usa-banner {
@@ -96,6 +98,10 @@ h2 {
         letter-spacing: 0.08rem;
     }
 
+}
+
+a {
+    outline: 0;
 }
 
 p {
