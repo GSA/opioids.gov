@@ -459,7 +459,6 @@ p > span {
                 letter-spacing: .08rem;
                 
                 span {
-                    color: $color-red;
                     font-weight: $font-bold; 
                 }
             }
@@ -557,6 +556,7 @@ p > span {
             padding: 0 .8rem;
             margin-right: .8rem;
             display: inline-block;
+            border: 1px solid #ffffff;
         }
         
         .darkest-sq {
@@ -1180,12 +1180,12 @@ input[type=submit] {
     form [type="submit"] {
         padding: 1rem 2rem;
     }
-}
-
-.site-empasis {
+    
+    .site-empasis {
     font-size: $h3-font-size;
     font-weight: $font-bold;
     text-align: left;
+    color: $color-gold; 
     
     a {
        color: $color-gold;
@@ -1195,3 +1195,5 @@ input[type=submit] {
     text-decoration: underline;
     }
 }
+}
+
