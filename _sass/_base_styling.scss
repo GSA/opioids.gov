@@ -516,14 +516,30 @@ p > span {
         
         ul {
             
+            padding-left: 0;
+            
             li {
                 listing-style: none;
-                display: inline;
-                padding: 0 3.2rem;
-                font-size: 1.4rem;
+                display: block;
+                padding: 0 2rem;
+                font-size: 1.2rem;
                 -webkit-column-break-inside: avoid;
                 page-break-inside: avoid;
                 break-inside: avoid;
+                list-style: none;
+                column-count: 2;
+                
+                    @media screen and (min-width: $medium-screen) {
+                        listing-style: none;
+                        display: inline;
+                        padding: 0 3.2rem;
+                        font-size: 1.4rem;
+                        -webkit-column-break-inside: avoid;
+                        page-break-inside: avoid;
+                        break-inside: avoid;
+                        float: none;
+                        margin: 0 auto;
+                    }
             }
         }
         
