@@ -10,12 +10,19 @@ h2 {
     outline: 0;
 }
 
-h2:focus, a:focus {
+h2:focus, a:focus, :focus {
     outline: 0px none;
 }
 
 .usa-banner {
     height: 20px;
+}
+
+.usa-grid {
+    :focus, .usa-focus {
+        outline: 0px none;
+        outline-offset: 0;
+    }
 }
 
 .usa-header {
