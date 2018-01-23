@@ -686,9 +686,14 @@ p > span {
         margin: 0 auto;
         -webkit-box-orient: horizontal;
         -webkit-box-direction: normal;
-            -ms-flex-direction: row;
-                flex-direction: row;
+            //-ms-flex-direction: row;
+                //flex-direction: row;
         margin-top: 3rem;
+        
+            @media screen and (min-width: $medium-screen) {
+                     -ms-flex-direction: row;
+                    flex-direction: row;
+            }
         
     }
     
@@ -705,13 +710,18 @@ p > span {
     }
     h6  {
         display: inline-block;
-        margin: 0 20px 0 0;
+        margin: 5px 0;
         line-height: 1;
-        span {
-            display: block;
-            font-size: $h2-font-size;
-            font-weight: $font-bold;
-        }
+        
+            span {
+                display: block;
+                font-size: $h2-font-size;
+                font-weight: $font-bold;
+            }
+       
+            @media screen and (min-width: $medium-screen) {
+                   margin: 0 20px 0 0;
+            }
     }
     figure {
         padding-top: 3rem;
@@ -721,7 +731,11 @@ p > span {
         position: relative;
     }
     .graphic {
-        padding-left: 30px;
+        padding-left: 0;
+        
+        @media screen and (min-width: $medium-screen) {
+                padding-left: 30px;
+            }
     }
 
     .chart {
