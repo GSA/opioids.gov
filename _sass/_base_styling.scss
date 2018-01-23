@@ -691,7 +691,14 @@ p > span {
         -webkit-box-direction: normal;
            -ms-flex-direction: row;
            flex-direction: row;
-        margin-top: 3rem;       
+        margin-top: 3rem;
+            
+            title {
+                margin: 0 auto;
+                text-align: center;
+                border: none;
+                background: none;
+            }
     }
     
     .site-section-data-split {
