@@ -45,7 +45,7 @@ h2 {
     height: 60px;
     margin: 1rem 0;
     
-    @media screen and (min-width: $medium-screen) {
+    @media screen and (min-width: $large-screen) {
        margin-left: -30px;
     }
     
