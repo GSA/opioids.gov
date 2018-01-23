@@ -1012,7 +1012,7 @@ p > span {
     background: -webkit-linear-gradient(left, $color-red 50%, $color-blue-darkest 0);
     background: -o-linear-gradient(left, $color-red 50%, $color-blue-darkest 0);
     background: -webkit-gradient(linear, left top, right top, color-stop(50%, $color-red), color-stop(0, $color-blue-darkest));
-    background: linear-gradient(to right, $color-red 50%, $color-blue-darkest 0);
+    background: linear-gradient(to left, $color-red 50%, $color-blue-darkest 0);
     border: solid $color-blue-darker 1px;
     &:before{
         content: "";
