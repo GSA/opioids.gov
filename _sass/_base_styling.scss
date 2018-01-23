@@ -222,6 +222,8 @@ p > span {
     }
     
     .usa-grid {
+        padding-left: 2rem;
+        padding-rigth: 2rem;
     
         p {
             padding-top: 1.5rem;
@@ -236,34 +238,34 @@ p > span {
     }
     
     @media screen and (min-width: $medium-screen) {
-    @include keyframes(bounce) {
-        0%, 20%, 50%, 80%, 100% {
-        @include transform(translateY(0));
-    }
-        40% {
-        @include transform(translateY(-30px));
-    }
-        60% {
-        @include transform(translateY(-15px));
-    }
-    }
+        @include keyframes(bounce) {
+            0%, 20%, 50%, 80%, 100% {
+            @include transform(translateY(0));
+            }
+            40% {
+            @include transform(translateY(-30px));
+            }
+            60% {
+            @include transform(translateY(-15px));
+            }
+        }
 
-    .arrow {
-        position: absolute;
-        bottom: 0;
-        left: 50%;
-        margin-left:-20px;
-        margin-bottom: 5%;
-        width: 40px;
-        height: 40px;
-        background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg version='1.1' id='Layer_1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' x='0px' y='0px' viewBox='0 0 52.5 52.5' style='enable-background:new 0 0 52.5 52.5;' xml:space='preserve'%3e%3cstyle type='text/css'%3e .st0%7bfill:none;stroke:%23FFFFFF;stroke-width:2;stroke-linecap:round;stroke-miterlimit:10;%7d %3c/style%3e%3cpolyline class='st0' points='2.3,10.7 14.3,26.3 26.3,41.8 38.3,26.3 50.3,10.7 '/%3e%3cpolyline class='st0' points='15.1,19 20.7,26.3 26.3,33.5 31.8,26.3 37.4,19 '/%3e%3c/svg%3e");
-        background-size: contain;
-    }
+        .arrow {
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            margin-left:-20px;
+            margin-bottom: 5%;
+            width: 40px;
+            height: 40px;
+            background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg version='1.1' id='Layer_1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' x='0px' y='0px' viewBox='0 0 52.5 52.5' style='enable-background:new 0 0 52.5 52.5;' xml:space='preserve'%3e%3cstyle type='text/css'%3e .st0%7bfill:none;stroke:%23FFFFFF;stroke-width:2;stroke-linecap:round;stroke-miterlimit:10;%7d %3c/style%3e%3cpolyline class='st0' points='2.3,10.7 14.3,26.3 26.3,41.8 38.3,26.3 50.3,10.7 '/%3e%3cpolyline class='st0' points='15.1,19 20.7,26.3 26.3,33.5 31.8,26.3 37.4,19 '/%3e%3c/svg%3e");
+            background-size: contain;
+        }
 
-    .bounce {
-         @include animation(bounce 2s infinite);
+        .bounce {
+             @include animation(bounce 2s infinite);
+        }
     }
-}
 }
 
 .site-caption {
