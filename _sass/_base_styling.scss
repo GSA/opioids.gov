@@ -615,6 +615,7 @@ p > span {
     .site-section-data-share {
         path:hover{
         stroke: none;
+        stroke-width: 0;
         fill: #C19222 !important;
         cursor: pointer;
         }
