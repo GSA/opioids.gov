@@ -159,7 +159,7 @@ p > span {
     
         .lead-text {
             position: absolute;
-            top: 45%;
+            top: 42%;
             -webkit-transform: translateY(-50%);
                 -ms-transform: translateY(-50%);
                     transform: translateY(-50%);
@@ -1153,14 +1153,17 @@ p > span {
 .site-pie2-wrapper, .site-pie3-wrapper {
     margin: 0 4rem;
     text-align: center;
-    @media screen and (min-width: $medium-screen) {
-        max-width: 25%;
-    }
-    .site-section-data-caption {
-        font-size: 1.4rem;
-        font-family: $font-sans;
-        letter-spacing: .08rem;
-    }
+    padding-top:10px;
+    
+        @media screen and (min-width: $medium-screen) {
+            max-width: 25%;
+            padding-top: 0;
+        }
+        .site-section-data-caption {
+            font-size: 1.4rem;
+            font-family: $font-sans;
+            letter-spacing: .08rem;
+        }
 }
 
 form {
