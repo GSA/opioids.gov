@@ -302,7 +302,7 @@ p > span {
 
 .site-crisis {
     .bar-caption {
-        color: $color-gold;
+        color: $color-gold-dark;
         font-weight: $font-bold;
     }
     
@@ -320,14 +320,14 @@ p > span {
         //font-weight: normal;
         //}
     //}
+
+    .highlighted-secondary {
+        color: $color-blue-darker;
+        font-size: $small-font-size;
+    }
     
     .bar-caption-opioid {
         color: $color-blue;
-        
-            .highlighted-secondary {
-                color: $color-red;
-                font-size: 1rem;
-            }
     }
     
     .graphic.site-section-data-split {
@@ -404,6 +404,7 @@ p > span {
         
         h4 {
             margin-top: 0;
+            margin-bottom: 0;
             color: #293340;
             font-size: 2rem;
         }
@@ -704,7 +705,7 @@ p > span {
     }
     
     .sea-title {
-        color: $color-gold;
+        color: $color-gold-dark;
     }
     
         .site-section-data-split.siezure-key {
@@ -751,7 +752,7 @@ p > span {
     svg {
         width: 60px;
     }
-    h6  {
+    h3  {
         display: inline-block;
         margin: 5px 0;
         line-height: 1;
@@ -1246,3 +1247,6 @@ input[type=submit] {
 }
 }
 
+.social-share {
+    text-decoration: none;
+}
