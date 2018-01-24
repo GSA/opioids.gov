@@ -2,19 +2,32 @@ h1, h2 {
     margin-top: 1rem;
     text-align: center;
     letter-spacing: .08rem;
+    outline: 0;
 }
 
 h2 {
     padding: 0 2rem;
+    outline: 0;
 }
+
+//h2:focus, a:focus, :focus {
+//    outline: 0px none;
+//}
 
 .usa-banner {
     height: 20px;
 }
 
+.usa-grid {
+    :focus, .usa-focus {
+        outline: 0px none;
+        outline-offset: 0;
+    }
+}
+
 .usa-header {
     position: -webkit-sticky;
-    position: sticky;
+    position: sticky; 
     top: 0;
     background: $color-white;
     
@@ -42,6 +55,11 @@ h2 {
 .site-logo img {
     height: 60px;
     margin: 1rem 0;
+    
+    @media screen and (min-width: $large-screen) {
+       margin-left: -30px;
+    }
+    
 
 }
 
@@ -93,10 +111,15 @@ h2 {
 
 }
 
+a {
+    outline: 0;
+}
+
 p {
     text-align: center;
     letter-spacing: .08rem;
-    font-size: 1.6rem;
+    font-size: 1.5rem;
+    orphans: 3;
     
     @media screen and (min-width: $medium-screen) {
        font-size: 1.8rem;
@@ -104,7 +127,6 @@ p {
 }
 
 p > span {
-    color: $color-red;
     font-weight: $font-bold;
     } 
 
@@ -151,7 +173,7 @@ p > span {
 }
 
 .site-lead {
-    height: 80vh;
+    height: 85vh;
     
      @media screen and (min-width: $medium-screen) {
         height: 90vh;
@@ -160,7 +182,7 @@ p > span {
     
         .lead-text {
             position: absolute;
-            top: 40%;
+            top: 42%;
             -webkit-transform: translateY(-50%);
                 -ms-transform: translateY(-50%);
                     transform: translateY(-50%);
@@ -223,6 +245,8 @@ p > span {
     }
     
     .usa-grid {
+        padding-left: 2rem;
+        padding-right: 2rem;
     
         p {
             padding-top: 1.5rem;
@@ -237,34 +261,34 @@ p > span {
     }
     
     @media screen and (min-width: $medium-screen) {
-    @include keyframes(bounce) {
-        0%, 20%, 50%, 80%, 100% {
-        @include transform(translateY(0));
-    }
-        40% {
-        @include transform(translateY(-30px));
-    }
-        60% {
-        @include transform(translateY(-15px));
-    }
-    }
+        @include keyframes(bounce) {
+            0%, 20%, 50%, 80%, 100% {
+            @include transform(translateY(0));
+            }
+            40% {
+            @include transform(translateY(-30px));
+            }
+            60% {
+            @include transform(translateY(-15px));
+            }
+        }
 
-    .arrow {
-        position: absolute;
-        bottom: 0;
-        left: 50%;
-        margin-left:-20px;
-        margin-bottom: 5%;
-        width: 40px;
-        height: 40px;
-        background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg version='1.1' id='Layer_1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' x='0px' y='0px' viewBox='0 0 52.5 52.5' style='enable-background:new 0 0 52.5 52.5;' xml:space='preserve'%3e%3cstyle type='text/css'%3e .st0%7bfill:none;stroke:%23FFFFFF;stroke-width:2;stroke-linecap:round;stroke-miterlimit:10;%7d %3c/style%3e%3cpolyline class='st0' points='2.3,10.7 14.3,26.3 26.3,41.8 38.3,26.3 50.3,10.7 '/%3e%3cpolyline class='st0' points='15.1,19 20.7,26.3 26.3,33.5 31.8,26.3 37.4,19 '/%3e%3c/svg%3e");
-        background-size: contain;
-    }
+        .arrow {
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            margin-left:-20px;
+            margin-bottom: 5%;
+            width: 40px;
+            height: 40px;
+            background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg version='1.1' id='Layer_1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' x='0px' y='0px' viewBox='0 0 52.5 52.5' style='enable-background:new 0 0 52.5 52.5;' xml:space='preserve'%3e%3cstyle type='text/css'%3e .st0%7bfill:none;stroke:%23FFFFFF;stroke-width:2;stroke-linecap:round;stroke-miterlimit:10;%7d %3c/style%3e%3cpolyline class='st0' points='2.3,10.7 14.3,26.3 26.3,41.8 38.3,26.3 50.3,10.7 '/%3e%3cpolyline class='st0' points='15.1,19 20.7,26.3 26.3,33.5 31.8,26.3 37.4,19 '/%3e%3c/svg%3e");
+            background-size: contain;
+        }
 
-    .bounce {
-         @include animation(bounce 2s infinite);
+        .bounce {
+             @include animation(bounce 2s infinite);
+        }
     }
-}
 }
 
 .site-caption {
@@ -278,7 +302,7 @@ p > span {
 
 .site-crisis {
     .bar-caption {
-        color: $color-gold;
+        color: $color-gold-dark;
         font-weight: $font-bold;
     }
     
@@ -296,29 +320,24 @@ p > span {
         //font-weight: normal;
         //}
     //}
+
+    .highlighted-secondary {
+        color: $color-blue-darker;
+        font-size: $small-font-size;
+    }
     
     .bar-caption-opioid {
         color: $color-blue;
-        
-            .highlighted-secondary {
-                color: $color-red;
-                font-size: 1rem;
-            }
     }
     
     .graphic.site-section-data-split {
         text-align: center;
-        -webkit-box-align: center;
-            -ms-flex-align: center;
-            align-items: center;
-            -ms-flex-direction: row;
+        -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
+         -ms-flex-direction: row;
             flex-direction: row;
         padding-top: 1rem;
-        @media screen and (min-width: $medium-screen) {
-            -webkit-box-align: end;
-                -ms-flex-align: end;
-                    align-items: flex-end;
-        }
         
         p {
             font-family: $font-sans;
@@ -380,6 +399,7 @@ p > span {
         
         h4 {
             margin-top: 0;
+            margin-bottom: 0;
             color: #293340;
             font-size: 2rem;
         }
@@ -460,7 +480,6 @@ p > span {
                 letter-spacing: .08rem;
                 
                 span {
-                    color: $color-red;
                     font-weight: $font-bold; 
                 }
             }
@@ -473,6 +492,11 @@ p > span {
             line-height: 5rem;
             color: $color-red;
             letter-spacing: .08rem;
+            padding-bottom: 30px;
+            
+                @media screen and (min-width: $medium-screen) {
+                    paddining-bottom:10px;
+                }
             
         }
     }
@@ -511,14 +535,39 @@ p > span {
         
         ul {
             
+            padding-left: 0;
+            padding: 0 4rem;
+            
+                @media screen and (min-width: $medium-screen) {
+                    padding: 0 2rem;
+                }
+            
             li {
                 listing-style: none;
                 display: inline;
-                padding: 0 3.2rem;
-                font-size: 1.4rem;
+                padding: 0 2rem;
+                font-size: 1.2rem;
                 -webkit-column-break-inside: avoid;
                 page-break-inside: avoid;
                 break-inside: avoid;
+                white-space: nowrap;
+                list-style: none;
+                -moz-column-count: 2;
+                -webkit-column-count: 2;
+                column-count: 2;
+                margin: 0 auto;
+                width: 50%;
+                text-align: left;
+                float: left;
+                
+                    @media screen and (min-width: $medium-screen) {
+                        padding: 0 3.2rem;
+                        font-size: 1.4rem;
+                        text-align: center;
+                        width: auto;
+                        float: none;
+                        text-align: center;
+                    }
             }
         }
         
@@ -528,6 +577,7 @@ p > span {
             padding: 0 .8rem;
             margin-right: .8rem;
             display: inline-block;
+            border: 1px solid #ffffff;
         }
         
         .darkest-sq {
@@ -550,11 +600,19 @@ p > span {
 }
 
 .site-section-data-share {
+        text-align: center;
+    
+        @media screen and (min-width: $medium-screen) {
+            text-align: left;
+        }
+        
         path:hover{
         stroke-width: 0;
         fill: #C19222 !important;
         cursor: pointer;
         }
+    
+         
     }
 
 .site-prescribing {
@@ -578,6 +636,7 @@ p > span {
     .site-section-data-share {
         path:hover{
         stroke: none;
+        stroke-width: 0;
         fill: #C19222 !important;
         cursor: pointer;
         }
@@ -622,6 +681,7 @@ p > span {
         font-size: 1.4rem;
     }
     
+    
     .air-title, .border-title, .sea-title {
         font-family: $font-serif; 
         font-weight: $font-bold;
@@ -640,7 +700,24 @@ p > span {
     }
     
     .sea-title {
-        color: $color-gold;
+        color: $color-gold-dark;
+    }
+    
+        .site-section-data-split.siezure-key {
+        text-align: center;
+        margin: 0 auto;
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+           -ms-flex-direction: row;
+           flex-direction: row;
+        margin-top: 3rem;
+            
+            title {
+                margin: 0 auto;
+                text-align: center;
+                border: none;
+                background: none;
+            }
     }
     
     .site-section-data-split {
@@ -648,9 +725,14 @@ p > span {
         margin: 0 auto;
         -webkit-box-orient: horizontal;
         -webkit-box-direction: normal;
-            -ms-flex-direction: row;
-                flex-direction: row;
+            //-ms-flex-direction: row;
+                //flex-direction: row;
         margin-top: 3rem;
+        
+            @media screen and (min-width: $medium-screen) {
+                     -ms-flex-direction: row;
+                    flex-direction: row;
+            }
         
     }
     
@@ -665,25 +747,35 @@ p > span {
     svg {
         width: 60px;
     }
-    h6  {
+    h3  {
         display: inline-block;
-        margin: 0 20px 0 0;
+        margin: 5px 0;
         line-height: 1;
-        span {
-            display: block;
-            font-size: $h2-font-size;
-            font-weight: $font-bold;
-        }
+        
+            span {
+                display: block;
+                font-size: $h2-font-size;
+                font-weight: $font-bold;
+            }
+       
+            @media screen and (min-width: $medium-screen) {
+                   margin: 0 20px 0 0;
+            }
     }
     figure {
-        padding-top: 3rem;
+        padding-top: .5rem;
         padding-bottom: 3rem;
         margin: 0 auto;
         max-width: 1100px;
         position: relative;
     }
     .graphic {
-        padding-left: 30px;
+        padding-left: 0;
+        
+        @media screen and (min-width: $medium-screen) {
+                padding-left: 30px;
+                padding-right: 30px;
+            }
     }
 
     .chart {
@@ -745,7 +837,11 @@ p > span {
     }
     .chart-total {
         font-weight: $font-bold;
-        padding-top: 20px;
+        padding-top: 5px;
+        
+        @media screen and (min-width: $medium-screen) {
+                padding-top: 20px;
+            }
     }
 }
 
@@ -798,6 +894,7 @@ p > span {
         
         svg:hover {
             color: $color-gold;
+            border: none;
         }
     }
     a {
@@ -814,9 +911,12 @@ p > span {
             flex-direction: column;
     text-align: center;
     margin: 0 30px;
-    @media screen and (min-width: $medium-screen) {
-      max-width: 30%;
-    }
+    padding-bottom: 30px;
+    
+        @media screen and (min-width: $medium-screen) {
+          max-width: 30%;
+            padding-bottom: 0;
+        }
     svg {
         max-width: 140px;
     }
@@ -829,12 +929,17 @@ p > span {
 
 .site-section-data-share {
     margin-top: 5%;
-    text-align: left;
+    text-align: center;
     text-transform: uppercase;
     font-family: $font-sans;
     font-size: $small-font-size;
     font-weight: $font-normal;
     letter-spacing: .08rem;
+    
+        @media screen and (min-width: $medium-screen) {
+            text-align: left;
+        }
+    
     div {
         display: inline;
         vertical-align: top;
@@ -893,17 +998,17 @@ p > span {
     height: 150px;
     margin: 1em auto;
     border-radius: 50%;
-    background: -webkit-gradient(linear, left top, right top, color-stop(50%, $color-white), color-stop(0, $color-red));
-    background: -webkit-linear-gradient(left, $color-red 50%, $color-white 0);
-    background: -o-linear-gradient(left, $color-red 50%, $color-white 0);
-    background: -webkit-gradient(linear, left top, right top, color-stop(50%, $color-red), color-stop(0, $color-white));
-    background: linear-gradient(to right, $color-red 50%, $color-white 0);
+    background: -webkit-gradient(linear, left top, right top, color-stop(50%, $color-red), color-stop(0, $color-blue-darkest));
+    background: -webkit-linear-gradient(left, $color-blue-darkest 50%, $color-red 0);
+    background: -o-linear-gradient(left, $color-blue-darkest 50%, $color-red 0);
+    background: -webkit-gradient(linear, left top, right top, color-stop(50%, $color-blue-darkest), color-stop(0, $color-red));
+    background: linear-gradient(to right, $color-blue-darkest 50%, $color-red 0);
     border: solid $color-blue-darker 1px;
     &:before{
         content: "";
         height: 100%;
         display: block;
-        background: $color-red;
+        background: $color-blue-darkest;
         border-radius: 0 100% 100% 0 / 50%;
         margin-left: 50%;
         -webkit-transform-origin: left;
@@ -930,17 +1035,17 @@ p > span {
     height: 150px;
     margin: 1em auto;
     border-radius: 50%;
-    background: -webkit-gradient(linear, left top, right top, color-stop(50%, $color-white), color-stop(0, $color-red));
-    background: -webkit-linear-gradient(left, $color-red 50%, $color-white 0);
-    background: -o-linear-gradient(left, $color-red 50%, $color-white 0);
-    background: -webkit-gradient(linear, left top, right top, color-stop(50%, $color-red), color-stop(0, $color-white));
-    background: linear-gradient(to right, $color-red 50%, $color-white 0);
-    border: solid $color-black 1px;
+    background: -webkit-gradient(linear, left top, right top, color-stop(50%, $color-blue-darkest), color-stop(0, $color-red));
+    background: -webkit-linear-gradient(left, $color-red 50%, $color-blue-darkest 0);
+    background: -o-linear-gradient(left, $color-red 50%, $color-blue-darkest 0);
+    background: -webkit-gradient(linear, left top, right top, color-stop(50%, $color-red), color-stop(0, $color-blue-darkest));
+    background: linear-gradient(to left, $color-red 50%, $color-blue-darkest 0);
+    border: solid $color-blue-darker 1px;
     &:before{
         content: "";
         height: 100%;
         display: block;
-        background: $color-red;
+        background: $color-blue-darkest;
         border-radius: 0 100% 100% 0 / 50%;
         margin-left: 50%;
         -webkit-transform-origin: left;
@@ -1065,24 +1170,39 @@ p > span {
 }
 
 .site-updated{
-    .usa-width-one-half{
-        @media screen and (min-width: $medium-screen){
-            padding: 0 3rem;
+    .usa-width-one-half:first-child {
+       @media screen and (min-width: $medium-screen){
+            padding-right: 7rem;
         }
     }
+    
+    .usa-width-one-half:last-child {
+       @media screen and (min-width: $medium-screen){
+            padding-left: 7rem;
+        }
+    }
+    
+    //.usa-width-one-half{
+    //    @media screen and (min-width: $medium-screen){
+    //        padding: 0 7rem;
+    //    }
+    //}
 }
 
 .site-pie2-wrapper, .site-pie3-wrapper {
     margin: 0 4rem;
     text-align: center;
-    @media screen and (min-width: $medium-screen) {
-        max-width: 25%;
-    }
-    .site-section-data-caption {
-        font-size: 1.4rem;
-        font-family: $font-sans;
-        letter-spacing: .08rem;
-    }
+    padding-top:10px;
+    
+        @media screen and (min-width: $medium-screen) {
+            max-width: 25%;
+            padding-top: 0;
+        }
+        .site-section-data-caption {
+            font-size: 1.4rem;
+            font-family: $font-sans;
+            letter-spacing: .08rem;
+        }
 }
 
 form {
@@ -1105,12 +1225,12 @@ input[type=submit] {
     form [type="submit"] {
         padding: 1rem 2rem;
     }
-}
-
-.site-empasis {
+    
+    .site-empasis {
     font-size: $h3-font-size;
     font-weight: $font-bold;
     text-align: left;
+    color: $color-gold; 
     
     a {
        color: $color-gold;
@@ -1119,4 +1239,9 @@ input[type=submit] {
     a:hover {
     text-decoration: underline;
     }
+}
+}
+
+.social-share {
+    text-decoration: none;
 }

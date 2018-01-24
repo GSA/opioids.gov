@@ -7,10 +7,10 @@ layout: default
   <div class="usa-grid lead-text">
     <h1>Confronting the <span class="title-emphasis">opioid crisis</span> <span class="secondaryheader">in the United States</span></h1>
     <hr>
-    <p>In 2016, more Americans died due to opioid overdoses than car crashes. From cities and suburbs to rural America, opioid addiction is the crisis next door. This website illustrates both the magnitude of the opioid crisis and the actions the Trump Administration is taking to address it.</p>
+    <p>In 2016, more Americans died due to opioid overdoses than car crashes. From cities and suburbs to rural America, opioid addiction and overdose is the crisis next door. This website illustrates both the magnitude of the opioid crisis and some of the actions the Trump Administration is taking to address it.</p>
     
   </div>
-  <a href="#crisis" class="arrow bounce"></a>
+  <a href="#crisis" class="arrow bounce"><span class="usa-sr-only">Click to jumpt to the next section, Crisis.</span></a>
 </section>
 <section class="usa-grid usa-section site-section site-crisis">
   <span class="site-divider">
@@ -23,9 +23,10 @@ layout: default
       <figure>
         <h3>Deaths in 2016...</h3>
         <div class="graphic site-section-data-split">
-          <div class="wow fadeInUp" data-wow-delay=".2s">
+          <div class="wow fadeInUp" data-wow-delay=".2s" role="group" aria-describedby="overdosesdesc">
+              <desc id="overdosesdesc" class="usa-sr-only">A vertical bar chart showing the total number of opioid overdoses as compared to the total number of drug overdoses.</desc>
             <h4>63,632</h4>
-            
+            <span class="highlighted-secondary">Drug Overdoses</span>
             <div class="chart">
               <span class="block tooltip" title="63,632">
                  <span class="value-vertical">45</span>
@@ -35,42 +36,44 @@ layout: default
               </span>
             </div>
 	          <hr class="chart-hbar"/>
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 150 150"><defs><style>.opioid-deaths{fill:#d20021;}</style></defs><title>0221-OpStat Site_Crisis-icons</title><g id="content"><path class="opioid-deaths" d="M106.6,51.22h-.31a1.57,1.57,0,0,1-1.52-1.29l-.44-2.32h.37a4,4,0,0,0,4-4v-10a4,4,0,0,0-4-3.95h-26a4,4,0,0,0-3.95,3.95v10a4,4,0,0,0,3.95,4h.22l-.43,2.27A1.58,1.58,0,0,1,77,51.17h0a9.42,9.42,0,0,0-9.42,9.42V88.51A13.33,13.33,0,0,0,42,85.21l-6.87,16.73a13.33,13.33,0,1,0,24.66,10.13l3.6-8.76h0l3.27-8a13.11,13.11,0,0,0,.88-3.24v18.7a9.44,9.44,0,0,0,9.42,9.43h29.53a9.44,9.44,0,0,0,9.43-9.43V60.65A9.47,9.47,0,0,0,106.6,51.22Zm-59.7,36a8,8,0,1,1,14.83,6.09l-2.27,5.51-14.83-6.1Zm8,22.82A8,8,0,0,1,40,104l2.59-6.31,14.83,6.09Zm18-38.5h37.75v28.84H72.83ZM80.08,35h23.25v7.31H80.08V35ZM74,57.69a4.06,4.06,0,0,1,2.9-1.21h0a6.9,6.9,0,0,0,6.78-5.63l.6-3.24H98.92l.62,3.31a6.91,6.91,0,0,0,6.68,5.61h.31a4.12,4.12,0,0,1,4,4.11v5.58H72.83V60.59A4,4,0,0,1,74,57.69Zm32.43,57.23H76.94a4.12,4.12,0,0,1-4.11-4.12v-5.1h37.75v5.1A4.12,4.12,0,0,1,106.47,114.92Z"/></g></svg>
-		        <div class="bar-caption-opioid">Drug<br>Overdoses* <br/> <span class="highlighted-secondary">*Opioid-related overdoses</span></div>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 150 150" aria-labelledby="overdosestitle" role="group"><defs><style>.opioid-deaths{fill:#293340;}</style></defs><title id="overdosestitle">Drug Overdoses</title><g id="content"><path class="opioid-deaths" d="M106.6,51.22h-.31a1.57,1.57,0,0,1-1.52-1.29l-.44-2.32h.37a4,4,0,0,0,4-4v-10a4,4,0,0,0-4-3.95h-26a4,4,0,0,0-3.95,3.95v10a4,4,0,0,0,3.95,4h.22l-.43,2.27A1.58,1.58,0,0,1,77,51.17h0a9.42,9.42,0,0,0-9.42,9.42V88.51A13.33,13.33,0,0,0,42,85.21l-6.87,16.73a13.33,13.33,0,1,0,24.66,10.13l3.6-8.76h0l3.27-8a13.11,13.11,0,0,0,.88-3.24v18.7a9.44,9.44,0,0,0,9.42,9.43h29.53a9.44,9.44,0,0,0,9.43-9.43V60.65A9.47,9.47,0,0,0,106.6,51.22Zm-59.7,36a8,8,0,1,1,14.83,6.09l-2.27,5.51-14.83-6.1Zm8,22.82A8,8,0,0,1,40,104l2.59-6.31,14.83,6.09Zm18-38.5h37.75v28.84H72.83ZM80.08,35h23.25v7.31H80.08V35ZM74,57.69a4.06,4.06,0,0,1,2.9-1.21h0a6.9,6.9,0,0,0,6.78-5.63l.6-3.24H98.92l.62,3.31a6.91,6.91,0,0,0,6.68,5.61h.31a4.12,4.12,0,0,1,4,4.11v5.58H72.83V60.59A4,4,0,0,1,74,57.69Zm32.43,57.23H76.94a4.12,4.12,0,0,1-4.11-4.12v-5.1h37.75v5.1A4.12,4.12,0,0,1,106.47,114.92Z"/></g></svg>
+		        <div class="bar-caption-opioid">Opioid<br>Overdoses</div>
           </div>
       
-          <div class="row wow fadeInUp" data-wow-delay=".35s">
+          <div class="row wow fadeInUp" data-wow-delay=".35s" role="group" aria-describedby="breastcancerdesc">
+            <desc id="breastcancerdesc" class="usa-sr-only">A verical bar chart showing the total number of breast cancer deaths, 41,952.</desc>
             <div class="chart">
               <span class="block tooltip block-gold" title="41,952">
                   <span class="value-vertical">132</span>
               </span>
               <hr class="chart-hbar"/>
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 150 150"><defs><style>.cancer-deaths-1{fill:#c19222;stroke:#c19222;stroke-miterlimit:10;}</style></defs><title>breastcancerdeaths_icon</title><g id="content"><path class="cancer-deaths-1" d="M106.59,103.21,88.71,81.35,100.55,66a1.4,1.4,0,0,0,.13-.18c5.37-9.35-6.71-30-8.11-32.37h0a1.45,1.45,0,0,0-.34-.4.75.75,0,0,0-.15-.09.85.85,0,0,0-.29-.17h0a45,45,0,0,0-33.52,0h0a1.16,1.16,0,0,0-.24.14,2.12,2.12,0,0,0-.2.12,1.45,1.45,0,0,0-.34.4h0C56,35.76,44,56.45,49.33,65.8a.57.57,0,0,0,.12.18L61.3,81.35,43.41,103.21a7.6,7.6,0,0,0,.83,10.51l5.47,4.85a7.64,7.64,0,0,0,5.07,1.92l.7,0a7.66,7.66,0,0,0,5.31-2.93L75,99.11l14.21,18.42a7.66,7.66,0,0,0,5.32,2.93c.23,0,.46,0,.7,0a7.67,7.67,0,0,0,5.07-1.92l5.46-4.85a7.61,7.61,0,0,0,.83-10.51ZM66.68,54.43a25,25,0,0,1,16.64,0L75,64.6ZM97.92,64.1,86.6,78.77,77.09,67.15,86,56.31A35,35,0,0,0,92.52,40.1c3.75,7.44,8.26,18.8,5.4,24ZM89.46,35.33l-.53,6.42c0,.06,0,.11,0,.18-.08.38-.17.75-.26,1.12l-.15.57c-.08.32-.18.64-.27,1s-.14.47-.23.7-.15.49-.24.73-.22.62-.34.92c0,.14-.1.28-.16.43a34,34,0,0,1-2.08,4.29,28.2,28.2,0,0,0-20.34,0,35.54,35.54,0,0,1-2.12-4.38l-.1-.27c-.13-.35-.27-.71-.39-1.08-.07-.19-.14-.39-.2-.58s-.18-.57-.27-.86-.16-.54-.23-.81-.12-.48-.18-.72-.17-.65-.24-1a1.7,1.7,0,0,0,0-.22l-.53-6.41a41.84,41.84,0,0,1,28.93,0ZM58.23,115.56a4.37,4.37,0,0,1-6.37.59l-5.47-4.85a4.38,4.38,0,0,1-.47-6L63.33,84l3.37,4.37L73,96.46Zm45.38-4.27-5.46,4.86a4.38,4.38,0,0,1-6.38-.59L76.28,95.47,64.65,80.38,52.08,64.1c-2.85-5.19,1.65-16.55,5.4-24A35,35,0,0,0,64,56.31l9.71,11.87L85.38,82.4h0l18.7,22.85a4.37,4.37,0,0,1-.48,6Zm0,0"/></g></svg>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 150 150" aria-labelledby="breastcancertitle cancerdesc" role="img"><defs><style>.cancer-deaths-1{fill:#c19222;stroke:#c19222;stroke-miterlimit:10;}</style></defs><title id="breastcancertitle">breastcancerdeaths_icon</title><desc id="cancerdesc">A vertical bar chart indicating that the number of breast cancer deaths is smaller than the number of opioid deaths</desc><g id="content"><path class="cancer-deaths-1" d="M106.59,103.21,88.71,81.35,100.55,66a1.4,1.4,0,0,0,.13-.18c5.37-9.35-6.71-30-8.11-32.37h0a1.45,1.45,0,0,0-.34-.4.75.75,0,0,0-.15-.09.85.85,0,0,0-.29-.17h0a45,45,0,0,0-33.52,0h0a1.16,1.16,0,0,0-.24.14,2.12,2.12,0,0,0-.2.12,1.45,1.45,0,0,0-.34.4h0C56,35.76,44,56.45,49.33,65.8a.57.57,0,0,0,.12.18L61.3,81.35,43.41,103.21a7.6,7.6,0,0,0,.83,10.51l5.47,4.85a7.64,7.64,0,0,0,5.07,1.92l.7,0a7.66,7.66,0,0,0,5.31-2.93L75,99.11l14.21,18.42a7.66,7.66,0,0,0,5.32,2.93c.23,0,.46,0,.7,0a7.67,7.67,0,0,0,5.07-1.92l5.46-4.85a7.61,7.61,0,0,0,.83-10.51ZM66.68,54.43a25,25,0,0,1,16.64,0L75,64.6ZM97.92,64.1,86.6,78.77,77.09,67.15,86,56.31A35,35,0,0,0,92.52,40.1c3.75,7.44,8.26,18.8,5.4,24ZM89.46,35.33l-.53,6.42c0,.06,0,.11,0,.18-.08.38-.17.75-.26,1.12l-.15.57c-.08.32-.18.64-.27,1s-.14.47-.23.7-.15.49-.24.73-.22.62-.34.92c0,.14-.1.28-.16.43a34,34,0,0,1-2.08,4.29,28.2,28.2,0,0,0-20.34,0,35.54,35.54,0,0,1-2.12-4.38l-.1-.27c-.13-.35-.27-.71-.39-1.08-.07-.19-.14-.39-.2-.58s-.18-.57-.27-.86-.16-.54-.23-.81-.12-.48-.18-.72-.17-.65-.24-1a1.7,1.7,0,0,0,0-.22l-.53-6.41a41.84,41.84,0,0,1,28.93,0ZM58.23,115.56a4.37,4.37,0,0,1-6.37.59l-5.47-4.85a4.38,4.38,0,0,1-.47-6L63.33,84l3.37,4.37L73,96.46Zm45.38-4.27-5.46,4.86a4.38,4.38,0,0,1-6.38-.59L76.28,95.47,64.65,80.38,52.08,64.1c-2.85-5.19,1.65-16.55,5.4-24A35,35,0,0,0,64,56.31l9.71,11.87L85.38,82.4h0l18.7,22.85a4.37,4.37,0,0,1-.48,6Zm0,0"/></g></svg>
             </div>
             <div class="bar-caption">Breast<br>Cancer</div>
           </div>
       
-          <div class="wow fadeInUp" data-wow-delay=".45s">
+          <div class="wow fadeInUp" data-wow-delay=".45s" role="group" aria-describedby="vehicledesc">
+            <desc id="vehicledesc" class="usa-sr-only">A vertical bar chart showing the total number of vehicle deaths, 38,738.</desc>
             <div class="chart">
               <span class="block tooltip block-gold" title="38,748">
                    <span class="value-vertical">120</span>
               </span>
             </div>	  
             <hr class="chart-hbar"/>
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 150 150"><defs><style>.vehicle-deaths-1{fill:#c19222;}</style></defs><title>vehicledeaths_icon</title><g id="content"><path class="vehicle-deaths-1" d="M31,110.24A14.69,14.69,0,1,1,45.63,95.56,14.7,14.7,0,0,1,31,110.24Zm0-23.49a8.81,8.81,0,1,0,8.81,8.81A8.82,8.82,0,0,0,31,86.75Z"/><path class="vehicle-deaths-1" d="M119.05,110.24a14.69,14.69,0,1,1,14.69-14.68A14.7,14.7,0,0,1,119.05,110.24Zm0-23.49a8.81,8.81,0,1,0,8.81,8.81A8.82,8.82,0,0,0,119.05,86.75Z"/><path class="vehicle-deaths-1" d="M130.8,98.49a2.94,2.94,0,1,1,0-5.87,8.53,8.53,0,0,0,8.81-8.81c0-5.9-3.13-14.68-11.75-14.68h-5a13.93,13.93,0,0,1-8.69-3.06L91.07,47.56a8.88,8.88,0,0,0-5.51-1.93H43.11a8.78,8.78,0,0,0-7.33,3.93l-5,7.5A13.89,13.89,0,0,1,19.2,63.25a8.82,8.82,0,0,0-8.81,8.81V83.81a8.82,8.82,0,0,0,8.81,8.81,2.94,2.94,0,1,1,0,5.87A14.7,14.7,0,0,1,4.52,83.81V72.06A14.7,14.7,0,0,1,19.2,57.38a8,8,0,0,0,6.69-3.58l5-7.5a14.63,14.63,0,0,1,12.22-6.54H85.56A14.75,14.75,0,0,1,94.74,43l23.14,18.51a8,8,0,0,0,5,1.76h5c11.45,0,17.62,10.59,17.62,20.56A14.36,14.36,0,0,1,130.8,98.49Z"/><path class="vehicle-deaths-1" d="M107.31,98.49H42.69a2.94,2.94,0,0,1,0-5.87h64.62a2.94,2.94,0,0,1,0,5.87Z"/><path class="vehicle-deaths-1" d="M101.43,69.13H72.06a2.94,2.94,0,0,1-2.93-2.94V54.44a2.94,2.94,0,0,1,5.87,0v8.81h26.43a2.94,2.94,0,0,1,0,5.88Z"/><path class="vehicle-deaths-1" d="M60.32,69.13H36.82a2.93,2.93,0,0,1-2.62-4.25l5.87-11.75a2.94,2.94,0,0,1,5.26,2.63l-3.76,7.49H60.32a2.94,2.94,0,0,1,0,5.88Z"/><path class="vehicle-deaths-1" d="M83.81,80.87H77.94a2.94,2.94,0,1,1,0-5.87h5.87a2.94,2.94,0,1,1,0,5.87Z"/></g></svg>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 150 150" aria-labelledby="vehicledeathstitle vehicledeathsdesc" role="img"><defs><style>.vehicle-deaths-1{fill:#c19222;}</style></defs><title id="vehicledeathstitle">vehicledeaths_icon</title><desc id="vehicledeathsdesc">A vertical bar charting indicating the number of vehicles deaths is lower than the number of Opioid deaths.</desc><g id="content"><path class="vehicle-deaths-1" d="M31,110.24A14.69,14.69,0,1,1,45.63,95.56,14.7,14.7,0,0,1,31,110.24Zm0-23.49a8.81,8.81,0,1,0,8.81,8.81A8.82,8.82,0,0,0,31,86.75Z"/><path class="vehicle-deaths-1" d="M119.05,110.24a14.69,14.69,0,1,1,14.69-14.68A14.7,14.7,0,0,1,119.05,110.24Zm0-23.49a8.81,8.81,0,1,0,8.81,8.81A8.82,8.82,0,0,0,119.05,86.75Z"/><path class="vehicle-deaths-1" d="M130.8,98.49a2.94,2.94,0,1,1,0-5.87,8.53,8.53,0,0,0,8.81-8.81c0-5.9-3.13-14.68-11.75-14.68h-5a13.93,13.93,0,0,1-8.69-3.06L91.07,47.56a8.88,8.88,0,0,0-5.51-1.93H43.11a8.78,8.78,0,0,0-7.33,3.93l-5,7.5A13.89,13.89,0,0,1,19.2,63.25a8.82,8.82,0,0,0-8.81,8.81V83.81a8.82,8.82,0,0,0,8.81,8.81,2.94,2.94,0,1,1,0,5.87A14.7,14.7,0,0,1,4.52,83.81V72.06A14.7,14.7,0,0,1,19.2,57.38a8,8,0,0,0,6.69-3.58l5-7.5a14.63,14.63,0,0,1,12.22-6.54H85.56A14.75,14.75,0,0,1,94.74,43l23.14,18.51a8,8,0,0,0,5,1.76h5c11.45,0,17.62,10.59,17.62,20.56A14.36,14.36,0,0,1,130.8,98.49Z"/><path class="vehicle-deaths-1" d="M107.31,98.49H42.69a2.94,2.94,0,0,1,0-5.87h64.62a2.94,2.94,0,0,1,0,5.87Z"/><path class="vehicle-deaths-1" d="M101.43,69.13H72.06a2.94,2.94,0,0,1-2.93-2.94V54.44a2.94,2.94,0,0,1,5.87,0v8.81h26.43a2.94,2.94,0,0,1,0,5.88Z"/><path class="vehicle-deaths-1" d="M60.32,69.13H36.82a2.93,2.93,0,0,1-2.62-4.25l5.87-11.75a2.94,2.94,0,0,1,5.26,2.63l-3.76,7.49H60.32a2.94,2.94,0,0,1,0,5.88Z"/><path class="vehicle-deaths-1" d="M83.81,80.87H77.94a2.94,2.94,0,1,1,0-5.87h5.87a2.94,2.94,0,1,1,0,5.87Z"/></g></svg>
             <div class="bar-caption">Motor<br>Vehicles</div>
           </div>
       
         </div>
 	
 	<div class="site-section-data-source">
-          Source: <a href="#" target="_blank">CDC</a>
+          Source: CDC
       	</div>
         
       </figure>
       
       <p>
-        Number of people 12 years and older who have misused opioids...
+        Number of people 12 years and older who have misused prescription opioids or heroin...
       </p>
       <div class="site-section-data-split">
         <div class="site-section-data-metric">
@@ -87,7 +90,15 @@ layout: default
         </div>
       </div>
         
-        {% include social-share.html %}
+      <div class="usa-grid site-section-data-share">
+        <div>Share:</div>
+        <a href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fopioids.gov" target="_blank" title="Share on Facebook" class="social-share">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><defs><style>.cls-fb{fill:#2b5e92;}</style></defs><title>Facebook Social Share</title><g id="content"><path class="cls-fb" d="M8.05,17.74h3.12V9.93h2.17l.23-2.61h-2.4V5.83c0-.61.12-.86.72-.86h1.68V2.26H11.41c-2.32,0-3.36,1-3.36,3V7.32H6.43V10H8.05Z"/></g></svg>
+        </a>
+        <a href="https://twitter.com/intent/tweet?text=The%20%23OpioidCrisis%20kills%20more%20people%20than%20breast%20cancer.%20Learn%20more%20at%20https%3A%2F%2Fopioids.gov" target="_blank" class="social-share">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><defs><style>.cls-twitter{fill:#2b5e92;}</style></defs><title>Twitter Social Share</title><g id="content"><path class="cls-twitter" d="M.6,15.91a11,11,0,0,0,5.91,1.73,10.92,10.92,0,0,0,11-11.48,7.73,7.73,0,0,0,1.92-2,7.77,7.77,0,0,1-2.21.6,3.86,3.86,0,0,0,1.69-2.13,7.89,7.89,0,0,1-2.45.94A3.86,3.86,0,0,0,9.86,7.1a10.92,10.92,0,0,1-7.95-4A3.87,3.87,0,0,0,3.1,8.22a3.85,3.85,0,0,1-1.75-.49,3.86,3.86,0,0,0,3.1,3.83,3.77,3.77,0,0,1-1.74.07,3.86,3.86,0,0,0,3.6,2.68A7.77,7.77,0,0,1,.6,15.91Z"/></g></svg> 
+        </a>     
+      </div>
     </div>
 </section>
 
@@ -99,7 +110,7 @@ layout: default
       <hr>
     </span>
     <p>Over-prescribing of opioids has contributed to <span>rising rates of opioid addiction and overdoses</span>. In coordination with health care providers and patients, the Trump Administration is working to drive down both the number and strength of opioid prescriptions and advance evidence-based pain care.</p>
-    <div class="site-section-data">
+    <div class="site-section-data" role="group">
         <div class="site-section-data-lead-metric">
          731.2
         </div>
@@ -111,7 +122,7 @@ layout: default
         </div>
         
       
-        <div class="site-caption secondary-caption">
+        <div class="site-caption secondary-caption" role="group">
           <ul>
             <li><span class="darkest-sq"></span> Over 820</li>
             <li><span class="dark-sq"></span> 820 to 659</li>
@@ -124,7 +135,9 @@ layout: default
         <?xml version="1.0" encoding="utf-8"?>
 <!-- Generator: Adobe Illustrator 20.1.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
 <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-	 viewBox="0 0 1133 632" style="enable-background:new 0 0 1133 632;" xml:space="preserve">
+   viewBox="0 0 1133 632" style="enable-background:new 0 0 1133 632;" xml:space="preserve" role="group" aria-labelledby="maptitle mapdesc">
+   <title id="maptitle">United States Map</title>
+   <desc id="mapdesc">United States map showing the number of opioid prescriptions per 1,000 people nationwide for each state.</desc>
    <style type="text/css">
 	.st0{fill:#AEB0B5;}
 	.st1{fill:#AEB0B5;stroke:#FFFFFF;stroke-width:1.5;}
@@ -795,21 +808,20 @@ layout: default
       </g>
     </g>
   </g>
-  
 </svg>
 
         <div class="site-section-data-source">
             Source: HHS
         </div>
         <div class="site-section-data-split">
-          <div class="site-section-data-metric">
-            883.54 <div class="site-section-data-caption">Average dose* <br/> (higher dosage leads to higher risk for misuse)</div>
+          <div class="site-section-data-metric" role="group">
+            883.54 <div class="site-section-data-caption">Average total dose per prescription*  <br/> (higher dosage leads to higher risk for misuse)</div>
             <div class="site-caption">*Dose expressed in morphine milligram equivalent (MME)</div>
             <div class="site-section-data-source">
                 Source: HHS
             </div>
           </div>
-          <div class="site-section-data-metric">
+          <div class="site-section-data-metric" role="group">
             912,305 <div class="site-section-data-caption">pounds of drugs collected</div>
             <div class="site-caption">At the Fall 2017 National Take Back Day</div>
             <div class="site-section-data-source">
@@ -817,7 +829,15 @@ layout: default
             </div>
           </div>
         </div>
-        {% include social-share.html %}
+        <div class="usa-grid site-section-data-share">
+            <div>Share:</div>
+            <a href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fopioids.gov" target="_blank" title="Share on Facebook" class="social-share">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><defs><style>.cls-fb{fill:#2b5e92;}</style></defs><title>Facebook Social Share</title><g id="content"><path class="cls-fb" d="M8.05,17.74h3.12V9.93h2.17l.23-2.61h-2.4V5.83c0-.61.12-.86.72-.86h1.68V2.26H11.41c-2.32,0-3.36,1-3.36,3V7.32H6.43V10H8.05Z"/></g></svg>
+            </a>
+            <a href="https://twitter.com/intent/tweet?text=Overprescribing%20has%20contributed%20to%20the%20%23OpioidCrisis.%20Learn%20more%20at%20https%3A%2F%2Fopioids.gov" target="_blank" class="social-share">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><defs><style>.cls-twitter{fill:#2b5e92;}</style></defs><title>Twitter Social Share</title><g id="content"><path class="cls-twitter" d="M.6,15.91a11,11,0,0,0,5.91,1.73,10.92,10.92,0,0,0,11-11.48,7.73,7.73,0,0,0,1.92-2,7.77,7.77,0,0,1-2.21.6,3.86,3.86,0,0,0,1.69-2.13,7.89,7.89,0,0,1-2.45.94A3.86,3.86,0,0,0,9.86,7.1a10.92,10.92,0,0,1-7.95-4A3.87,3.87,0,0,0,3.1,8.22a3.85,3.85,0,0,1-1.75-.49,3.86,3.86,0,0,0,3.1,3.83,3.77,3.77,0,0,1-1.74.07,3.86,3.86,0,0,0,3.6,2.68A7.77,7.77,0,0,1,.6,15.91Z"/></g></svg> 
+            </a>     
+          </div>
       </div>
 </div>
 </section>
@@ -828,18 +848,16 @@ layout: default
       <h2 id="supply">Stopping the Flow of Illicit Opioids</h2>
       <hr>
     </span>
-  <p>Illicit opioids – including fentanyl, which is 50 to 100 times more potent than morphine – have flooded into our country  		<span>through ports, shipments, and border crossings. </span>. The Trump Administration is working to increase the seizure of illicit opioids and reduce the illicit drug supply.</p>
-    <div class="site-section-data-split">
+  <p>Illicit opioids – including fentanyl, which is 50 to 100 times more potent than morphine – have flooded into our country   		<span>through ports, shipments, and border crossings</span>. The Trump Administration is working to increase the seizure of illicit opioids and reduce the illicit drug supply.</p>
+    <div class="site-section-data-split siezure-key">
       <div class="site-metric">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 60 60">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 60 60" aria-labelledby="airtitle" role="img">
           <defs>
             <style>
               .cls-3-air{fill:none;stroke:#fff;stroke-linecap:round;stroke-miterlimit:10;stroke-width:2px}
             </style>
           </defs>
-          <title>
-            0221-OpStat Site-MockUps_v 11-DevelopmentPurposes
-          </title>
+          <title id="airtitle">Siezure Air Icon</title>
           <circle cx="30" cy="30" r="28.5" fill="#d20021" id="content"/>
           <g id="Layer_3" data-name="Layer 3">
             <path d="M48.18 11.94a3.54 3.54 0 0 0-2.57-.88c-1.32 0-4.82.48-9.42 4.88L22.25 14a1 1 0 0 0-.87.29L19 16.65a1 1 0 0 0-.28.92 1 1 0 0 0 .6.74l10.59 4.58a71.51 71.51 0 0 0-4.35 6.42l-2.56.38a1.06 1.06 0 0 0-.58.28l-1.83 1.84a1 1 0 0 0 .43 1.7l4.28 1.3 1.3 4.28a1 1 0 0 0 .73.7 1 1 0 0 0 1-.27l1.83-1.84a1 1 0 0 0 .29-.57l.38-2.58a68.76 68.76 0 0 0 6.42-4.35l4.58 10.6a1 1 0 0 0 .74.6h.19a1.06 1.06 0 0 0 .73-.3l2.35-2.36a1 1 0 0 0 .29-.86l-1.95-13.92a18.35 18.35 0 0 0 4.47-7c.69-2.17.51-4-.47-5zm-1.47 4.41a16.79 16.79 0 0 1-4.33 6.52 1 1 0 0 0-.29.86L44 37.66l-.94.93-4.48-10.45a1 1 0 0 0-.7-.58h-.24a1.05 1.05 0 0 0-.65.23 62.33 62.33 0 0 1-7.3 5.06l-.35.22a1.06 1.06 0 0 0-.48.73l-.39 2.71-.39.39-1-3.18a1 1 0 0 0-.68-.68l-3.18-1 .39-.39 2.71-.39a1.06 1.06 0 0 0 .73-.48 63.75 63.75 0 0 1 5.27-7.64 1 1 0 0 0 .2-.88 1 1 0 0 0-.59-.7L21.54 17l.93-.93L36.4 18a1.06 1.06 0 0 0 .86-.29c4.36-4.31 7.49-4.65 8.35-4.65a1.7 1.7 0 0 1 1.13.29c.28.27.49 1.29 0 3zm0 0" fill="#fff"/>
@@ -849,15 +867,13 @@ layout: default
         <p class="site-caption air-title">Air*</p>
       </div>
       <div class="site-metric">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 60 60">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 60 60" aria-labelledby="bordertitle" role="img">
           <defs>
             <style>
               .cls-2-borders{fill:#fff}
             </style>
           </defs>
-          <title>
-            0221-OpStat Site-MockUps_v 11-DevelopmentPurposes
-          </title>
+          <title id="bordertitle">Siezure Border Icon</title>
           <g id="Layer_3" data-name="Layer 3">
             <circle cx="30" cy="30" r="28.5" fill="#0b1c34"/>
             <path class="cls-2-borders" d="M43.4 17a30.6 30.6 0 0 1-13-4.1.75.75 0 0 0-.74 0 30.6 30.6 0 0 1-13 4.1.77.77 0 0 0-.72.76v14.5a11.65 11.65 0 0 0 2.23 6.79 18.93 18.93 0 0 0 4.78 4.58 28.77 28.77 0 0 0 6.88 3.47.68.68 0 0 0 .46 0 28.77 28.77 0 0 0 6.88-3.47 18.93 18.93 0 0 0 4.78-4.58 11.65 11.65 0 0 0 2.23-6.79V17.79a.77.77 0 0 0-.78-.79zm-.81 15.26c0 3.8-2.12 7.19-6.32 10.09A28.64 28.64 0 0 1 30 45.6a28.26 28.26 0 0 1-6.24-3.2c-4.22-2.9-6.35-6.3-6.35-10.11V18.5a32.37 32.37 0 0 0 12.59-4 32.37 32.37 0 0 0 12.59 4z"/>
@@ -869,10 +885,13 @@ layout: default
         <p class="site-caption border-title">Borders</p>
       </div>
       <div class="site-metric">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 60 60">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 60 60" aria-labelledby="seatitle" role="img">
+	  <defs>
           <style>
             .st51,.st53{fill:none;stroke:#fff;stroke-width:1.3834;stroke-miterlimit:10}.st53{stroke-width:1.383;stroke-linecap:round}
           </style>
+          </defs>
+          <title id="seatitle">Siezure Sea Icon</title>
           <g id="Layer_3">
             <circle cx="29.2" cy="30.2" r="28.5" fill="#c19222"/>
             <path class="st51" d="M36.1 20.1v-3.4-.1H23.7s-.1 0-.1.1v3.5h-3.4V26s0 .1.1 0l9.6-3.1 9.6 3.1h.1v-5.8l-3.5-.1c0 .1 0 0 0 0z"/>
@@ -890,49 +909,52 @@ layout: default
     <figure>
         <div class="graphic">
       
-          <div class="row site-section-data-split wow fadeInLeft" data-wow-delay=".2s">
-            <h6>Seizures in <span>FY2017</span></h6>
+          <div class="row site-section-data-split wow fadeInLeft" data-wow-delay=".2s" role="group" aria-describedby="seizures2017">
+            <desc id="seizures2017" class="usa-sr-only">Horizontal bar chart showing the number of air, border, and sea opioid drug seizures in fiscal year 2017.</desc>
+            <h3>Seizures in <span>FY2017</span></h3>
             <div class="chart">
               <span class="block tooltip" title="Air: 2,175">
-                 <span class="value">47%</span>
+                 <span class="value">51%</span>
               </span>
               <span class="block tooltip" title="Borders: 1,648">
-                 <span class="value">48%</span>
+                 <span class="value">40%</span>
               </span>
               <span class="block tooltip" title="Sea: 37">
-                 <span class="value">3%</span>
+                 <span class="value">5%</span>
               </span>
             </div>
             <div class="chart-total">3,860</div>
           </div>
       
-          <div class="row site-section-data-split wow fadeInLeft" data-wow-delay=".35s">
-            <h6>Seizures in <span>FY2016</span></h6>
+          <div class="row site-section-data-split wow fadeInLeft" data-wow-delay=".35s" role="group" aria-describedby="seizures2016">
+            <desc id="seizures2016" class="usa-sr-only">Horizontal bar chart showing the number of air, border, and sea opioid drug seizures in fiscal year 2016.</desc>
+            <h3>Seizures in <span>FY2016</span></h3>
             <div class="chart" >
               <span class="block tooltip" title="Air: 1,083">
-                  <span class="value">29%</span>
+                  <span class="value">25%</span>
               </span>
               <span class="block tooltip" title="Borders: 1,078">
-                  <span class="value">29%</span>
+                  <span class="value">26%</span>
               </span>
               <span class="block tooltip" title="Sea: 28">
-                   <span class="value">2%</span>
+                   <span class="value">3%</span>
               </span>
             </div>
             <div class="chart-total">2,189</div>
           </div>
       
-          <div class="row site-section-data-split wow fadeInLeft" data-wow-delay=".45s">
-            <h6>Seizures in <span>FY2015</span></h6>
+          <div class="row site-section-data-split wow fadeInLeft" data-wow-delay=".45s" role="group" aria-describedby="seizures2015">
+              <desc id="seizures2015" class="usa-sr-only">Horizontal bar chart showing the number of air, border, and sea opioid drug seizures in fiscal year 2015.</desc>
+            <h3>Seizures in <span>FY2015</span></h3>
             <div class="chart fadeInLeft" data-wow-delay=".25s">
               <span class="block tooltip" title="Air: 865">
-                   <span class="value">19%</span>
+                   <span class="value">20%</span>
               </span>
               <span class="block tooltip" title="Borders: 855">
-                   <span class="value">17%</span>
+                   <span class="value">21%</span>
               </span>
               <span class="block tooltip" title="Sea: 22">
-                   <span class="value">3%</span>
+                   <span class="value">2%</span>
               </span>
             </div>
             <div class="chart-total">1,742</div>
@@ -945,7 +967,15 @@ layout: default
       <div class="site-section-data-source">
           Source: CBP
       </div>
-      {% include social-share.html %}
+      <div class="usa-grid site-section-data-share">
+          <div>Share:</div>
+          <a href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fopioids.gov" target="_blank" title="Share on Facebook" class="social-share">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><defs><style>.cls-fb{fill:#2b5e92;}</style></defs><title>Facebook Social Share</title><g id="content"><path class="cls-fb" d="M8.05,17.74h3.12V9.93h2.17l.23-2.61h-2.4V5.83c0-.61.12-.86.72-.86h1.68V2.26H11.41c-2.32,0-3.36,1-3.36,3V7.32H6.43V10H8.05Z"/></g></svg>
+          </a>
+          <a href="https://twitter.com/intent/tweet?text=Illicit%20opioids%20have%20contributed%20to%20the%20%23OpioidCrisis.%20Learn%20more%20at%20https%3A%2F%2Fopioids.gov" target="_blank" class="social-share">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><defs><style>.cls-twitter{fill:#2b5e92;}</style></defs><title>Twitter Social Share</title><g id="content"><path class="cls-twitter" d="M.6,15.91a11,11,0,0,0,5.91,1.73,10.92,10.92,0,0,0,11-11.48,7.73,7.73,0,0,0,1.92-2,7.77,7.77,0,0,1-2.21.6,3.86,3.86,0,0,0,1.69-2.13,7.89,7.89,0,0,1-2.45.94A3.86,3.86,0,0,0,9.86,7.1a10.92,10.92,0,0,1-7.95-4A3.87,3.87,0,0,0,3.1,8.22a3.85,3.85,0,0,1-1.75-.49,3.86,3.86,0,0,0,3.1,3.83,3.77,3.77,0,0,1-1.74.07,3.86,3.86,0,0,0,3.6,2.68A7.77,7.77,0,0,1,.6,15.91Z"/></g></svg> 
+          </a>     
+        </div>
 </section>
 
 <section class="usa-section site-section site-section-dark site-lives">
@@ -957,11 +987,18 @@ layout: default
     </span>
     <p>From <span>providing overdose-reversing drugs</span> to first responders to increasing access to drug addiction treatment, the Trump Administration is working to save the lives of those suffering with addiction.</p>
     <div class="site-section-data-split">
-      <div class="site-lives-data">
+      <div class="site-lives-data" role="group">
       <h3>
         Overdose Rescue
       </h3>
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 150 150"><defs><style>.cls-1-doses,.cls-3-doses{fill:none;}.cls-1-doses{stroke:#fff;stroke-miterlimit:10;stroke-width:0.41px;}.cls-1-doses,.cls-2-doses{opacity:0.8;}.cls-2-doses{fill:#fff;}.cls-3-doses{stroke:#262c35;stroke-linecap:round;stroke-linejoin:round;stroke-width:2.48px;}</style></defs><title>0221-OpStat Site-MockUps_v 11-DevelopmentPurposes</title><g id="Layer_3" data-name="Layer 3"><circle class="cls-1-doses" cx="75" cy="75" r="67.34"/><circle class="cls-2-doses" cx="75" cy="75" r="62.8"/><path class="cls-3-doses" d="M80,46.14h8.81a0,0,0,0,1,0,0v2.55a4.4,4.4,0,0,1-4.4,4.4h0a4.4,4.4,0,0,1-4.4-4.4V46.14A0,0,0,0,1,80,46.14Z" transform="translate(168.85 99.08) rotate(179.9)"/><path class="cls-3-doses" d="M95.42,98a7.37,7.37,0,1,1,7.38,7.36A7.38,7.38,0,0,1,95.42,98Z"/><path class="cls-3-doses" d="M99.8,97.94a3,3,0,1,1,3,3A3,3,0,0,1,99.8,97.94Z"/><path class="cls-3-doses" d="M45.05,98a3,3,0,1,1,3,3A3,3,0,0,1,45.05,98Z"/><path class="cls-3-doses" d="M38.16,98a6.36,6.36,0,0,1-5.32-6.25l-.05-32.17a6.35,6.35,0,0,1,6.34-6.37l53.4-.09a8.07,8.07,0,0,1,7.2,4.38l7.45,14.45c5.41,4.38,7.19,5.36,9.35,7.84A6.86,6.86,0,0,1,118,84.33l0,10.34a3.25,3.25,0,0,1-3.24,3.25h-2.06"/><line class="cls-3-doses" x1="91.56" y1="97.96" x2="59.27" y2="98.02"/><path class="cls-3-doses" d="M55.41,98a7.37,7.37,0,1,0-7.36,7.38A7.36,7.36,0,0,0,55.41,98Z"/><line class="cls-3-doses" x1="76.05" y1="79.4" x2="76.07" y2="90.09"/><line class="cls-3" x1="70.72" y1="84.75" x2="81.41" y2="84.73"/><line class="cls-3-doses" x1="107.18" y1="71.91" x2="32.81" y2="72.05"/><line class="cls-3" x1="90.32" y1="43.56" x2="92.57" y2="41.3"/><line class="cls-3" x1="84.37" y1="41.1" x2="84.36" y2="37.92"/><line class="cls-3-doses" x1="78.42" y1="43.58" x2="76.17" y2="41.33"/></g></svg>
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 150 150" aria-labelledby="rescuetitle" role="img">
+	      <defs>
+	      <style>.cls-1-doses,.cls-3-doses{fill:none;}.cls-1-doses{stroke:#fff;stroke-miterlimit:10;stroke-width:0.41px;}.cls-1-doses,.cls-2-doses{opacity:0.8;}.cls-2-doses{fill:#fff;}.cls-3-doses{stroke:#262c35;stroke-linecap:round;stroke-linejoin:round;stroke-width:2.48px;}</style>
+	      </defs>
+	      <title id="rescuetitle">Overdose Rescue Icon</title>
+	      <g id="Layer_3" data-name="Layer 3">
+		      <circle class="cls-1-doses" cx="75" cy="75" r="67.34"/>
+		      <circle class="cls-2-doses" cx="75" cy="75" r="62.8"/><path class="cls-3-doses" d="M80,46.14h8.81a0,0,0,0,1,0,0v2.55a4.4,4.4,0,0,1-4.4,4.4h0a4.4,4.4,0,0,1-4.4-4.4V46.14A0,0,0,0,1,80,46.14Z" transform="translate(168.85 99.08) rotate(179.9)"/><path class="cls-3-doses" d="M95.42,98a7.37,7.37,0,1,1,7.38,7.36A7.38,7.38,0,0,1,95.42,98Z"/><path class="cls-3-doses" d="M99.8,97.94a3,3,0,1,1,3,3A3,3,0,0,1,99.8,97.94Z"/><path class="cls-3-doses" d="M45.05,98a3,3,0,1,1,3,3A3,3,0,0,1,45.05,98Z"/><path class="cls-3-doses" d="M38.16,98a6.36,6.36,0,0,1-5.32-6.25l-.05-32.17a6.35,6.35,0,0,1,6.34-6.37l53.4-.09a8.07,8.07,0,0,1,7.2,4.38l7.45,14.45c5.41,4.38,7.19,5.36,9.35,7.84A6.86,6.86,0,0,1,118,84.33l0,10.34a3.25,3.25,0,0,1-3.24,3.25h-2.06"/><line class="cls-3-doses" x1="91.56" y1="97.96" x2="59.27" y2="98.02"/><path class="cls-3-doses" d="M55.41,98a7.37,7.37,0,1,0-7.36,7.38A7.36,7.36,0,0,0,55.41,98Z"/><line class="cls-3-doses" x1="76.05" y1="79.4" x2="76.07" y2="90.09"/><line class="cls-3" x1="70.72" y1="84.75" x2="81.41" y2="84.73"/><line class="cls-3-doses" x1="107.18" y1="71.91" x2="32.81" y2="72.05"/><line class="cls-3" x1="90.32" y1="43.56" x2="92.57" y2="41.3"/><line class="cls-3" x1="84.37" y1="41.1" x2="84.36" y2="37.92"/><line class="cls-3-doses" x1="78.42" y1="43.58" x2="76.17" y2="41.33"/></g></svg>
       <p class="site-section-data-metric">242,654</p>
       <p class="site-section-data-caption">Doses</p>
       <p class="site-section-data-caption secondary-caption">Doses of naloxone, a medication to reverse an opioid overdose, administered by emergency medical services personnel</p>
@@ -969,11 +1006,16 @@ layout: default
           Source: DOT
       </div>
     </div>
-    <div class="site-lives-data">
+    <div class="site-lives-data" role="group">
         <h3>
           Treating Addiction
         </h3>
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 150 150"><defs><style>.treating-people-1{fill:#fff;}.treating-people-1,.treating-people-2{opacity:0.8;}.treating-people-2{fill:none;stroke:#fff;stroke-width:0.41px;}.cls-2,.treating-people-3{stroke-miterlimit:10;}.treating-people-3{fill:#262c35;stroke:#262c35;stroke-width:0.75px;}</style></defs><title>0221-OpStat Site-MockUps_v 11-DevelopmentPurposes</title><g id="Layer_3" data-name="Layer 3"><circle class="treating-people-1" cx="75.09" cy="75" r="62.8"/><circle class="treating-people-2" cx="75" cy="75" r="67.76"/><path class="treating-people-3" d="M31.73,95.29a.79.79,0,0,1-.79-.79v-6a.79.79,0,1,1,1.57,0v6A.78.78,0,0,1,31.73,95.29Zm-5.54-.79v-12c0-4.2,4.91-4.27,5.12-4.27h4.93c.87-.09,2.52-.69,2.55-2.32a.79.79,0,0,0-.78-.8.77.77,0,0,0-.79.77c0,.64-1.08.78-1.06.78H31.31c-2.32,0-6.69,1.22-6.69,5.84v12a.79.79,0,1,0,1.57,0ZM47.52,78.24h1.71a.79.79,0,1,0,0-1.57H47.5c-.64,0-.64-.58-.64-.77a.78.78,0,0,0-.78-.78h0a.79.79,0,0,0-.78.79A2.35,2.35,0,0,0,46,77.64a2.33,2.33,0,0,0,1.52.6ZM50.9,63.43c0-5.61-4.06-10.17-9.06-10.17s-9.06,4.56-9.06,10.17S36.84,73.6,41.84,73.6,50.9,69,50.9,63.43Zm-1.57,0c0,4.74-3.36,8.6-7.49,8.6s-7.49-3.86-7.49-8.6,3.36-8.6,7.49-8.6S49.33,58.69,49.33,63.43Zm53.44,14.81c.87-.09,2.52-.69,2.55-2.32a.79.79,0,0,0-.78-.8h0a.77.77,0,0,0-.78.77c0,.64-1.08.78-1.06.78H101a.79.79,0,1,0,0,1.57Zm16.5,15.85V88.57a.79.79,0,0,0-1.57,0v5.52a.79.79,0,1,0,1.57,0Zm6.32.21V82.51c0-4.62-4.37-5.84-6.69-5.84H114a.72.72,0,0,1-.44-.17.77.77,0,0,1-.19-.6.78.78,0,0,0-.79-.78h0a.79.79,0,0,0-.78.79,2.18,2.18,0,0,0,2.23,2.33h4.85c.21,0,5.12.05,5.12,4.27V94.3a.79.79,0,0,0,1.57,0Zm-8.16-30.87c0-5.61-4.06-10.17-9.06-10.17s-9.06,4.56-9.06,10.17,4.06,10.17,9.06,10.17S117.43,69,117.43,63.43Zm-1.57,0c0,4.74-3.36,8.6-7.49,8.6s-7.49-3.86-7.49-8.6,3.36-8.6,7.49-8.6S115.86,58.69,115.86,63.43ZM62.59,100.78V86.58a.79.79,0,0,0-.78-.79.8.8,0,0,0-.79.79v14.2a.79.79,0,0,0,.79.79A.78.78,0,0,0,62.59,100.78Zm-8.3,0v-22c0-5.77,6.68-5.86,7-5.86h6.45c1.07-.11,3.09-.83,3.12-2.81a.77.77,0,0,0-.77-.79.75.75,0,0,0-.79.77c0,1.06-1.66,1.26-1.64,1.26H61.26c-3,0-8.54,1.56-8.54,7.43v22a.79.79,0,1,0,1.57,0Zm34.86-.54V86.72a.78.78,0,0,0-.78-.79.79.79,0,0,0-.79.79v13.52a.79.79,0,0,0,.79.79A.78.78,0,0,0,89.15,100.24Zm8.3.27V78.76c0-5.87-5.58-7.43-8.53-7.43H82.51a1.25,1.25,0,0,1-.76-.29,1.32,1.32,0,0,1-.32-1,.77.77,0,0,0-.78-.78h0a.79.79,0,0,0-.79.79,2.82,2.82,0,0,0,.81,2.09,2.78,2.78,0,0,0,1.87.72h6.38c.28,0,7,.09,7,5.86v21.75a.79.79,0,0,0,.79.79A.78.78,0,0,0,97.45,100.51ZM86.74,54.93c0-7.23-5.23-13.1-11.65-13.1S63.43,47.7,63.43,54.93,68.66,68,75.09,68,86.74,62.16,86.74,54.93Zm-1.57,0c0,6.36-4.52,11.54-10.08,11.54S65,61.29,65,54.93,69.53,43.4,75.09,43.4,85.17,48.57,85.17,54.93Z"/></g></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 150 150" aria-label="addictiontitle" role="img">
+		<defs>
+			<style>.treating-people-1{fill:#fff;}.treating-people-1,.treating-people-2{opacity:0.8;}.treating-people-2{fill:none;stroke:#fff;stroke-width:0.41px;}.cls-2,.treating-people-3{stroke-miterlimit:10;}.treating-people-3{fill:#262c35;stroke:#262c35;stroke-width:0.75px;}</style>
+		</defs>
+		<title id="addictiontitle">Treating Addiction Icon</title>
+		<g id="Layer_3" data-name="Layer 3"><circle class="treating-people-1" cx="75.09" cy="75" r="62.8"/><circle class="treating-people-2" cx="75" cy="75" r="67.76"/><path class="treating-people-3" d="M31.73,95.29a.79.79,0,0,1-.79-.79v-6a.79.79,0,1,1,1.57,0v6A.78.78,0,0,1,31.73,95.29Zm-5.54-.79v-12c0-4.2,4.91-4.27,5.12-4.27h4.93c.87-.09,2.52-.69,2.55-2.32a.79.79,0,0,0-.78-.8.77.77,0,0,0-.79.77c0,.64-1.08.78-1.06.78H31.31c-2.32,0-6.69,1.22-6.69,5.84v12a.79.79,0,1,0,1.57,0ZM47.52,78.24h1.71a.79.79,0,1,0,0-1.57H47.5c-.64,0-.64-.58-.64-.77a.78.78,0,0,0-.78-.78h0a.79.79,0,0,0-.78.79A2.35,2.35,0,0,0,46,77.64a2.33,2.33,0,0,0,1.52.6ZM50.9,63.43c0-5.61-4.06-10.17-9.06-10.17s-9.06,4.56-9.06,10.17S36.84,73.6,41.84,73.6,50.9,69,50.9,63.43Zm-1.57,0c0,4.74-3.36,8.6-7.49,8.6s-7.49-3.86-7.49-8.6,3.36-8.6,7.49-8.6S49.33,58.69,49.33,63.43Zm53.44,14.81c.87-.09,2.52-.69,2.55-2.32a.79.79,0,0,0-.78-.8h0a.77.77,0,0,0-.78.77c0,.64-1.08.78-1.06.78H101a.79.79,0,1,0,0,1.57Zm16.5,15.85V88.57a.79.79,0,0,0-1.57,0v5.52a.79.79,0,1,0,1.57,0Zm6.32.21V82.51c0-4.62-4.37-5.84-6.69-5.84H114a.72.72,0,0,1-.44-.17.77.77,0,0,1-.19-.6.78.78,0,0,0-.79-.78h0a.79.79,0,0,0-.78.79,2.18,2.18,0,0,0,2.23,2.33h4.85c.21,0,5.12.05,5.12,4.27V94.3a.79.79,0,0,0,1.57,0Zm-8.16-30.87c0-5.61-4.06-10.17-9.06-10.17s-9.06,4.56-9.06,10.17,4.06,10.17,9.06,10.17S117.43,69,117.43,63.43Zm-1.57,0c0,4.74-3.36,8.6-7.49,8.6s-7.49-3.86-7.49-8.6,3.36-8.6,7.49-8.6S115.86,58.69,115.86,63.43ZM62.59,100.78V86.58a.79.79,0,0,0-.78-.79.8.8,0,0,0-.79.79v14.2a.79.79,0,0,0,.79.79A.78.78,0,0,0,62.59,100.78Zm-8.3,0v-22c0-5.77,6.68-5.86,7-5.86h6.45c1.07-.11,3.09-.83,3.12-2.81a.77.77,0,0,0-.77-.79.75.75,0,0,0-.79.77c0,1.06-1.66,1.26-1.64,1.26H61.26c-3,0-8.54,1.56-8.54,7.43v22a.79.79,0,1,0,1.57,0Zm34.86-.54V86.72a.78.78,0,0,0-.78-.79.79.79,0,0,0-.79.79v13.52a.79.79,0,0,0,.79.79A.78.78,0,0,0,89.15,100.24Zm8.3.27V78.76c0-5.87-5.58-7.43-8.53-7.43H82.51a1.25,1.25,0,0,1-.76-.29,1.32,1.32,0,0,1-.32-1,.77.77,0,0,0-.78-.78h0a.79.79,0,0,0-.79.79,2.82,2.82,0,0,0,.81,2.09,2.78,2.78,0,0,0,1.87.72h6.38c.28,0,7,.09,7,5.86v21.75a.79.79,0,0,0,.79.79A.78.78,0,0,0,97.45,100.51ZM86.74,54.93c0-7.23-5.23-13.1-11.65-13.1S63.43,47.7,63.43,54.93,68.66,68,75.09,68,86.74,62.16,86.74,54.93Zm-1.57,0c0,6.36-4.52,11.54-10.08,11.54S65,61.29,65,54.93,69.53,43.4,75.09,43.4,85.17,48.57,85.17,54.93Z"/></g></svg>
         <p class="site-section-data-metric">1,150,423</p>
         <p class="site-section-data-caption">People</p>
         <p class="site-section-data-caption secondary-caption">People receiving medication-assisted treatment from a certified treatment facility</p>
@@ -981,11 +1023,16 @@ layout: default
             Source: <a href="https://www.samhsa.gov/data/sites/default/files/2016_NSSATS.pdf" target="_blank">SAMHSA</a>
         </div>
       </div>
-      <div class="site-lives-data">
+      <div class="site-lives-data" role="group">
           <h3>
             Access to Care
           </h3>
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 150 150"><defs><style>.cls-1{fill:#fff;}.cls-1,.cls-2{opacity:0.8;}.cls-2,.cls-3{fill:none;}.cls-2{stroke:#fff;stroke-miterlimit:10;stroke-width:0.41px;}.cls-3{stroke:#262c35;stroke-linecap:round;stroke-linejoin:round;stroke-width:2.48px;}</style></defs><title>0221-OpStat Site-MockUps_v 11-DevelopmentPurposes</title><g id="Layer_3" data-name="Layer 3"><circle class="cls-1" cx="75" cy="75" r="62.8"/><circle class="cls-2" cx="75" cy="75" r="67.34"/><g id="_Group_" data-name="&lt;Group&gt;"><g id="_Group_2" data-name="&lt;Group&gt;"><path id="_Path_" data-name="&lt;Path&gt;" class="cls-3" d="M79.76,91.22a17.34,17.34,0,0,0,1.55-3.36,13.73,13.73,0,0,0-.6-10.92,13.43,13.43,0,0,0-10.93-7.32C61,69,57.11,77.77,57.11,77.77s-3.84-8.85-12.59-8.28a13.4,13.4,0,0,0-11,7.2,13.71,13.71,0,0,0-.71,10.92,17.45,17.45,0,0,0,2.31,4.63c.38.55.79,1.09,1.22,1.6a91.86,91.86,0,0,0,9.27,8.93s9.13,7.47,11.3,12.42c1.34-3,5.2-6.8,8.07-9.4"/></g></g><circle class="cls-3" cx="67.67" cy="93.94" r="4.93" transform="translate(-45.01 120.51) rotate(-67.5)"/><path class="cls-3" d="M67,84.6a8.66,8.66,0,0,0-8.66,8.66"/><path class="cls-3" d="M74.84,100.5l2.54,1.83a12.56,12.56,0,0,0,19.9-10.2V68.38"/><path class="cls-3" d="M108.26,45.06l-.66-.2a1.8,1.8,0,0,1-1.23-2.19h0a1.8,1.8,0,0,1,2.2-1.28l1.82.48a2.9,2.9,0,0,1,2.16,2.68c.28,6.22-.28,23.83-15.27,23.83S81.74,50.77,82,44.55a2.92,2.92,0,0,1,2.17-2.68L86,41.39a1.81,1.81,0,0,1,2.2,1.28h0A1.81,1.81,0,0,1,87,44.86l-.67.2"/></g></svg>
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 150 150" aria-labelledby="caretitle" role="img">
+		  <defs>
+			  <style>.cls-1{fill:#fff;}.cls-1,.cls-2{opacity:0.8;}.cls-2,.cls-3{fill:none;}.cls-2{stroke:#fff;stroke-miterlimit:10;stroke-width:0.41px;}.cls-3{stroke:#262c35;stroke-linecap:round;stroke-linejoin:round;stroke-width:2.48px;}</style>
+		  </defs>
+		  <title id="caretitle">Access to Care Icon</title>
+		  <g id="Layer_3" data-name="Layer 3"><circle class="cls-1" cx="75" cy="75" r="62.8"/><circle class="cls-2" cx="75" cy="75" r="67.34"/><g id="_Group_" data-name="&lt;Group&gt;"><g id="_Group_2" data-name="&lt;Group&gt;"><path id="_Path_" data-name="&lt;Path&gt;" class="cls-3" d="M79.76,91.22a17.34,17.34,0,0,0,1.55-3.36,13.73,13.73,0,0,0-.6-10.92,13.43,13.43,0,0,0-10.93-7.32C61,69,57.11,77.77,57.11,77.77s-3.84-8.85-12.59-8.28a13.4,13.4,0,0,0-11,7.2,13.71,13.71,0,0,0-.71,10.92,17.45,17.45,0,0,0,2.31,4.63c.38.55.79,1.09,1.22,1.6a91.86,91.86,0,0,0,9.27,8.93s9.13,7.47,11.3,12.42c1.34-3,5.2-6.8,8.07-9.4"/></g></g><circle class="cls-3" cx="67.67" cy="93.94" r="4.93" transform="translate(-45.01 120.51) rotate(-67.5)"/><path class="cls-3" d="M67,84.6a8.66,8.66,0,0,0-8.66,8.66"/><path class="cls-3" d="M74.84,100.5l2.54,1.83a12.56,12.56,0,0,0,19.9-10.2V68.38"/><path class="cls-3" d="M108.26,45.06l-.66-.2a1.8,1.8,0,0,1-1.23-2.19h0a1.8,1.8,0,0,1,2.2-1.28l1.82.48a2.9,2.9,0,0,1,2.16,2.68c.28,6.22-.28,23.83-15.27,23.83S81.74,50.77,82,44.55a2.92,2.92,0,0,1,2.17-2.68L86,41.39a1.81,1.81,0,0,1,2.2,1.28h0A1.81,1.81,0,0,1,87,44.86l-.67.2"/></g></svg>
           <p class="site-section-data-metric">44,735</p>
           <p class="site-section-data-caption">Practitioners</p>
           <p class="site-section-data-caption secondary-caption">Health care practitioners who have a waiver to prescribe buprenorphine, a medicine for treating opioid addiction</p>
@@ -994,7 +1041,15 @@ layout: default
           </div>
         </div>
   </div>
-  {% include social-share.html %}
+  <div class="usa-grid site-section-data-share">
+      <div>Share:</div>
+      <a href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fopioids.gov" target="_blank" title="Share on Facebook" class="social-share">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><defs><style>.cls-fb{fill:#2b5e92;}</style></defs><title>Facebook Social Share</title><g id="content"><path class="cls-fb" d="M8.05,17.74h3.12V9.93h2.17l.23-2.61h-2.4V5.83c0-.61.12-.86.72-.86h1.68V2.26H11.41c-2.32,0-3.36,1-3.36,3V7.32H6.43V10H8.05Z"/></g></svg>
+      </a>
+      <a href="https://twitter.com/intent/tweet?text=Three%20ways%20to%20save%20the%20lives%20of%20those%20affected%20by%20the%20%23OpioidCrisis.%20Learn%20more%20at%20https%3A%2F%2Fopioids.gov" target="_blank" class="social-share">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><defs><style>.cls-twitter{fill:#2b5e92;}</style></defs><title>Twitter Social Share</title><g id="content"><path class="cls-twitter" d="M.6,15.91a11,11,0,0,0,5.91,1.73,10.92,10.92,0,0,0,11-11.48,7.73,7.73,0,0,0,1.92-2,7.77,7.77,0,0,1-2.21.6,3.86,3.86,0,0,0,1.69-2.13,7.89,7.89,0,0,1-2.45.94A3.86,3.86,0,0,0,9.86,7.1a10.92,10.92,0,0,1-7.95-4A3.87,3.87,0,0,0,3.1,8.22a3.85,3.85,0,0,1-1.75-.49,3.86,3.86,0,0,0,3.1,3.83,3.77,3.77,0,0,1-1.74.07,3.86,3.86,0,0,0,3.6,2.68A7.77,7.77,0,0,1,.6,15.91Z"/></g></svg> 
+      </a>     
+    </div>
 </section>
 
 <section class="usa-grid usa-section site-section site-veterans">
@@ -1003,14 +1058,14 @@ layout: default
     <h2 id="veterans">Veterans</h2>
     <hr>
   </span>
-  <p>America’s veterans have <span>rates of opioid misuse that are higher than the civilian population</span>. Through the Department of Veterans Affairs, the Trump Administration is working to prevent opioid misuse and provide high-quality treatment to veterans suffering from addiction.</p>
+  <p>America’s veterans have <span>rates of opioid misuse that are higher than the civilian population</span>. Through the U.S. Department of Veterans Affairs, the Trump Administration is working to prevent opioid misuse and provide high-quality treatment to veterans suffering from addiction.</p>
     <div class="site-section-data-split">
-      <div class="site-pie2-wrapper">
+      <div class="site-pie2-wrapper" role="group">
         <h3>Prevention</h3>
-        <div class="site-pie-chart2 wow rotateIn" data-wow-delay=".25s"></div>
-          <div class="site-section-data-metric">
-            <p> 9.7% </p> 
-            <div class="site-section-data-caption">Opioid prescriptions provided to veterans that are for an extended release (higher risk) opioid rather than immediate release (lower risk)
+        <div title="Prevetion Pie Chart" class="site-pie-chart2 wow rotateIn" data-wow-delay=".25s" aria-describedby="pie2desc"></div>
+          <div class="site-section-data-metric" id="pie2desc">
+            <p> 90.3% </p> 
+            <div class="site-section-data-caption">Opioid prescriptions provided to veterans that are for an immediate release (lower risk) opioid rather than extended release (higher risk)
              </div>
              <div class="site-section-data-source">
 	      Source: VA
@@ -1019,10 +1074,10 @@ layout: default
       </div>
       <div class="site-pie3-wrapper">
         <h3>Treatment</h3>
-        <div class="site-pie-chart3 wow rotateIn" data-wow-delay=".45s"></div>
-          <div class="site-section-data-metric">
+        <div itle="Treatment Pie Chart" class="site-pie-chart3 wow rotateIn" data-wow-delay=".45s" aria-describedby="pie3desc"></div>
+          <div class="site-section-data-metric" id="pie3desc">
              <p> 35% </p>  
-             <div class="site-section-data-caption">Veterans who are diagnosed opioid addicts that are receiving medication-assisted treatment
+             <div class="site-section-data-caption">Veterans who are diagnosed with an opioid use disorder that are receiving 	medication-assisted treatment 
              </div>
              <div class="site-section-data-source">
       Source: VA
@@ -1031,7 +1086,15 @@ layout: default
       </div>
     </div>
  
-  {% include social-share.html %}
+    <div class="usa-grid site-section-data-share">
+        <div>Share:</div>
+        <a href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fopioids.gov" target="_blank" title="Share on Facebook" class="social-share">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><defs><style>.cls-fb{fill:#2b5e92;}</style></defs><title>Facebook Social Share</title><g id="content"><path class="cls-fb" d="M8.05,17.74h3.12V9.93h2.17l.23-2.61h-2.4V5.83c0-.61.12-.86.72-.86h1.68V2.26H11.41c-2.32,0-3.36,1-3.36,3V7.32H6.43V10H8.05Z"/></g></svg>
+        </a>
+        <a href="https://twitter.com/intent/tweet?text=Helping%20veterans%20fight%20the%20%23OpioidCrisis.%20Learn%20more%20at%20https%3A%2F%2Fopioids.gov" target="_blank" class="social-share">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><defs><style>.cls-twitter{fill:#2b5e92;}</style></defs><title>Twitter Social Share</title><g id="content"><path class="cls-twitter" d="M.6,15.91a11,11,0,0,0,5.91,1.73,10.92,10.92,0,0,0,11-11.48,7.73,7.73,0,0,0,1.92-2,7.77,7.77,0,0,1-2.21.6,3.86,3.86,0,0,0,1.69-2.13,7.89,7.89,0,0,1-2.45.94A3.86,3.86,0,0,0,9.86,7.1a10.92,10.92,0,0,1-7.95-4A3.87,3.87,0,0,0,3.1,8.22a3.85,3.85,0,0,1-1.75-.49,3.86,3.86,0,0,0,3.1,3.83,3.77,3.77,0,0,1-1.74.07,3.86,3.86,0,0,0,3.6,2.68A7.77,7.77,0,0,1,.6,15.91Z"/></g></svg> 
+        </a>     
+      </div>
 </section>
 
 <section class="usa-section site-section site-section-dark site-updated">
