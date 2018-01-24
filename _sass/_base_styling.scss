@@ -320,14 +320,14 @@ p > span {
         //font-weight: normal;
         //}
     //}
+
+    .highlighted-secondary {
+        color: $color-blue-darker;
+        font-size: $small-font-size;
+    }
     
     .bar-caption-opioid {
         color: $color-blue;
-        
-            .highlighted-secondary {
-                color: $color-red;
-                font-size: 1rem;
-            }
     }
     
     .graphic.site-section-data-split {
@@ -404,6 +404,7 @@ p > span {
         
         h4 {
             margin-top: 0;
+            margin-bottom: 0;
             color: #293340;
             font-size: 2rem;
         }
