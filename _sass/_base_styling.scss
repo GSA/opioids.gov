@@ -304,6 +304,7 @@ p > span {
     .bar-caption {
         color: $color-gold-dark;
         font-weight: $font-bold;
+        font-size: 1.4rem;
         
         .highlighted-secondary {
              visibility: hidden;             
@@ -333,6 +334,7 @@ p > span {
     
     .bar-caption-opioid {
         color: $color-blue;
+        font-size: 1.4rem;
         
         .highlighted-secondary {
             color: $color-red;
