@@ -391,6 +391,7 @@ p > span {
                 padding: 5px 5px;
                 position: absolute;
                 z-index: 98;
+                text-align: center;
             }
         }
            &:hover:after {
@@ -403,6 +404,7 @@ p > span {
                 padding: 5px 5px;
                 position: absolute;
                 z-index: 98;
+               text-align: center;
            }
     }
     figure {
@@ -438,6 +440,7 @@ p > span {
         -o-transition: opacity, .3s ease;
         transition: opacity, .3s ease;
         cursor: pointer;
+        
         @media screen and (min-width: $medium-screen) {
             width: 125px;
         }
@@ -453,18 +456,8 @@ p > span {
     }
 
     .value-vertical {
-        //visibility: hidden;
-        padding-top: 20px;
-        font-size: 1.4rem;
-        text-align: center;
-        color: white;
-        
-        @media screen and (min-width: $medium-screen) {
-            visibility: hidden;
-        }
+        visibility: hidden;
     }
-    
-    
     
     .chart-total {
         font-weight: $font-bold;
