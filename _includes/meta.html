@@ -1,9 +1,8 @@
+<!-- COMMON TAGS -->
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
-<!-- COMMON TAGS -->
-<meta charset="utf-8">
-<title>Opioids.gov</title>
+<title>{% if page.title %}{{ page.title }} | {% endif %}{{ site.title }}</title>
 <!-- Search Engine -->
 <meta name="image" content="https://federalist-proxy.app.cloud.gov/preview/gsa/opstat/sc_fb-updates/assets/img/opioids-gov-fb-meta.png">
 <!-- Schema.org for Google -->
@@ -15,9 +14,10 @@
 <meta name="twitter:image:src" content="https://federalist-proxy.app.cloud.gov/preview/gsa/opstat/sc_fb-updates/assets/img/opioids-gov-fb-meta.png">
 <!-- Open Graph general (Facebook, Pinterest & Google+) -->
 <meta name="og:title" content="Opioids.gov">
-<meta name="og:image" content="https://federalist-proxy.app.cloud.gov/preview/gsa/opstat/sc_fb-updates/assets/img/opioids-gov-fb-meta.png">
+<meta name="og:image" content="{{fb-screen-shot | relative_url}}">
 <meta name="og:url" content="https://www.opioids.gov">
 <meta name="og:site_name" content="Opioids.gov">
 <meta name="og:type" content="website">
-<title>{% if page.title %}{{ page.title }} | {% endif %}{{ site.title }}</title>
+
+
 {% include favicon.html %}
