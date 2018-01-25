@@ -304,6 +304,11 @@ p > span {
     .bar-caption {
         color: $color-gold-dark;
         font-weight: $font-bold;
+        
+        .highlighted-secondary {
+             visibility: hidden;             
+        }
+        
     }
     
     .site-section-data-source {
@@ -321,13 +326,20 @@ p > span {
         //}
     //}
 
-    .highlighted-secondary {
-        color: $color-blue-darker;
-        font-size: $small-font-size;
-    }
+    //.highlighted-secondary {
+      //  color: $color-blue-darker;
+        //font-size: $small-font-size;
+    //}
     
     .bar-caption-opioid {
         color: $color-blue;
+        
+        .highlighted-secondary {
+            color: $color-red;
+            font-weight: normal;
+            font-family: $font-sans;
+            font-size: 1.2rem;             
+        }
     }
     
     .graphic.site-section-data-split {
