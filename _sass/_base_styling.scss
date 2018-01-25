@@ -1246,6 +1246,12 @@ input[type=submit] {
 }
 
 .site-updated {
+    text-align: center;
+    
+    p {
+        text-align: center;
+    }
+    
     form [type="submit"] {
         padding: 1rem 2rem;
     }
@@ -1253,7 +1259,7 @@ input[type=submit] {
     .site-empasis {
     font-size: $h3-font-size;
     font-weight: $font-bold;
-    text-align: left;
+    text-align: center;
     color: $color-gold; 
     
     a {
