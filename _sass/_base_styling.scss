@@ -414,7 +414,6 @@ p > span {
         
         h4 {
             margin-top: 0;
-            margin-bottom: 0;
             color: #293340;
             font-size: 2rem;
         }
@@ -454,8 +453,19 @@ p > span {
     }
 
     .value-vertical {
-        visibility: hidden;
+        //visibility: hidden;
+        padding-top: 20px;
+        font-size: 1.4rem;
+        text-align: center;
+        color: white;
+        
+        @media screen and (min-width: $medium-screen) {
+            visibility: hidden;
+        }
     }
+    
+    
+    
     .chart-total {
         font-weight: $font-bold;
         padding-top: 20px;
