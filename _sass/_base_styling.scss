@@ -304,6 +304,13 @@ p > span {
     .bar-caption {
         color: $color-gold-dark;
         font-weight: $font-bold;
+        font-size: 1.4rem;
+        
+        .highlighted-secondary {
+             visibility: hidden;
+             color: white;
+        }
+        
     }
     
     .site-section-data-source {
@@ -321,13 +328,21 @@ p > span {
         //}
     //}
 
-    .highlighted-secondary {
-        color: $color-blue-darker;
-        font-size: $small-font-size;
-    }
+    //.highlighted-secondary {
+      //  color: $color-blue-darker;
+        //font-size: $small-font-size;
+    //}
     
     .bar-caption-opioid {
-        color: $color-blue;
+        color: $color-blue-darker;
+        font-size: 1.4rem;
+        
+        .highlighted-secondary {
+            color: $color-red;
+            font-weight: normal;
+            font-family: $font-sans;
+            font-size: 1.2rem;             
+        }
     }
     
     .graphic.site-section-data-split {
@@ -376,6 +391,7 @@ p > span {
                 padding: 5px 5px;
                 position: absolute;
                 z-index: 98;
+                text-align: center;
             }
         }
            &:hover:after {
@@ -388,6 +404,7 @@ p > span {
                 padding: 5px 5px;
                 position: absolute;
                 z-index: 98;
+               text-align: center;
            }
     }
     figure {
@@ -399,7 +416,6 @@ p > span {
         
         h4 {
             margin-top: 0;
-            margin-bottom: 0;
             color: #293340;
             font-size: 2rem;
         }
@@ -414,7 +430,7 @@ p > span {
     
     .block {
         display: block;
-        width: 75px;
+        width: 100%;
         color: #fff;
         font-size: .75em;
         background-color: $color-blue-darkest;
@@ -424,6 +440,7 @@ p > span {
         -o-transition: opacity, .3s ease;
         transition: opacity, .3s ease;
         cursor: pointer;
+        
         @media screen and (min-width: $medium-screen) {
             width: 125px;
         }
@@ -441,6 +458,7 @@ p > span {
     .value-vertical {
         visibility: hidden;
     }
+    
     .chart-total {
         font-weight: $font-bold;
         padding-top: 20px;
@@ -751,6 +769,9 @@ p > span {
         display: inline-block;
         margin: 5px 0;
         line-height: 1;
+        font-family: $font-sans;
+        font-weight: normal;
+        font-size: 1.4rem;
         
             span {
                 display: block;
@@ -1035,17 +1056,17 @@ p > span {
     height: 150px;
     margin: 1em auto;
     border-radius: 50%;
-    background: -webkit-gradient(linear, left top, right top, color-stop(50%, $color-blue-darkest), color-stop(0, $color-red));
-    background: -webkit-linear-gradient(left, $color-red 50%, $color-blue-darkest 0);
-    background: -o-linear-gradient(left, $color-red 50%, $color-blue-darkest 0);
     background: -webkit-gradient(linear, left top, right top, color-stop(50%, $color-red), color-stop(0, $color-blue-darkest));
-    background: linear-gradient(to left, $color-red 50%, $color-blue-darkest 0);
+    background: -webkit-linear-gradient(left, $color-blue-darkest 50%, $color-red 0);
+    background: -o-linear-gradient(left, $color-blue-darkest 50%, $color-red 0);
+    background: -webkit-gradient(linear, left top, right top, color-stop(50%, $color-blue-darkest), color-stop(0, $color-red));
+    background: linear-gradient(to left, $color-blue-darkest 50%, $color-red 0);
     border: solid $color-blue-darker 1px;
     &:before{
         content: "";
         height: 100%;
         display: block;
-        background: $color-blue-darkest;
+        background: $color-red;
         border-radius: 0 100% 100% 0 / 50%;
         margin-left: 50%;
         -webkit-transform-origin: left;
@@ -1170,6 +1191,12 @@ p > span {
 }
 
 .site-updated{
+    .usa-width-full{
+        text-align: center;
+        margin: 0 auto;
+    }
+    
+    
     .usa-width-one-half:first-child {
        @media screen and (min-width: $medium-screen){
             padding-right: 7rem;
@@ -1222,6 +1249,12 @@ input[type=submit] {
 }
 
 .site-updated {
+    text-align: center;
+    
+    p {
+        text-align: center;
+    }
+    
     form [type="submit"] {
         padding: 1rem 2rem;
     }
@@ -1229,7 +1262,7 @@ input[type=submit] {
     .site-empasis {
     font-size: $h3-font-size;
     font-weight: $font-bold;
-    text-align: left;
+    text-align: center;
     color: $color-gold; 
     
     a {
