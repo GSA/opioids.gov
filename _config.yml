@@ -6,7 +6,7 @@ email: sara.cope@gsa.gov
 description: >- # this means to ignore newlines until "baseurl:"
   Write an awesome description here.
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "" # the base hostname & protocol for your site, e.g. http://example.com
+url: "https://www.opioids.gov" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: sarassassin
 github_username:  saracope
 
