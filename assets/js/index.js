@@ -1,11 +1,7 @@
 
 
-
-//sticky header
-stickybits('.usa-header');
-
-
 //smooth scrolling
+if (window.innerWidth > 768) {
 $('a[href*="#"]:not([href="#"]):not([href="#show"]):not([href="#hide"])').click(function() {
     if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
         var target = $(this.hash);
@@ -26,6 +22,7 @@ $('a[href*="#"]:not([href="#"]):not([href="#show"]):not([href="#hide"])').click(
         }
     }
 });
+}
 
 //barchart sizing
 $('.value').each(function() {
@@ -39,9 +36,12 @@ $('.value-vertical').each(function() {
 });
 
 
-$('.block').tooltip();
+// $('.block').tooltip();
 
 $(window).scroll(function(){
     $(".arrow").css("opacity", 1 - $(window).scrollTop() / 250); 
   //250 is fade pixels
   });
+
+//sticky header
+stickybits('.usa-header');
