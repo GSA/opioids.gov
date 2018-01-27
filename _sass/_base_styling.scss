@@ -309,6 +309,7 @@ p > span {
         .highlighted-secondary {
              visibility: hidden;
              color: white;
+            font-size: 1.4rem;
         }
         
     }
@@ -339,9 +340,7 @@ p > span {
         
         .highlighted-secondary {
             color: $color-red;
-            font-weight: normal;
-            font-family: $font-sans;
-            font-size: 1.2rem;             
+            font-size: 1.4rem;
         }
     }
     
