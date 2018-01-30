@@ -197,6 +197,11 @@ p > span {
                         transform: translateY(-50%);
                 margin-top: 0;
             }
+
+            p {
+                max-width: 65%;
+                margin: 18px auto;
+            }
             
         }
     
@@ -234,7 +239,7 @@ p > span {
             text-align: center;
             
             @media screen and (min-width: $medium-screen) {
-                max-width: 60%;
+                max-width: 40%;
                 font-size: 8rem;
             }
     }
