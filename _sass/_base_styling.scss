@@ -174,15 +174,21 @@ p > span {
 
 .site-lead {
     height: 85vh;
+    width: 100%;
     
      @media screen and (min-width: $medium-screen) {
         height: 90vh;
     }
-    //position: relative;
+
+    @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+        /* IE10+ CSS styles go here */
+        height: 100vh;
+    }
+    position: relative;
     
         .lead-text {
             position: absolute;
-            top: 42%;
+            top: 32vh;
             -webkit-transform: translateY(-50%);
                 -ms-transform: translateY(-50%);
                     transform: translateY(-50%);
@@ -191,11 +197,16 @@ p > span {
             
             @media screen and (min-width: $medium-screen) {
                 position: absolute;
-                top: 50%;
+                top: 45vh;
                 -webkit-transform: translateY(-50%);
                     -ms-transform: translateY(-50%);
                         transform: translateY(-50%);
                 margin-top: 0;
+            }
+            @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+                /* IE10+ CSS styles go here */
+                position: relative;
+                margin: 0 10vh 0 20vh;
             }
             
         }
@@ -235,7 +246,7 @@ p > span {
             
             @media screen and (min-width: $medium-screen) {
                 max-width: 60%;
-                font-size: 8rem;
+                font-size: 7rem;
             }
     }
     hr {
@@ -1143,11 +1154,10 @@ p > span {
         -ms-transform: translateX(-50%);
             transform: translateX(-50%);
     }
-    h3 {
+    h2 {
         @media screen and (min-width: $medium-screen) {
         padding: 0 10%;
-        margin-top: 0;
-        margin-bottom: 0;
+        margin: 0 auto;
         }
     }
     hr {
@@ -1277,3 +1287,10 @@ input[type=submit] {
 .social-share {
     text-decoration: none;
 }
+
+
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+    .map {
+      width: 100%; 
+    }
+  }
