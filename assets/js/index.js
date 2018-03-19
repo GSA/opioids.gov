@@ -43,5 +43,5 @@ $(window).scroll(function(){
   //250 is fade pixels
   });
 
-//sticky header
-stickybits('.usa-header');
+// //sticky header
+// stickybits('.usa-header');
