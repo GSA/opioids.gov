@@ -9,8 +9,12 @@ baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: sarassassin
 github_username:  saracope
+
+# Configuration for Google Analytics, add your UA code here:
 google_analytics_ua: UA-33523145-1
-dap_agency: EOP 
+
+# Configuration for DAP, add your agency ID here:
+dap_agency: EOP
 
 # Build settings
 markdown: kramdown
